@@ -3,3 +3,4 @@
 __pycache__
 metadata-classification/embeddings/
 data/lid.176.bin
+data/requirements-texts/urds
