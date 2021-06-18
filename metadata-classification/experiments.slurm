@@ -15,7 +15,7 @@
 # load modules (assuming you start from the default environment)
 # we explicitly call the modules to improve reproducibility
 # in case the default settings change
-module load Python/3.8.2-GCCcore-9.3.0^C
+module load Python/3.8.2-GCCcore-9.3.0
 
 source $HOME/python_venvs/metadata_venv/bin/activate
 

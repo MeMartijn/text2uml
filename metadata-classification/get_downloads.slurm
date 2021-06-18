@@ -4,16 +4,15 @@
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
-#SBATCH --mem=200M
 #SBATCH --time=01:00:00
-#SBATCH --partition=testing
+#SBATCH --partition=mem
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 
 # load modules (assuming you start from the default environment)
 # we explicitly call the modules to improve reproducibility
 # in case the default settings change
-module load Python/3.8.2-GCCcore-9.3.0^C
+module load Python/3.8.2-GCCcore-9.3.0
 
 source $HOME/python_venvs/metadata_venv/bin/activate
 
