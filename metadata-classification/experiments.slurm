@@ -4,7 +4,7 @@
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
-#SBATCH --mem=200M
+#SBATCH --mem=400M
 #SBATCH --time=01:00:00
 #SBATCH --partition=testing
 #SBATCH --ntasks=1
@@ -15,7 +15,9 @@
 # load modules (assuming you start from the default environment)
 # we explicitly call the modules to improve reproducibility
 # in case the default settings change
-module load SciPy-bundle/2019.10-foss-2019b-Python-3.7.4
+module load Python/3.8.2-GCCcore-9.3.0^C
+
+source $HOME/python_venvs/metadata_venv/bin/activate
 
 echo "[$SHELL] #### Starting Python test"
 echo "[$SHELL] ## This is $SLURM_JOB_USER and this job has the ID $SLURM_JOB_ID"
