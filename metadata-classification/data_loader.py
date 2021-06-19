@@ -22,7 +22,8 @@ class FlairEncoder:
         self.data_dir = data_dir
         self.dfs = data
 
-    def get_embedded_dataset(self, save = True):
+    # TODO: SET SAVE TO TRUE AGAIN
+    def get_embedded_dataset(self, save = False):
         '''Return the embedding representation of the dataset'''
         def get_embedding_dir(embedding):
             '''Turn the name of the embedding technique into a specific folder'''
@@ -78,6 +79,9 @@ class FlairEncoder:
                     embedding = eval(embedding)
                 else:
                     embedding = TransformerWordEmbeddings(embedding)
+
+                # TODO: REMOVE THIS LINE
+                dfs = dfs.iloc[:10]
 
                 # Apply transformation
                 dfs['embedding'] = dfs['name'].progress_map(
