@@ -84,6 +84,9 @@ class FlairEncoder:
                     lambda text: create_embedding(text, embedding)
                 )
 
+                print('Make sure this is okay:')
+                print(dfs.iloc[0])
+
                 if save:
                     if embedding_dir not in os.listdir(data_dir):
                         # Create a location to save the datasets as pickle files
