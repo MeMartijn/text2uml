@@ -9,8 +9,10 @@ from sklearn.linear_model import LogisticRegression
 from hypopt import GridSearch
 from sklearn.metrics import classification_report
 import pandas as pd
+import sys
 
 # Adapted from https://github.com/MeMartijn/FakeNewsDetection
+sys.path.append('../')
 from data_loader import DataLoader  
 
 if __name__ == '__main__':

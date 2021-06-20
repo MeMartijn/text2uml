@@ -4,8 +4,10 @@ Python script for generating embeddings on ALICE computing facility
 
 import socket
 from time import time
+import sys
 
 # Adapted from https://github.com/MeMartijn/FakeNewsDetection
+sys.path.append('../')
 from data_loader import DataLoader  
 
 if __name__ == '__main__':
@@ -18,8 +20,8 @@ if __name__ == '__main__':
     data = DataLoader()
 
     # Get word embeddings
-    print('Start loading TransformerXL...')
-    embeddings = data.get_transformerxl()
-    print('Finished generating TransformerXL')
+    print('Start loading BERT...')
+    embeddings = data.get_bert()
+    print('Finished generating BERT')
 
     print('Python test finished (running time: {0:.1f}s)'.format(time() - start_time))

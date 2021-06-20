@@ -4,8 +4,10 @@ Python script for generating embeddings on ALICE computing facility
 
 import socket
 from time import time
+import sys
 
 # Adapted from https://github.com/MeMartijn/FakeNewsDetection
+sys.path.append('../')
 from data_loader import DataLoader  
 
 if __name__ == '__main__':

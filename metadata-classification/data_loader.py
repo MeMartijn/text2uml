@@ -112,10 +112,10 @@ class DataLoader:
         tqdm.pandas()
 
         # Set target data file
-        self.data_link = '../data/uml_extracted_metadata_annotated.json'
+        self.data_link = '../../data/uml_extracted_metadata_annotated.json'
 
         # Set target directory for saving embeddings
-        self.data_dir = 'embeddings'
+        self.data_dir = '../embeddings'
 
         # Clean classes and attributes from training data
         self.data = self.get_cleaned_data()
