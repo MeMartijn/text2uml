@@ -29,6 +29,8 @@ class FlairEncoder:
             if embedding[-1:] == ')':
                 # The embedding technique is part of a function
                 return re.search(r'"(.+)"', embedding).group(1)
+            elif '/' in embedding:
+                return embedding.split('/')[1]
 
             return embedding
 
