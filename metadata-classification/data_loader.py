@@ -34,25 +34,22 @@ class FlairEncoder:
 
         def create_embedding(statement, embedding):
             '''Create a single embedding from a piece of text'''
-            try:
-                # Split all sentences
-                sentences = tokenize.sent_tokenize(statement)
+            # Split all sentences
+            sentences = tokenize.sent_tokenize(statement)
 
-                # Create an array for storing the embeddings
-                vector = []
+            # Create an array for storing the embeddings
+            vector = []
 
-                # Loop over all sentences and apply embedding
-                for sentence in sentences:
-                    # Create a Sentence object for each sentence in the statement
-                    sentence = Sentence(sentence, use_tokenizer = True)
+            # Loop over all sentences and apply embedding
+            for sentence in sentences:
+                # Create a Sentence object for each sentence in the statement
+                sentence = Sentence(sentence, use_tokenizer = True)
 
-                    # Embed words in sentence
-                    embedding.embed(sentence)
-                    vector.append([token.embedding.numpy() for token in sentence])
+                # Embed words in sentence
+                embedding.embed(sentence)
+                vector.append([token.embedding.numpy() for token in sentence])
 
-                return vector
-            except:
-                print(statement)
+            return vector
         
         def encode_datasets(embedding_dir, data_dir, dfs, embedding):
             '''Return all datasets with embeddings instead of texts'''
