@@ -4,10 +4,9 @@
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
-#SBATCH --time=03:00:00
-#SBATCH --partition=gpu-short
+#SBATCH --time=06:00:00
+#SBATCH --partition=cpu-medium
 #SBATCH --ntasks=1
-#SBATCH --gres=gpu:1
 
 # load modules (assuming you start from the default environment)
 # we explicitly call the modules to improve reproducibility
