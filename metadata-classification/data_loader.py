@@ -47,7 +47,7 @@ class FlairEncoder:
 
                 # Embed words in sentence
                 embedding.embed(sentence)
-                vector.append([token.embedding.numpy() for token in sentence])
+                vector.append([token.embedding.cpu().numpy() for token in sentence])
 
             return vector
         
