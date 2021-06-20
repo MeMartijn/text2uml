@@ -4,8 +4,8 @@
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
-#SBATCH --time=03:00:00
-#SBATCH --partition=gpu-short
+#SBATCH --time=04:00:00
+#SBATCH --partition=gpu-medium
 #SBATCH --ntasks=1
 #SBATCH --gres=gpu:1
 
