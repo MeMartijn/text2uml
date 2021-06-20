@@ -76,6 +76,9 @@ class FlairEncoder:
                 else:
                     embedding = TransformerWordEmbeddings(embedding)
 
+                # TODO REMOVE THIS LINE
+                dfs = dfs[:10]
+                
                 # Apply transformation
                 dfs['embedding'] = dfs['name'].progress_map(
                     lambda text: create_embedding(text, embedding)
