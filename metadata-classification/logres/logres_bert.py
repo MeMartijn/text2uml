@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
         # Split training data
         print('Generate train and test sets')
-        X_train, X_test, y_train, y_test = train_test_split(pooled_df['embedding'].values, pooled_df['type'].values, test_size=0.25, random_state=0)
+        X_train, X_test, y_train, y_test = train_test_split(pooled_df['embedding'].to_list(), pooled_df['type'].to_list(), test_size=0.25, random_state=0)
 
         # Delete dataset to save memory
         del pooled_df
