@@ -27,7 +27,7 @@ if __name__ == '__main__':
     gpt = data.get_gptneo()
 
     # Apply pooling strategy
-    for pooling_strategy in ['max', 'average', 'min']:
+    for pooling_strategy in ['average']:
         print(f'Running experiment with {pooling_strategy} pooling')
         report_dict = clfs.get_logres_scores(data, gpt, pooling_strategy, penalty = 'l2')
         pd.DataFrame(report_dict).to_csv(f'{pooling_strategy}_gptneo_logres.csv', index=False)
