@@ -4,10 +4,12 @@ import numpy as np
 import re
 from tqdm.auto import tqdm
 import json
+import torch
 
 # Flair embedding imports
 from flair.data import Sentence
 from flair.embeddings import TransformerWordEmbeddings, WordEmbeddings, FlairEmbeddings, StackedEmbeddings, ELMoEmbeddings
+from transformers import TransfoXLModel, TransfoXLTokenizer, XLNetModel, XLNetTokenizer, XLMModel, XLMTokenizer
 import os
 from nltk import tokenize
 
@@ -44,12 +46,20 @@ class FlairEncoder:
 
             # Loop over all sentences and apply embedding
             for sentence in sentences:
-                # Create a Sentence object for each sentence in the statement
-                sentence = Sentence(sentence, use_tokenizer = True)
+                if isinstance(embedding, dict):
+                    # Get embedding from Huggingface directly
+                    input_ids = torch.tensor(embedding['tokenizer'].encode(sentence)).unsqueeze(0)
+                    outputs = embedding['model'](input_ids)
+                    last_hidden_states = outputs[0]
+                    vector.append(list(last_hidden_states[0].detach().numpy()))
+                else:
+                    # Continue as "regular" Flair-based embedding
+                    # Create a Sentence object for each sentence in the statement
+                    sentence = Sentence(sentence, use_tokenizer = True)
 
-                # Embed words in sentence
-                embedding.embed(sentence)
-                vector.append([token.embedding.cpu().numpy() for token in sentence])
+                    # Embed words in sentence
+                    embedding.embed(sentence)
+                    vector.append([token.embedding.cpu().numpy() for token in sentence])
 
             return vector
         
@@ -75,6 +85,21 @@ class FlairEncoder:
                 elif embedding[-1:] == ')':
                     # This embedding has parameters
                     embedding = eval(embedding)
+                elif embedding == 'transfo-xl-wt103':
+                    embedding = {
+                        'model': TransfoXLModel.from_pretrained('transfo-xl-wt103'),
+                        'tokenizer': TransfoXLTokenizer.from_pretrained('transfo-xl-wt103'),
+                    }
+                elif embedding == 'xlm-mlm-en-2048':
+                    embedding = {
+                        'model': XLMModel.from_pretrained('transfo-xl-wt103'),
+                        'tokenizer': XLMTokenizer.from_pretrained('transfo-xl-wt103'),
+                    }
+                elif embedding == 'xlnet-base-cased':
+                    embedding = {
+                        'model': XLNetModel.from_pretrained('transfo-xl-wt103'),
+                        'tokenizer': XLNetTokenizer.from_pretrained('transfo-xl-wt103'),
+                    }
                 else:
                     embedding = TransformerWordEmbeddings(embedding)
 
