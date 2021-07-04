@@ -36,4 +36,6 @@ if __name__ == '__main__':
         report_dict = clfs.get_logres_scores(data, bert, pooling_strategy, penalty = 'l2')
         pd.DataFrame(report_dict).to_csv(f'{pooling_strategy}_gptneo_logres.csv', index=False)
 
+        print(f'BERT + {pooling_strategy} finished (running time: {0:.1f}s)'.format(time() - start_time))
+
     print('Python test finished (running time: {0:.1f}s)'.format(time() - start_time))
