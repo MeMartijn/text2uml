@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=bert
+#SBATCH --job-name=word2vec
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
