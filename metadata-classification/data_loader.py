@@ -238,7 +238,7 @@ class DataLoader:
 
         # Create big dataframe with all values together
         flatten = lambda t: [item for sublist in t for item in sublist]
-        return pd.DataFrame(list(map(lambda x: [x, 'class'], flatten(all_classes))) + list(map(lambda x: [x, 'attribute'], flatten(all_attrs))), columns=['name', 'type'])[:10]
+        return pd.DataFrame(list(map(lambda x: [x, 'class'], flatten(all_classes))) + list(map(lambda x: [x, 'attribute'], flatten(all_attrs))), columns=['name', 'type'])
 
     def set_embeddings(self):
         '''Set all interfaces for embedding techniques using custom functions or Flair encoders'''
