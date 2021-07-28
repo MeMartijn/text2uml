@@ -129,31 +129,15 @@ class FlairEncoder(GeneralEncoder):
 
 class FastTextEncoder(GeneralEncoder):
     '''An interface for interacting with fastText'''
-    # TODO: IMPLEMENT FASTTEXT ENCODER
-
     def get_embedding_dir(self, embedding):
         '''Turn the name of the embedding technique into a specific folder'''
         return 'fasttext'
-    
+
     def get_embedder(self):
         # Activate embedding
-        if self.embedding == 'transfo-xl-wt103':
-            embedding = {
-                'model': TransfoXLModel.from_pretrained('transfo-xl-wt103'),
-                'tokenizer': TransfoXLTokenizer.from_pretrained('transfo-xl-wt103'),
-            }
-        elif self.embedding == 'xlm-mlm-en-2048':
-            embedding = {
-                'model': XLMModel.from_pretrained('transfo-xl-wt103'),
-                'tokenizer': XLMTokenizer.from_pretrained('transfo-xl-wt103'),
-            }
-        elif self.embedding == 'xlnet-base-cased':
-            embedding = {
-                'model': XLNetModel.from_pretrained('transfo-xl-wt103'),
-                'tokenizer': XLNetTokenizer.from_pretrained('transfo-xl-wt103'),
-            }
-        else:
-            embedding = TransformerWordEmbeddings(self.embedding)
+        vocab = [[x] for x in np.array([word_tokenize(sentence) for sentence in self.df['name'].to_list()]).flatten()]
+
+        embedding = FastText(vocab, min_count=1, size=400)
         
         return embedding
     
@@ -163,30 +147,13 @@ class FastTextEncoder(GeneralEncoder):
         sentences = tokenize.sent_tokenize(statement)
 
         # Create an array for storing the embeddings
-        vector = []
-
-        # Loop over all sentences and apply embedding
-        for sentence in sentences:
-            if isinstance(self.transformer, dict):
-                # Get embedding from Huggingface directly
-                input_ids = torch.tensor(self.transformer['tokenizer'].encode(sentence)).unsqueeze(0)
-                outputs = self.transformer['model'](input_ids)
-                last_hidden_states = outputs[0]
-                vector.append(list(last_hidden_states[0].detach().numpy()))
-            else:
-                # Continue as "regular" Flair-based embedding
-                # Create a Sentence object for each sentence in the statement
-                sentence = Sentence(sentence, use_tokenizer = True)
-
-                # Embed words in sentence
-                self.transformer.embed(sentence)
-                vector.append([token.embedding.cpu().numpy() for token in sentence])
+        vector = [[embedder.wv.get_vector(token) for token in word_tokenize(sentence)] for sentence in sentences]
 
         return vector
 
 
 class Word2VecEncoder(GeneralEncoder):
-    '''An interface for interacting with fastText'''
+    '''An interface for interacting with word2vec'''
     def get_embedding_dir(self, embedding):
         '''Turn the name of the embedding technique into a specific folder'''
         return 'word2vec'
@@ -195,7 +162,7 @@ class Word2VecEncoder(GeneralEncoder):
         # Activate embedding
         vocab = [[x] for x in np.array([word_tokenize(sentence) for sentence in self.df['name'].to_list()]).flatten()]
 
-        embedding = Word2Vec(vocab, min_count=1)
+        embedding = Word2Vec(vocab, min_count=1, size=400)
         
         return embedding
     
