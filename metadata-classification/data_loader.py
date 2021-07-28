@@ -1,17 +1,13 @@
-import os
+import os, json, torch, os
 import pandas as pd
 import numpy as np
-import re
 from tqdm.auto import tqdm
-import json
-import torch
-
-# Flair embedding imports
 from flair.data import Sentence
 from flair.embeddings import TransformerWordEmbeddings
 from transformers import TransfoXLModel, TransfoXLTokenizer, XLNetModel, XLNetTokenizer, XLMModel, XLMTokenizer
-import os
-from nltk import tokenize
+from nltk import tokenize, word_tokenize
+from gensim.models import FastText, Word2Vec
+from pathlib import Path
 
 class GeneralEncoder:
     '''An interface for interacting with the fasttext model'''
@@ -22,7 +18,7 @@ class GeneralEncoder:
         # Save variables to class
         self.embedding = embedding
         self.data_dir = data_dir
-        self.dfs = data
+        self.df = data
     
     def get_embedder(self):
         '''Empty script for setting custom embedder'''
@@ -42,7 +38,7 @@ class GeneralEncoder:
     def get_embedded_dataset(self, save = True):
         '''Return the embedding representation of the dataset'''
         
-        def encode_datasets(embedding_dir, data_dir, dfs, embedding):
+        def encode_datasets(embedding_dir, data_dir, df, embedding):
             '''Return all datasets with embeddings instead of texts'''
             # Check whether there already is a file containing the embeddings
             if embedding_dir in os.listdir(data_dir):
@@ -56,12 +52,12 @@ class GeneralEncoder:
                 embedder = self.get_embedder()
 
                 # Apply transformation
-                dfs['embedding'] = dfs['name'].progress_map(
+                df['embedding'] = df['name'].progress_map(
                     lambda text: self.create_embedding(text, embedder)
                 )
 
                 print('Make sure this is okay:')
-                print(dfs.iloc[0])
+                print(df.iloc[0])
 
                 if save:
                     if embedding_dir not in os.listdir(data_dir):
@@ -70,15 +66,15 @@ class GeneralEncoder:
 
                     # Save the dataset as pickle file
                     file_path = os.path.join(data_dir, embedding_dir, 'data.pkl')
-                    dfs.to_pickle(file_path)
+                    df.to_pickle(file_path)
                     print('Saved data.pkl at ' + file_path)
                 
-                return dfs
+                return df
         
         # Directory name for saving the datasets
         embedding_dir = self.get_embedding_dir(self.embedding)
 
-        return encode_datasets(embedding_dir, self.data_dir, self.dfs, self.embedding)
+        return encode_datasets(embedding_dir, self.data_dir, self.df, self.embedding)
 
 class FlairEncoder(GeneralEncoder):
     '''An interface for interacting with Zalando's Flair library'''
@@ -134,6 +130,11 @@ class FlairEncoder(GeneralEncoder):
 class FastTextEncoder(GeneralEncoder):
     '''An interface for interacting with fastText'''
     # TODO: IMPLEMENT FASTTEXT ENCODER
+
+    def get_embedding_dir(self, embedding):
+        '''Turn the name of the embedding technique into a specific folder'''
+        return 'fasttext'
+    
     def get_embedder(self):
         # Activate embedding
         if self.embedding == 'transfo-xl-wt103':
@@ -186,26 +187,15 @@ class FastTextEncoder(GeneralEncoder):
 
 class Word2VecEncoder(GeneralEncoder):
     '''An interface for interacting with fastText'''
-    # TODO: IMPLEMENT WORD2VEC ENCODER
+    def get_embedding_dir(self, embedding):
+        '''Turn the name of the embedding technique into a specific folder'''
+        return 'word2vec'
+
     def get_embedder(self):
         # Activate embedding
-        if self.embedding == 'transfo-xl-wt103':
-            embedding = {
-                'model': TransfoXLModel.from_pretrained('transfo-xl-wt103'),
-                'tokenizer': TransfoXLTokenizer.from_pretrained('transfo-xl-wt103'),
-            }
-        elif self.embedding == 'xlm-mlm-en-2048':
-            embedding = {
-                'model': XLMModel.from_pretrained('transfo-xl-wt103'),
-                'tokenizer': XLMTokenizer.from_pretrained('transfo-xl-wt103'),
-            }
-        elif self.embedding == 'xlnet-base-cased':
-            embedding = {
-                'model': XLNetModel.from_pretrained('transfo-xl-wt103'),
-                'tokenizer': XLNetTokenizer.from_pretrained('transfo-xl-wt103'),
-            }
-        else:
-            embedding = TransformerWordEmbeddings(self.embedding)
+        vocab = [[x] for x in np.array([word_tokenize(sentence) for sentence in self.df['name'].to_list()]).flatten()]
+
+        embedding = Word2Vec(vocab, min_count=1)
         
         return embedding
     
@@ -215,24 +205,7 @@ class Word2VecEncoder(GeneralEncoder):
         sentences = tokenize.sent_tokenize(statement)
 
         # Create an array for storing the embeddings
-        vector = []
-
-        # Loop over all sentences and apply embedding
-        for sentence in sentences:
-            if isinstance(self.transformer, dict):
-                # Get embedding from Huggingface directly
-                input_ids = torch.tensor(self.transformer['tokenizer'].encode(sentence)).unsqueeze(0)
-                outputs = self.transformer['model'](input_ids)
-                last_hidden_states = outputs[0]
-                vector.append(list(last_hidden_states[0].detach().numpy()))
-            else:
-                # Continue as "regular" Flair-based embedding
-                # Create a Sentence object for each sentence in the statement
-                sentence = Sentence(sentence, use_tokenizer = True)
-
-                # Embed words in sentence
-                self.transformer.embed(sentence)
-                vector.append([token.embedding.cpu().numpy() for token in sentence])
+        vector = [[embedder.wv.get_vector(token) for token in word_tokenize(sentence)] for sentence in sentences]
 
         return vector
 
@@ -253,7 +226,10 @@ class DataLoader:
             raise ValueError('This dataset is not supported. Please only use \'lindholmen\' or \'genmymodel\' as keywords.')
 
         # Set target directory for saving embeddings
-        self.data_dir = '../embeddings'
+        self.data_dir = '../embeddings/' + dataset 
+
+        # Create destination if it doesn't exist
+        Path(self.data_dir).mkdir(parents=True, exist_ok=True)
 
         # Clean classes and attributes from training data
         self.data = self.get_cleaned_data()
