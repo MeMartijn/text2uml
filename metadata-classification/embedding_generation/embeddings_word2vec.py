@@ -16,19 +16,8 @@ if __name__ == '__main__':
 
     print('Python test started on {}'.format(socket.gethostname()))
 
-    print('Start loading GenMyModel')
     # Initialize data loading module
     data = DataLoader(dataset='genmymodel')
-
-    # Get word embeddings
-    print('Start loading word2vec...')
-    embeddings = data.get_word2vec()
-    print('Finished generating word2vec')
-
-
-    print('Start loading Lindholmen')    
-    # Initialize data loading module
-    data = DataLoader(dataset='lindholmen')
 
     # Get word embeddings
     print('Start loading word2vec...')
