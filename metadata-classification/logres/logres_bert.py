@@ -34,7 +34,7 @@ if __name__ == '__main__':
     for pooling_strategy in ['max', 'average', 'min']:
         print(f'Running experiment with {pooling_strategy} pooling')
         report_dict = clfs.get_logres_scores(data, bert, pooling_strategy, penalty = 'l2')
-        pd.DataFrame(report_dict).to_csv(f'{pooling_strategy}_gptneo_logres.csv', index=False)
+        pd.DataFrame(report_dict).to_csv(f'{pooling_strategy}_bert_logres.csv', index=False)
 
         print(f'BERT + {pooling_strategy} finished (running time: {0:.1f}s)'.format(time() - start_time))
 
