@@ -180,7 +180,7 @@ class Word2VecEncoder(GeneralEncoder):
 
 class DataLoader:
     '''A class which holds functionality to load and interact with the data from the research article'''
-    def __init__(self, dataset = 'lindholmen'):
+    def __init__(self, dataset = 'genmymodel'):
         # Prepare tqdm loops
         tqdm.pandas()
 
