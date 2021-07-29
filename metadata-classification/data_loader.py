@@ -43,13 +43,13 @@ class GeneralEncoder:
             # Check whether there already is a file containing the embeddings
             if embedding_dir in os.listdir(data_dir):
                 # Return the previously made embeddings
-                df =  pd.read_pickle(os.path.join(
+                new_df =  pd.read_pickle(os.path.join(
                     data_dir, embedding_dir, 'data.pkl'
                 ))
 
-                print(df.head(5))
+                print(new_df.head(5))
 
-                return df
+                return new_df
             else:
                 print('Creating representations and saving them as files...')
 
@@ -61,7 +61,7 @@ class GeneralEncoder:
                 )
 
                 print('Make sure this is okay:')
-                print(df.iloc[0])
+                print(df.head(5))
 
                 if save:
                     if embedding_dir not in os.listdir(data_dir):
