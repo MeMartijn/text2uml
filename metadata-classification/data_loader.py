@@ -19,8 +19,6 @@ class GeneralEncoder:
         self.embedding = embedding
         self.data_dir = data_dir
         self.df = data
-
-        print(len(self.df))
     
     def get_embedder(self):
         '''Empty script for setting custom embedder'''
