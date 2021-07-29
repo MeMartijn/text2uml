@@ -4,7 +4,7 @@
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
-#SBATCH --time=03:00:00
+#SBATCH --time=01:00:00
 #SBATCH --partition=testing
 #SBATCH --ntasks=1
 
