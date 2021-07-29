@@ -5,7 +5,7 @@
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
 #SBATCH --time=03:00:00
-#SBATCH --partition=cpu-short
+#SBATCH --partition=testing
 #SBATCH --ntasks=1
 
 # load modules (assuming you start from the default environment)
