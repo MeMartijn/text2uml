@@ -136,6 +136,7 @@ class FastTextEncoder(GeneralEncoder):
     def get_embedder(self):
         # Activate embedding
         vocab = [[x] for x in np.array([word_tokenize(sentence) for sentence in self.df['name'].to_list()]).flatten()]
+        print(vocab[:25])
 
         embedding = FastText(vocab, min_count=1, size=400)
         
@@ -186,8 +187,10 @@ class DataLoader:
 
         # Set target data file
         if dataset == 'lindholmen':
+            print('Continuing with the Lindholmen dataset')
             self.data_link = '../../data/uml_extracted_metadata_annotated.json'
         elif dataset == 'genmymodel':
+            print('Continuing with the GenMyModel dataset')
             self.data_link = '../../data/genmymodel_uml_extracted_metadata_annotated.json'
         else:
             raise ValueError('This dataset is not supported. Please only use \'lindholmen\' or \'genmymodel\' as keywords.')
