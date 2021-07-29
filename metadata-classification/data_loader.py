@@ -136,8 +136,10 @@ class FastTextEncoder(GeneralEncoder):
         return 'fasttext'
 
     def get_embedder(self):
+        flatten = lambda t: [item for sublist in t for item in sublist]
+
         # Activate embedding
-        vocab = np.array([word_tokenize(sentence) for sentence in self.df['name'].to_list()], dtype=object).flatten()
+        vocab = flatten([word_tokenize(sentence) for sentence in self.df['name'].to_list()])
         print(vocab[:25])
 
         embedding = FastText(vocab, min_count=1, size=400)
