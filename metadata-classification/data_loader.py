@@ -35,7 +35,7 @@ class GeneralEncoder:
         else:
             return embedding
 
-    def get_embedded_dataset(self, save = False):
+    def get_embedded_dataset(self, save = True):
         '''Return the embedding representation of the dataset'''
         
         def encode_datasets(embedding_dir, data_dir, df, embedding):
