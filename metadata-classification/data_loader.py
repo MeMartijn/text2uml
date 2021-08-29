@@ -222,14 +222,7 @@ class DataLoader:
             # Load data as dictionary
             data = json.load(json_file)
 
-            # Only keep English classes and attributes
-            english_data = {
-                file: data[file]
-                for file in data.keys()
-                if data[file]['lang'] == '__label__en'
-            }
-            
-            return english_data
+            return data
     
     def get_df_from_data(self):
         '''Returns a dataframe with both the classes and the attributes'''
