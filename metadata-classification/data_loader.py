@@ -197,7 +197,7 @@ class DataLoader:
             self.data_link = '../../data/uml_extracted_metadata_annotated.json'
         elif dataset == 'genmymodel':
             print('Continuing with the GenMyModel dataset')
-            self.data_link = '../../data/genmymodel_uml_extracted_metadata_annotated.json'
+            self.data_link = '../../data/genmymodel_uml_extracted_metadata_final.json'
         else:
             raise ValueError('This dataset is not supported. Please only use \'lindholmen\' or \'genmymodel\' as keywords.')
 
@@ -247,7 +247,9 @@ class DataLoader:
 
         # Create big dataframe with all values together
         flatten = lambda t: np.array([item for sublist in t for item in sublist])
-        return pd.DataFrame(list(map(lambda x: [x, 'class'], np.unique(flatten(all_classes)))) + list(map(lambda x: [x, 'attribute'], np.unique(flatten(all_attrs)))), columns=['name', 'type'])
+        df =  pd.DataFrame(list(map(lambda x: [x, 'class'], np.unique(flatten(all_classes)))) + list(map(lambda x: [x, 'attribute'], np.unique(flatten(all_attrs)))), columns=['name', 'type'])
+        print(df.head(5))
+        return df
 
     def set_embeddings(self):
         '''Set all interfaces for embedding techniques using custom functions or Flair encoders'''
