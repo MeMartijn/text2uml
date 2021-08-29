@@ -23,7 +23,7 @@ if __name__ == '__main__':
     print('Python test started on {}'.format(socket.gethostname()))
 
     # Initialize modules
-    data = DataLoader()
+    data = DataLoader(dataset='genmymodel')
     clfs = Classifiers()
 
     # Get word embeddings
