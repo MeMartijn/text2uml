@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=bert
+#SBATCH --job-name=logres-bert
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
@@ -23,7 +23,7 @@ echo "[$SHELL] ## current working directory: "$CWD
 
 # Run the file
 echo "[$SHELL] ## Run script"
-python3 logres_bert.py
+python3 bert.py
 echo "[$SHELL] ## Script finished"
 
 echo "[$SHELL] #### Finished Python test. Have a nice day"
