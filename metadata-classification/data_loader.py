@@ -40,12 +40,15 @@ class GeneralEncoder:
         
         def encode_datasets(embedding_dir, data_dir, df, embedding):
             '''Return all datasets with embeddings instead of texts'''
+            # Define target file
+            dataset_path = os.path.join(
+                data_dir, embedding_dir, 'data.pkl'
+            )
+
             # Check whether there already is a file containing the embeddings
-            if embedding_dir in os.listdir(data_dir):
+            if os.path.isfile(dataset_path):
                 # Return the previously made embeddings
-                new_df =  pd.read_pickle(os.path.join(
-                    data_dir, embedding_dir, 'data.pkl'
-                ))
+                new_df =  pd.read_pickle(dataset_path)
 
                 print(new_df.head(5))
 
