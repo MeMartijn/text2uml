@@ -17,7 +17,7 @@ if __name__ == '__main__':
     print('Python test started on {}'.format(socket.gethostname()))
 
     # Initialize data loading module
-    data = DataLoader(dataset='genmymodel')
+    data = DataLoader(dataset='genmymodel', extended=True)
 
     # Get word embeddings
     print('Start loading fasttext...')
