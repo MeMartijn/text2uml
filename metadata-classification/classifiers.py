@@ -20,7 +20,7 @@ class Classifiers:
     @staticmethod
     def get_logres_scores(data, df, pooling_strategy, penalty = 'l2'):
         print(f'Apply {pooling_strategy} pooling to dataset...')
-        pooled_df = data.apply_pooling('max', df[['embedding', 'type']])
+        pooled_df = data.apply_pooling(pooling_strategy, df[['embedding', 'type']])
 
         # Split training data
         print('Generate train and test sets')
