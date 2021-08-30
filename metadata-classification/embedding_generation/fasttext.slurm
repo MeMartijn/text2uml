@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=fasttext
+#SBATCH --job-name=embed-fasttext
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
