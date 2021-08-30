@@ -11,11 +11,12 @@ from pathlib import Path
 
 class GeneralEncoder:
     '''An interface for interacting with the fasttext model'''
-    def __init__(self, data_dir, data, embedding = None):
+    def __init__(self, data_dir, data, extended, embedding = None):
         # Prepare tqdm loops
         tqdm.pandas()
 
         # Save variables to class
+        self.extended = extended
         self.embedding = embedding
         self.data_dir = data_dir
         self.df = data
@@ -42,7 +43,7 @@ class GeneralEncoder:
             '''Return all datasets with embeddings instead of texts'''
             # Define target file
             dataset_path = os.path.join(
-                data_dir, embedding_dir, 'data.pkl'
+                data_dir, embedding_dir, f'{"data-extended" if self.extended else "data"}.pkl'
             )
 
             # Check whether there already is a file containing the embeddings
@@ -63,6 +64,11 @@ class GeneralEncoder:
                     lambda text: self.create_embedding(text, embedder)
                 )
 
+                if self.extended:
+                    df['contextual_embeddings'] = df['context'].progress_map(
+                        lambda context: [self.create_embedding(text, embedder) for text in context]
+                    )
+
                 print('Make sure this is okay:')
                 print(df.head(5))
 
@@ -72,9 +78,8 @@ class GeneralEncoder:
                         os.mkdir(os.path.join(data_dir, embedding_dir))
 
                     # Save the dataset as pickle file
-                    file_path = os.path.join(data_dir, embedding_dir, 'data.pkl')
-                    df.to_pickle(file_path)
-                    print('Saved data.pkl at ' + file_path)
+                    df.to_pickle(dataset_path)
+                    print(f'Saved {"extended" if self.extended else ""} data at ' + dataset_path)
                 
                 return df
         
@@ -144,7 +149,11 @@ class FastTextEncoder(GeneralEncoder):
         flatten = lambda t: [item for sublist in t for item in sublist]
 
         # Activate embedding
-        vocab = [[x] for x in flatten([word_tokenize(sentence) for sentence in self.df['name'].to_list()])]
+        if 'context' in self.df.columns:
+            vocab = [[x] for x in flatten([word_tokenize(sentence) for sentence in self.df['name'].to_list()]) + flatten(self.df['context'].to_list())]
+        else:
+            vocab = [[x] for x in flatten([word_tokenize(sentence) for sentence in self.df['name'].to_list()])]
+        
         print(vocab[:25])
 
         embedding = FastText(vocab, min_count=1, size=400)
@@ -169,8 +178,13 @@ class Word2VecEncoder(GeneralEncoder):
         return 'word2vec'
 
     def get_embedder(self):
+        flatten = lambda t: [item for sublist in t for item in sublist]
+
         # Activate embedding
-        vocab = [[x] for x in np.array([word_tokenize(sentence) for sentence in self.df['name'].to_list()]).flatten()]
+        if 'context' in self.df.columns:
+            vocab = [[x] for x in flatten([word_tokenize(sentence) for sentence in self.df['name'].to_list()]) + flatten(self.df['context'].to_list())]
+        else:
+            vocab = [[x] for x in flatten([word_tokenize(sentence) for sentence in self.df['name'].to_list()])]
 
         embedding = Word2Vec(vocab, min_count=1, size=400)
         
@@ -203,6 +217,8 @@ class DataLoader:
             self.data_link = '../../data/genmymodel_uml_extracted_metadata_final.json'
         else:
             raise ValueError('This dataset is not supported. Please only use \'lindholmen\' or \'genmymodel\' as keywords.')
+
+        self.extended = extended
 
         # Set target directory for saving embeddings
         self.data_dir = '../embeddings/' + dataset 
@@ -280,15 +296,15 @@ class DataLoader:
         '''Set all interfaces for embedding techniques using custom functions or Flair encoders'''
         
         def get_flair_embedding(embedding):
-            encoder = FlairEncoder(embedding = embedding, data_dir = self.data_dir, data = self.df)
+            encoder = FlairEncoder(embedding = embedding, data_dir = self.data_dir, data = self.df, extended = self.extended)
             return encoder.get_embedded_dataset
         
         def get_fasttext_embedding():
-            encoder = FastTextEncoder(data_dir = self.data_dir, data = self.df) 
+            encoder = FastTextEncoder(data_dir = self.data_dir, data = self.df, extended = self.extended)
             return encoder.get_embedded_dataset
 
         def get_word2vec_embedding():
-            encoder = Word2VecEncoder(data_dir = self.data_dir, data = self.df) 
+            encoder = Word2VecEncoder(data_dir = self.data_dir, data = self.df, extended = self.extended)
             return encoder.get_embedded_dataset
 
         # Attach all function references
