@@ -187,7 +187,7 @@ class Word2VecEncoder(GeneralEncoder):
 
 class DataLoader:
     '''A class which holds functionality to load and interact with the data from the research article'''
-    def __init__(self, dataset = 'genmymodel'):
+    def __init__(self, dataset = 'genmymodel', extended = False):
         # Prepare tqdm loops
         tqdm.pandas()
 
@@ -211,7 +211,7 @@ class DataLoader:
         self.data = self.get_cleaned_data()
 
         # All the classes and attributes, used for training models
-        self.df = self.get_df_from_data()
+        self.df = self.get_df_from_data(extended)
 
         # Set embedding functions
         self.set_embeddings()
@@ -224,25 +224,54 @@ class DataLoader:
 
             return data
     
-    def get_df_from_data(self):
+    def get_df_from_data(self, extended):
         '''Returns a dataframe with both the classes and the attributes'''
-        # Store all classes and attributes independent of eachother
-        all_classes = []
-        all_attrs = []
-
-        # Loop over all metadata and append to proper list
-        for file, metadata in self.data.items():
-            if 'classes' in metadata.keys():
-                all_classes.append(metadata['classes'])
-            
-            if 'attributes' in metadata.keys():
-                all_attrs.append(metadata['attributes'])
-
-        # Create big dataframe with all values together
+        # Helper function
         flatten = lambda t: np.array([item for sublist in t for item in sublist])
-        df =  pd.DataFrame(list(map(lambda x: [x, 'class'], np.unique(flatten(all_classes)))) + list(map(lambda x: [x, 'attribute'], np.unique(flatten(all_attrs)))), columns=['name', 'type'])
-        print(df.head(5))
-        return df
+
+        # Extended version hosts the context of the classes and attributes too
+        if extended:
+            mapping = {'classes': 'class', 'attributes': 'attribute'}
+
+            # Store all observations
+            matrix = []
+
+            print('Create an extended dataframe with contextual elements...')
+            for file in tqdm(self.data):
+                all_metadata = flatten([metadata[1] for metadata in self.data[file].items()])
+                
+                for metadata in self.data[file].items():
+                    # Get target variable name
+                    target = mapping[metadata[0]]
+                    
+                    # Append a new row for all observations
+                    for datapoint in metadata[1]:
+                        matrix.append([datapoint, target, list(filter(lambda x: x != datapoint, all_metadata))])
+
+            # Formatting and dropping of duplications
+            df = pd.DataFrame(matrix)
+            df = df.loc[df.astype(str).drop_duplicates().index]
+            df.columns = ['name', 'type', 'context']
+
+            print(df.head(5))
+            return df
+        else:
+            # Store all classes and attributes independent of eachother
+            all_classes = []
+            all_attrs = []
+
+            # Loop over all metadata and append to proper list
+            for file, metadata in self.data.items():
+                if 'classes' in metadata.keys():
+                    all_classes.append(metadata['classes'])
+                
+                if 'attributes' in metadata.keys():
+                    all_attrs.append(metadata['attributes'])
+
+            # Create big dataframe with all values together
+            df =  pd.DataFrame(list(map(lambda x: [x, 'class'], np.unique(flatten(all_classes)))) + list(map(lambda x: [x, 'attribute'], np.unique(flatten(all_attrs)))), columns=['name', 'type'])
+            print(df.head(5))
+            return df
 
     def set_embeddings(self):
         '''Set all interfaces for embedding techniques using custom functions or Flair encoders'''
