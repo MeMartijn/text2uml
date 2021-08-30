@@ -4,8 +4,8 @@
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
-#SBATCH --time=01:00:00
-#SBATCH --partition=testing
+#SBATCH --time=03:00:00
+#SBATCH --partition=cpu-short
 #SBATCH --ntasks=1
 
 # load modules (assuming you start from the default environment)
@@ -23,7 +23,7 @@ echo "[$SHELL] ## current working directory: "$CWD
 
 # Run the file
 echo "[$SHELL] ## Run script"
-python3 embeddings_fasttext.py
+python3 fasttext.py
 echo "[$SHELL] ## Script finished"
 
 echo "[$SHELL] #### Finished Python test. Have a nice day"
