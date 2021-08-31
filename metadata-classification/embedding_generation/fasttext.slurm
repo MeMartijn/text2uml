@@ -4,8 +4,8 @@
 #SBATCH --error=%x_%j.err
 #SBATCH --mail-user="m.b.j.schouten@umail.leidenuniv.nl"
 #SBATCH --mail-type="ALL"
-#SBATCH --time=03:00:00
-#SBATCH --partition=cpu-short
+#SBATCH --time=1-00:00:00
+#SBATCH --partition=cpu-medium
 #SBATCH --ntasks=1
 
 # load modules (assuming you start from the default environment)
