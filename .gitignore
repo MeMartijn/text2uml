@@ -7,3 +7,4 @@ data/requirements-texts/urds
 data/repo-genmymodel-uml
 data/models/sensebert
 data/models/pysupersensetagger-master
+bucketization/output
