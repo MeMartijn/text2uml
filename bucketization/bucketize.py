@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 from booknlp.booknlp import BookNLP
+import numpy as np
+import csv
 
 def get_supersenses(filename):
     model_params={
@@ -23,7 +25,7 @@ def get_supersenses(filename):
     booknlp.process(input_file, output_directory, file_id)
 
     # Gather results
-    df = pd.read_csv(f'{output_directory}{file_id}.tokens', sep='\t')
+    df = pd.read_csv(f'{output_directory}{file_id}.tokens', sep='\t', quoting=csv.QUOTE_NONE)
 
     # Gather supersenses
     supersenses = pd.read_csv(f'{output_directory}{file_id}.supersense', sep='\t')
