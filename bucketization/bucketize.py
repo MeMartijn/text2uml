@@ -1,5 +1,4 @@
 import pandas as pd
-import os
 from booknlp.booknlp import BookNLP
 import numpy as np
 import csv
