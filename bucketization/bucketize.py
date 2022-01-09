@@ -57,8 +57,41 @@ def get_supersenses(filename):
 
 def is_important_for_class(supersense_df):
     # Rule 1: there needs to be at least two nouns in the sentences
-    if len(supersense_df[supersense_df['POS-tag'] == 'NN']) > 1:
-        return True
+    if supersense_df['fine_POS_tag'].tolist().count('NN') + supersense_df['fine_POS_tag'].tolist().count('NNP') + supersense_df['fine_POS_tag'].tolist().count('NNS') > 1:
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['aux', 'auxpass', 'conj']) and 'verb.cognition' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['pobj', 'prep', 'nsubj']) and all(item in supersense_df['supersense_category'].tolist() for item in ['verb.stative', 'noun.relation']):
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['pobj', 'nummod']) and all(item in supersense_df['supersense_category'].tolist() for item in ['verb.stative', 'noun.artifact']) and supersense_df['supersense_category'].tolist().count('verb.stative') > 1:
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['nsubj', 'dobj', 'amod']) and 'verb.stative' in supersense_df['supersense_category'].tolist() and 'JJ' in supersense_df['fine_POS_tag'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubj', 'dobj']) and 'verb.possession' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubj', 'pobj', 'aux']) and 'verb.stative' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubj', 'pobj', 'aux']) and 'verb.communication' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubj', 'dobj', 'cc']) and 'verb.change' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubj', 'dobj']) and all(item in supersense_df['supersense_category'].tolist() for item in ['verb.perception', 'noun.artifact']):
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['prep', 'nsubjpass', 'auxpass', 'nummod', 'cc']):
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['nsubjpass', 'auxpass']) and 'require' in supersense_df['lemma'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['nsubjpass', 'auxpass', 'det', 'aux']) and 'verb.change' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubjpass', 'aux', 'auxpass', 'pobj']) and 'verb.contact' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubj', 'pobj', 'prep']) and 'verb.stative' in supersense_df['supersense_category'].tolist():
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['pobj', 'prep']) and all(item in supersense_df['supersense_category'].tolist() for item in ['verb.stative', 'noun.artifact']) and supersense_df['dependency_relation'].tolist().count('pobj') > 1:
+            return True
+        if all(item in supersense_df['dependency_relation'].tolist() for item in ['det', 'nsubj', 'dobj', 'predet']) and 'verb.social' in supersense_df['supersense_category'].tolist():
+            return True
+        else:
+            return False
     else:
         return False
 
