@@ -1,6 +1,5 @@
 from booknlp.booknlp import BookNLP
 import os
-from collections import Counter
 import pandas as pd
 import csv
 import numpy as np
@@ -22,9 +21,23 @@ class Text2UML:
         # Process source text
         booknlp.process(self.source, self.output_dir, self.id)
 
-        # Put tokens into memory
+        # Put process data into memory
         self.tokens = pd.read_csv(f'{self.output_dir}/{self.id}.tokens', sep='\t', quoting=csv.QUOTE_NONE)
+        self.get_supersenses()
         self.detected_entities = self.get_detected_entities()
+    
+    def get_supersenses(self):
+        # Get supersense table
+        supersenses = pd.read_csv(f'{self.output_dir}/{self.id}.supersense', sep='\t')
+
+        # Merge supersenses with main token table
+        self.tokens['supersense_category'] = ''
+
+        # Loop over supersense df
+        for index, row in supersenses.iterrows():
+            # Add supersense to all rows in range of starting and ending tokens
+            for token in range(row.start_token, row.end_token + 1):
+                self.tokens.loc[self.tokens.token_ID_within_document == token, 'supersense_category'] = row['supersense_category']
 
     def get_detected_entities(self):
         # Get entities table
@@ -37,7 +50,7 @@ class Text2UML:
 
         # Loop over entity df
         for index, row in entities.iterrows():
-            # Add supersense to all rows in range of starting and ending tokens
+            # Add entity data to all rows in range of starting and ending tokens
             for token in range(row.start_token, row.end_token + 1):
                 self.tokens.loc[self.tokens.token_ID_within_document == token, 'entity'] = row.COREF
                 self.tokens.loc[self.tokens.token_ID_within_document == token, 'entity_type'] = row.prop
