@@ -8,3 +8,5 @@ data/repo-genmymodel-uml
 data/models/sensebert
 data/models/pysupersensetagger-master
 bucketization/output
+Text2UML/input
+Text2UML/output
