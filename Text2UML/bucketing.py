@@ -1,7 +1,8 @@
 class Bucketizer:
-    def __init__(self, tokens, retrieve_text):
+    def __init__(self, tokens, retrieve_text, save_text):
         self.tokens = tokens
         self.retrieve_text = retrieve_text
+        self.save_text = save_text
     
     def is_important_for_class(self, supersense_df):
         # Rule 1: there needs to be at least two nouns in the sentences
@@ -66,6 +67,9 @@ class Bucketizer:
                 'class': list(filter(lambda x: self.is_important_for_class(x), focus_text_dfs)),
                 'activity': list(filter(lambda x: self.is_important_for_activity(x), focus_text_dfs)),
             }
+
+            # Save raw dfs for the next part of the process
+            self.save_text(bucketed_data)
             
             return {
                 bucket: [' '.join(df['word'].values) for df in bucketed_data[bucket]]
