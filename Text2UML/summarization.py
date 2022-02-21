@@ -77,12 +77,6 @@ class Summarizer:
             # Add to final dictionary
             final_entities.setdefault(get_sentence(main_entity), []).append(entity[0])
         
-        # Add non-used entities from the main entity list
-        located_entities = [item for sublist in final_entities.values() for item in sublist]
-        for entity_id, entity_name in self.entities.items():
-            if entity_id not in located_entities:
-                final_entities.setdefault(entity_name.lower(), []).append(float(entity_id))
-        
         return final_entities
     
     def get_filtered_text(self, requested_entities):
