@@ -1,12 +1,5 @@
 .ipynb_checkpoints
 .DS_Store
 __pycache__
-metadata-classification/embeddings/
-data/lid.176.bin
-data/requirements-texts/urds
-data/repo-genmymodel-uml
-data/models/sensebert
-data/models/pysupersensetagger-master
-bucketization/output
-Text2UML/input
-Text2UML/output
+output
+input
