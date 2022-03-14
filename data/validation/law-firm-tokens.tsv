@@ -1,0 +1,599 @@
+paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	lemma	byte_onset	byte_offset	POS_tag	fine_POS_tag	dependency_relation	syntactic_head_ID	event	supersense_category	entity	entity_type	entity_category	document_ID	encoding	target	IOB_tag
+0	0	0	0	Analyst	analyst	0	7	NOUN	NN	ROOT	0	O	noun.person				2	O		O
+0	0	1	1	:	:	7	8	PUNCT	:	punct	0	O					2	O		O
+0	0	2	2	Do	do	9	11	AUX	VBP	aux	4	O					2	O		O
+0	0	3	3	you	you	12	15	PRON	PRP	nsubj	4	O		2.0	PRON	PER	2	O		O
+0	0	4	4	run	run	16	19	VERB	VB	acl	0	O	verb.stative				2	O		O
+0	0	5	5	into	into	20	24	ADP	IN	prep	4	O	verb.stative				2	O		O
+0	0	6	6	any	any	25	28	DET	DT	det	7	O					2	O		O
+0	0	7	7	challenges	challenge	29	39	NOUN	NNS	pobj	5	O	noun.state				2	O		O
+0	0	8	8	with	with	40	44	ADP	IN	prep	7	O					2	O		O
+0	0	9	9	international	international	45	58	ADJ	JJ	amod	10	O					2	B	class	B-class
+0	0	10	10	addresses	address	59	68	NOUN	NNS	pobj	8	O	noun.communication				2	I	class	I-class
+0	0	11	11	,	,	68	69	PUNCT	,	punct	4	O					2	O		O
+0	0	12	12	given	give	70	75	VERB	VBN	prep	4	O					2	O		O
+0	0	13	13	the	the	76	79	DET	DT	det	15	O					2	O		O
+0	0	14	14	wide	wide	80	84	ADJ	JJ	amod	15	O					2	O		O
+0	0	15	15	variation	variation	85	94	NOUN	NN	pobj	12	O	noun.event				2	O		O
+0	0	16	16	in	in	95	97	ADP	IN	prep	15	O					2	O		O
+0	0	17	17	address	address	98	105	NOUN	NN	compound	18	O	noun.communication				2	B	attr	B-attr
+0	0	18	18	formats	format	106	113	NOUN	NNS	pobj	16	O	noun.communication				2	I	attr	I-attr
+0	0	19	19	?	?	113	114	PUNCT	.	punct	0	O					2	O		O
+0	1	0	20	AP	AP	116	118	PROPN	NNP	dep	25	O					2	O		O
+0	1	1	21	:	:	118	119	PUNCT	:	punct	20	O					2	O		O
+0	1	2	22	Actually	actually	120	128	ADV	RB	advmod	25	O					2	O		O
+0	1	3	23	,	,	128	129	PUNCT	,	punct	25	O					2	O		O
+0	1	4	24	that	that	130	134	PRON	DT	nsubj	25	O					2	O		O
+0	1	5	25	is	be	135	137	AUX	VBZ	ROOT	25	O	verb.stative				2	O		O
+0	1	6	26	a	a	138	139	DET	DT	det	28	O					2	O		O
+0	1	7	27	constant	constant	140	148	ADJ	JJ	amod	28	O					2	O		O
+0	1	8	28	source	source	149	155	NOUN	NN	attr	25	O	noun.location				2	O		O
+0	1	9	29	of	of	156	158	ADP	IN	prep	28	O					2	O		O
+0	1	10	30	confusion	confusion	159	168	NOUN	NN	pobj	29	O	noun.state				2	O		O
+0	1	11	31	and	and	169	172	CCONJ	CC	cc	30	O					2	O		O
+0	1	12	32	pain	pain	173	177	NOUN	NN	conj	30	O	noun.state				2	O		O
+0	1	13	33	.	.	177	178	PUNCT	.	punct	25	O					2	O		O
+0	2	0	34	We	we	179	181	PRON	PRP	nsubj	36	O		3.0	PRON	PER	2	O		O
+0	2	1	35	have	have	182	186	AUX	VBP	aux	36	O					2	O		O
+0	2	2	36	had	have	187	190	VERB	VBN	ROOT	36	O	verb.perception				2	O		O
+0	2	3	37	several	several	191	198	ADJ	JJ	amod	38	O					2	O		O
+0	2	4	38	situations	situation	199	209	NOUN	NNS	dobj	36	O	noun.state				2	O		O
+0	2	5	39	where	where	210	215	SCONJ	WRB	advmod	52	O					2	O		O
+0	2	6	40	,	,	215	216	PUNCT	,	punct	52	O					2	O		O
+0	2	7	41	due	due	217	220	ADP	IN	prep	52	O					2	O		O
+0	2	8	42	to	to	221	223	ADP	IN	pcomp	41	O					2	O		O
+0	2	9	43	an	an	224	226	DET	DT	det	46	O					2	O		O
+0	2	10	44	incorrect	incorrect	227	236	ADJ	JJ	amod	46	O					2	O		O
+0	2	11	45	address	address	237	244	NOUN	NN	compound	46	O	noun.communication				2	O		O
+0	2	12	46	format	format	245	251	NOUN	NN	pobj	41	O	noun.communication				2	O		O
+0	2	13	47	,	,	251	252	PUNCT	,	punct	52	O					2	O		O
+0	2	14	48	the	the	253	256	DET	DT	det	49	O		4.0	NOM	PER	2	O		O
+0	2	15	49	client	client	257	263	NOUN	NN	nsubj	52	O	noun.person	4.0	NOM	PER	2	B	class	B-class
+0	2	16	50	did	do	264	267	AUX	VBD	aux	52	O					2	O		O
+0	2	17	51	not	not	268	271	PART	RB	neg	52	O					2	O		O
+0	2	18	52	receive	receive	272	279	VERB	VB	relcl	38	O	verb.possession				2	O		O
+0	2	19	53	correspondence	correspondence	280	294	NOUN	NN	dobj	52	O	noun.communication				2	B	class	B-class
+0	2	20	54	.	.	294	295	PUNCT	.	punct	36	O					2	O		O
+0	3	0	55	Analyst	Analyst	298	305	PROPN	NNP	dep	59	O	noun.person				2	O		O
+0	3	1	56	:	:	305	306	PUNCT	:	punct	55	O					2	O		O
+0	3	2	57	Can	can	307	310	AUX	MD	aux	59	O					2	O		O
+0	3	3	58	you	you	311	314	PRON	PRP	nsubj	59	O		2.0	PRON	PER	2	O		O
+0	3	4	59	give	give	315	319	VERB	VB	ROOT	59	O	verb.possession				2	O		O
+0	3	5	60	me	I	320	322	PRON	PRP	dative	59	O		0.0	PRON	PER	2	O		O
+0	3	6	61	some	some	323	327	DET	DT	det	62	O					2	O		O
+0	3	7	62	examples	example	328	336	NOUN	NNS	dobj	59	O	noun.cognition				2	O		O
+0	3	8	63	of	of	337	339	ADP	IN	prep	62	O					2	O		O
+0	3	9	64	this	this	340	344	PRON	DT	pobj	63	O					2	O		O
+0	3	10	65	?	?	344	345	PUNCT	.	punct	59	O					2	O		O
+0	4	0	66	AP	AP	347	349	PROPN	NNP	ROOT	66	O					2	O		O
+0	4	1	67	:	:	349	350	PUNCT	:	punct	66	O					2	O		O
+0	5	0	68	Yes	yes	351	354	INTJ	UH	intj	71	O	noun.communication				2	O		O
+0	5	1	69	,	,	354	355	PUNCT	,	punct	71	O					2	O		O
+0	5	2	70	one	one	356	359	NOUN	NN	nsubj	71	O					2	O		O
+0	5	3	71	happened	happen	360	368	VERB	VBD	ROOT	71	O	verb.change				2	O		O
+0	5	4	72	recently	recently	369	377	ADV	RB	advmod	71	O					2	O		O
+0	5	5	73	.	.	377	378	PUNCT	.	punct	71	O					2	O		O
+0	6	0	74	Sometimes	sometimes	379	388	ADV	RB	advmod	77	O					2	O		O
+0	6	1	75	,	,	388	389	PUNCT	,	punct	77	O					2	O		O
+0	6	2	76	addresses	address	390	399	NOUN	NNS	nsubj	77	O	noun.communication				2	B	class	B-class
+0	6	3	77	start	start	400	405	VERB	VBP	ROOT	77	O	verb.change				2	O		O
+0	6	4	78	with	with	406	410	ADP	IN	prep	77	O					2	O		O
+0	6	5	79	a	a	411	412	DET	DT	det	81	O					2	O		O
+0	6	6	80	house	house	413	418	NOUN	NN	compound	81	O	noun.communication				2	B	attr	B-attr
+0	6	7	81	name	name	419	423	NOUN	NN	pobj	78	O	noun.communication				2	I	attr	I-attr
+0	6	8	82	or	or	424	426	CCONJ	CC	cc	81	O					2	O		O
+0	6	9	83	number	number	427	433	NOUN	NN	conj	81	O	noun.communication				2	B	attr	B-attr
+0	6	10	84	,	,	433	434	PUNCT	,	punct	77	O					2	O		O
+0	6	11	85	but	but	435	438	CCONJ	CC	cc	77	O					2	O		O
+0	6	12	86	some	some	439	443	DET	DT	det	88	O		5.0	NOM	PER	2	O		O
+0	6	13	87	overseas	overseas	444	452	ADJ	JJ	amod	88	O		5.0	NOM	PER	2	B	class	B-class
+0	6	14	88	clients	client	453	460	NOUN	NNS	nsubj	89	O	noun.person	5.0	NOM	PER	2	I	class	I-class
+0	6	15	89	put	put	461	464	VERB	VBD	conj	77	O	verb.contact				2	O		O
+0	6	16	90	the	the	465	468	DET	DT	det	91	O		6.0	NOM	GPE	2	O		O
+0	6	17	91	city	city	469	473	NOUN	NN	dobj	89	O	noun.location	6.0	NOM	GPE	2	B	attr	B-attr
+0	6	18	92	or	or	474	476	CCONJ	CC	cc	91	O					2	O		O
+0	6	19	93	town	town	477	481	NOUN	NN	conj	91	O	noun.location	7.0	NOM	GPE	2	B	attr	B-attr
+0	6	20	94	first	first	482	487	ADV	RB	advmod	89	O					2	O		O
+0	6	21	95	.	.	487	488	PUNCT	.	punct	89	O					2	O		O
+0	7	0	96	Imagine	imagine	489	496	VERB	VB	ROOT	96	O	verb.communication				2	O		O
+0	7	1	97	the	the	497	500	DET	DT	det	98	O					2	O		O
+0	7	2	98	confusion	confusion	501	510	NOUN	NN	dobj	96	O	noun.state				2	O		O
+0	7	3	99	of	of	511	513	ADP	IN	prep	98	O					2	O		O
+0	7	4	100	sending	send	514	521	VERB	VBG	pcomp	99	O	verb.contact				2	O		O
+0	7	5	101	something	something	522	531	PRON	NN	dobj	100	O					2	O		O
+0	7	6	102	to	to	532	534	ADP	IN	prep	100	O					2	O		O
+0	7	7	103	Paris	Paris	535	540	PROPN	NNP	pobj	102	O	noun.location	1.0	PROP	GPE	2	O		O
+0	7	8	104	which	which	541	546	PRON	WDT	nsubj	107	O					2	O		O
+0	7	9	105	we	we	547	549	PRON	PRP	nsubj	106	O		3.0	PRON	PER	2	O		O
+0	7	10	106	thought	think	550	557	VERB	VBD	relcl	103	O	verb.cognition				2	O		O
+0	7	11	107	was	be	558	561	AUX	VBD	ccomp	106	O	verb.stative				2	O		O
+0	7	12	108	the	the	562	565	DET	DT	det	109	O		6.0	NOM	GPE	2	O		O
+0	7	13	109	city	city	566	570	NOUN	NN	attr	107	O	noun.location	6.0	NOM	GPE	2	B	attr	B-attr
+0	7	14	110	but	but	571	574	CCONJ	CC	cc	106	O					2	O		O
+0	7	15	111	was	be	575	578	AUX	VBD	conj	106	O	verb.stative				2	O		O
+0	7	16	112	in	in	579	581	ADP	IN	prep	111	O					2	O		O
+0	7	17	113	fact	fact	582	586	NOUN	NN	pobj	112	O					2	O		O
+0	7	18	114	the	the	587	590	DET	DT	det	116	O					2	O		O
+0	7	19	115	house	house	591	596	NOUN	NN	compound	116	O	noun.communication				2	B	attr	B-attr
+0	7	20	116	name	name	597	601	NOUN	NN	attr	111	O	noun.communication				2	I	attr	I-attr
+0	7	21	117	!	!	601	602	PUNCT	.	punct	96	O					2	O		O
+0	8	0	118	The	the	605	608	DET	DT	det	120	O					2	O		O
+0	8	1	119	other	other	609	614	ADJ	JJ	amod	120	O					2	O		O
+0	8	2	120	issue	issue	615	620	NOUN	NN	nsubj	121	O	noun.cognition				2	O		O
+0	8	3	121	is	be	621	623	AUX	VBZ	ccomp	117	O	verb.stative				2	O		O
+0	8	4	122	that	that	624	628	SCONJ	IN	mark	136	O					2	O		O
+0	8	5	123	overseas	overseas	629	637	ADJ	JJ	amod	125	O					2	O		O
+0	8	6	124	zip	zip	638	641	NOUN	NN	compound	125	O	noun.communication				2	B	attr	B-attr
+0	8	7	125	codes	code	642	647	NOUN	NNS	nsubj	136	O	noun.communication				2	I	attr	I-attr
+0	8	8	126	or	or	648	650	CCONJ	CC	cc	125	O					2	I	attr	I-attr
+0	8	9	127	postal	postal	651	657	ADJ	JJ	amod	128	O	noun.communication				2	I	attr	I-attr
+0	8	10	128	codes	code	658	663	NOUN	NNS	conj	125	O	noun.communication				2	I	attr	I-attr
+0	8	11	129	,	,	663	664	PUNCT	,	punct	125	O					2	O		O
+0	8	12	130	as	as	665	667	SCONJ	IN	mark	134	O					2	O		O
+0	8	13	131	they	they	668	672	PRON	PRP	nsubjpass	134	O					2	O		O
+0	8	14	132	are	be	673	676	AUX	VBP	auxpass	134	O					2	O		O
+0	8	15	133	sometimes	sometimes	677	686	ADV	RB	advmod	134	O					2	O		O
+0	8	16	134	called	call	687	693	VERB	VBN	advcl	125	O					2	O		O
+0	8	17	135	,	,	693	694	PUNCT	,	punct	125	O					2	O		O
+0	8	18	136	are	be	695	698	AUX	VBP	ccomp	121	O	verb.stative				2	O		O
+0	8	19	137	not	not	699	702	PART	RB	neg	136	O					2	O		O
+0	8	20	138	always	always	703	709	ADV	RB	advmod	136	O					2	O		O
+0	8	21	139	numeric	numeric	710	717	ADJ	JJ	acomp	136	O					2	O		O
+0	8	22	140	—	—	717	718	PUNCT	:	punct	143	O					2	O		O
+0	8	23	141	they	they	718	722	PRON	PRP	nsubj	143	O					2	O		O
+0	8	24	142	can	can	723	726	AUX	MD	aux	143	O					2	O		O
+0	8	25	143	be	be	727	729	AUX	VB	ROOT	143	O	verb.stative				2	O		O
+0	8	26	144	a	a	730	731	DET	DT	det	145	O					2	O		O
+0	8	27	145	combination	combination	732	743	NOUN	NN	attr	143	O	noun.group				2	O		O
+0	8	28	146	of	of	744	746	ADP	IN	prep	145	O					2	O		O
+0	8	29	147	numbers	number	747	754	NOUN	NNS	pobj	146	O	noun.communication				2	O		O
+0	8	30	148	and	and	755	758	CCONJ	CC	cc	147	O					2	O		O
+0	8	31	149	letters	letter	759	766	NOUN	NNS	conj	147	O	noun.communication				2	O		O
+0	8	32	150	.	.	766	767	PUNCT	.	punct	143	O					2	O		O
+0	9	0	151	Analyst	Analyst	769	776	PROPN	NNP	nsubj	153	O	noun.person				2	O		O
+0	9	1	152	:	:	776	777	PUNCT	:	punct	153	O					2	O		O
+0	9	2	153	Tell	tell	778	782	VERB	VB	ROOT	153	O	verb.communication				2	O		O
+0	9	3	154	me	I	783	785	PRON	PRP	dobj	153	O		0.0	PRON	PER	2	O		O
+0	9	4	155	about	about	786	791	ADP	IN	prep	153	O					2	O		O
+0	9	5	156	the	the	792	795	DET	DT	det	157	O					2	O		O
+0	9	6	157	process	process	796	803	NOUN	NN	pobj	155	O	noun.act				2	O		O
+0	9	7	158	when	when	804	808	SCONJ	WRB	advmod	160	O					2	O		O
+0	9	8	159	you	you	809	812	PRON	PRP	nsubj	160	O		2.0	PRON	PER	2	O		O
+0	9	9	160	take	take	813	817	VERB	VBP	advcl	153	O	verb.social				2	O		O
+0	9	10	161	on	on	818	820	ADP	RP	prt	160	O	verb.social				2	O		O
+0	9	11	162	a	a	821	822	DET	DT	det	164	O		9.0	NOM	PER	2	O		O
+0	9	12	163	new	new	823	826	ADJ	JJ	amod	164	O		9.0	NOM	PER	2	O		O
+0	9	13	164	client	client	827	833	NOUN	NN	dobj	160	O	noun.person	9.0	NOM	PER	2	B	class	B-class
+0	9	14	165	.	.	833	834	PUNCT	.	punct	153	O					2	O		O
+0	10	0	166	What	what	835	839	DET	WDT	det	167	O					2	O		O
+0	10	1	167	information	information	840	851	NOUN	NN	dobj	171	O	noun.communication				2	O		O
+0	10	2	168	do	do	852	854	AUX	VBP	aux	171	O					2	O		O
+0	10	3	169	you	you	855	858	PRON	PRP	nsubj	171	O		2.0	PRON	PER	2	O		O
+0	10	4	170	initially	initially	859	868	ADV	RB	advmod	171	O					2	O		O
+0	10	5	171	record	record	869	875	VERB	VB	ROOT	171	O	verb.communication				2	O		O
+0	10	6	172	about	about	876	881	ADP	IN	prep	171	O					2	O		O
+0	10	7	173	that	that	882	886	DET	DT	det	174	O		10.0	NOM	PER	2	O		O
+0	10	8	174	person	person	887	893	NOUN	NN	pobj	172	O	noun.person	10.0	NOM	PER	2	O		O
+0	10	9	175	?	?	893	894	PUNCT	.	punct	171	O					2	O		O
+0	11	0	176	AP	AP	896	898	PROPN	NNP	dep	178	O					2	O		O
+0	11	1	177	:	:	898	899	PUNCT	:	punct	178	O					2	O		O
+0	11	2	178	Remember	remember	900	908	VERB	VB	ccomp	189	O	verb.cognition				2	O		O
+0	11	3	179	,	,	908	909	PUNCT	,	punct	178	O					2	O		O
+0	11	4	180	it	it	910	912	PRON	PRP	nsubj	181	O					2	O		O
+0	11	5	181	’s	’	912	914	VERB	VBZ	ccomp	178	O					2	O		O
+0	11	6	182	not	not	915	918	PART	RB	neg	181	O					2	O		O
+0	11	7	183	always	always	919	925	ADV	RB	advmod	181	O					2	O		O
+0	11	8	184	an	an	926	928	DET	DT	det	185	O		11.0	NOM	PER	2	O		O
+0	11	9	185	individual	individual	929	939	NOUN	NN	attr	181	O	noun.Tops	11.0	NOM	PER	2	B	attr	B-attr
+0	11	10	186	";"	";"	939	940	PUNCT	:	punct	189	O					2	O		O
+0	11	11	187	it	it	941	943	PRON	PRP	nsubj	189	O					2	O		O
+0	11	12	188	could	could	944	949	AUX	MD	aux	189	O					2	O		O
+0	11	13	189	be	be	950	952	AUX	VB	ROOT	189	O	verb.stative				2	O		O
+0	11	14	190	an	an	953	955	DET	DT	det	191	O		12.0	NOM	ORG	2	O		O
+0	11	15	191	organization	organization	956	968	NOUN	NN	attr	189	O	noun.group	12.0	NOM	ORG	2	B	attr	B-attr
+0	11	16	192	.	.	968	969	PUNCT	.	punct	189	O					2	O		O
+0	12	0	193	Analyst	Analyst	971	978	PROPN	NNP	dep	204	O	noun.person				2	O		O
+0	12	1	194	:	:	978	979	PUNCT	:	punct	193	O					2	O		O
+0	12	2	195	When	when	980	984	SCONJ	WRB	advmod	197	O					2	O		O
+0	12	3	196	it	it	985	987	PRON	PRP	nsubj	197	O					2	O		O
+0	12	4	197	’s	’	987	989	VERB	VBZ	advcl	204	O					2	O		O
+0	12	5	198	an	an	990	992	DET	DT	det	199	O		12.0	NOM	ORG	2	O		O
+0	12	6	199	organization	organization	993	1005	NOUN	NN	attr	197	O	noun.group	12.0	NOM	ORG	2	O		O
+0	12	7	200	,	,	1005	1006	PUNCT	,	punct	204	O					2	O		O
+0	12	8	201	do	do	1007	1009	AUX	VBP	aux	204	O					2	O		O
+0	12	9	202	you	you	1010	1013	PRON	PRP	nsubj	204	O		2.0	PRON	PER	2	O		O
+0	12	10	203	always	always	1014	1020	ADV	RB	advmod	204	O					2	O		O
+0	12	11	204	need	need	1021	1025	VERB	VB	ROOT	204	O					2	O		O
+0	12	12	205	to	to	1026	1028	PART	TO	aux	206	O					2	O		O
+0	12	13	206	know	know	1029	1033	VERB	VB	xcomp	204	O	verb.cognition				2	O		O
+0	12	14	207	the	the	1034	1037	DET	DT	det	208	O		14.0	NOM	PER	2	O		O
+0	12	15	208	contact	contact	1038	1045	NOUN	NN	dobj	206	O	noun.act	14.0	NOM	PER	2	B	attr	B-attr
+0	12	16	209	?	?	1045	1046	PUNCT	.	punct	204	O					2	O		O
+0	13	0	210	AP	AP	1048	1050	PROPN	NNP	ROOT	210	O					2	O		O
+0	13	1	211	:	:	1050	1051	PUNCT	:	punct	210	O					2	O		O
+0	14	0	212	Yes	yes	1052	1055	INTJ	UH	intj	217	O	noun.communication				2	O		O
+0	14	1	213	,	,	1055	1056	PUNCT	,	punct	217	O					2	O		O
+0	14	2	214	and	and	1057	1060	CCONJ	CC	cc	217	O					2	O		O
+0	14	3	215	sometimes	sometimes	1061	1070	ADV	RB	advmod	217	O					2	O		O
+0	14	4	216	there	there	1071	1076	PRON	EX	expl	217	O					2	O		O
+0	14	5	217	are	be	1077	1080	VERB	VBP	ROOT	217	O	verb.stative				2	O		O
+0	14	6	218	more	more	1081	1085	ADJ	JJR	amod	220	O					2	O		O
+0	14	7	219	than	than	1086	1090	ADP	IN	quantmod	220	O					2	O		O
+0	14	8	220	one	one	1091	1094	NUM	CD	attr	217	O					2	O		O
+0	14	9	221	.	.	1094	1095	PUNCT	.	punct	217	O					2	O		O
+0	15	0	222	For	for	1096	1099	ADP	IN	prep	232	O					2	O		O
+0	15	1	223	each	each	1100	1104	DET	DT	det	224	O		15.0	NOM	PER	2	O		O
+0	15	2	224	client	client	1105	1111	NOUN	NN	pobj	222	O	noun.person	15.0	NOM	PER	2	B	class	B-class
+0	15	3	225	or	or	1112	1114	CCONJ	CC	cc	224	O		15.0	NOM	PER	2	O		O
+0	15	4	226	representative	representative	1115	1129	NOUN	NN	conj	224	O	noun.person	15.0	NOM	PER	2	B	class	B-class
+0	15	5	227	of	of	1130	1132	ADP	IN	prep	224	O		15.0	NOM	PER	2	I	class	I-class
+0	15	6	228	an	an	1133	1135	DET	DT	det	229	O		12.0	NOM	ORG	2	I	class	I-class
+0	15	7	229	organization	organization	1136	1148	NOUN	NN	pobj	227	O	noun.group	12.0	NOM	ORG	2	I	class	I-class
+0	15	8	230	,	,	1148	1149	PUNCT	,	punct	232	O					2	O		O
+0	15	9	231	I	I	1150	1151	PRON	PRP	nsubj	232	O		0.0	PRON	PER	2	O		O
+0	15	10	232	need	need	1152	1156	VERB	VBP	ccomp	246	O					2	O		O
+0	15	11	233	to	to	1157	1159	PART	TO	aux	234	O					2	O		O
+0	15	12	234	write	write	1160	1165	VERB	VB	xcomp	232	O	verb.communication				2	O		O
+0	15	13	235	down	down	1166	1170	ADP	RP	prt	234	O	verb.communication				2	O		O
+0	15	14	236	their	their	1171	1176	PRON	PRP$	poss	238	O		15.0	PRON	PER	2	O		O
+0	15	15	237	full	full	1177	1181	ADJ	JJ	amod	238	O	noun.communication				2	B	attr	B-attr
+0	15	16	238	name	name	1182	1186	NOUN	NN	dobj	234	O	noun.communication				2	I	attr	I-attr
+0	15	17	239	and	and	1187	1190	CCONJ	CC	cc	234	O					2	O		O
+0	15	18	240	how	how	1191	1194	SCONJ	WRB	advmod	242	O					2	O		O
+0	15	19	241	they	they	1195	1199	PRON	PRP	nsubj	242	O		15.0	PRON	PER	2	O		O
+0	15	20	242	prefer	prefer	1200	1206	VERB	VBP	conj	234	O	verb.emotion				2	O		O
+0	15	21	243	their	their	1207	1212	PRON	PRP$	poss	244	O		15.0	PRON	PER	2	O		O
+0	15	22	244	honorific	honorific	1213	1222	ADJ	JJ	dobj	242	O	noun.communication				2	B	attr	B-attr
+0	15	23	245	:	:	1222	1223	PUNCT	:	punct	246	O					2	O		O
+0	15	24	246	Mr.	Mr.	1224	1227	PROPN	NNP	ROOT	246	O	noun.communication				2	O		O
+0	15	25	247	,	,	1227	1228	PUNCT	,	punct	246	O					2	O		O
+0	15	26	248	Ms.	Ms.	1229	1232	PROPN	NNP	conj	246	O		17.0	PROP	PER	2	O		O
+0	15	27	249	,	,	1232	1233	PUNCT	,	punct	248	O					2	O		O
+0	15	28	250	Mrs.	Mrs.	1234	1238	PROPN	NNP	conj	248	O		18.0	PROP	PER	2	O		O
+0	15	29	251	,	,	1238	1239	PUNCT	,	punct	250	O					2	O		O
+0	15	30	252	Dr.	Dr.	1240	1243	PROPN	NNP	conj	250	O	noun.communication	19.0	NOM	PER	2	O		O
+0	15	31	253	,	,	1243	1244	PUNCT	,	punct	252	O					2	O		O
+0	15	32	254	etc	etc	1245	1248	X	FW	conj	252	O					2	O		O
+0	15	33	255	.	.	1248	1249	PUNCT	.	punct	246	O					2	O		O
+0	16	0	256	And	and	1250	1253	CCONJ	CC	cc	262	O					2	O		O
+0	16	1	257	of	of	1254	1256	ADP	IN	prep	262	O					2	O		O
+0	16	2	258	course	course	1257	1263	NOUN	NN	pobj	257	O					2	O		O
+0	16	3	259	,	,	1263	1264	PUNCT	,	punct	262	O					2	O		O
+0	16	4	260	their	their	1265	1270	PRON	PRP$	poss	262	O		15.0	PRON	PER	2	O		O
+0	16	5	261	email	email	1271	1276	NOUN	NN	compound	262	O	noun.communication				2	B	attr	B-attr
+0	16	6	262	address	address	1277	1284	NOUN	NN	ROOT	262	O	noun.communication				2	I	attr	I-attr
+0	16	7	263	,	,	1284	1285	PUNCT	,	punct	262	O					2	O		O
+0	16	8	264	phone	phone	1286	1291	NOUN	NN	compound	265	O	noun.communication				2	B	attr	B-attr
+0	16	9	265	number	number	1292	1298	NOUN	NN	appos	262	O	noun.communication				2	I	attr	I-attr
+0	16	10	266	,	,	1298	1299	PUNCT	,	punct	265	O					2	O		O
+0	16	11	267	and	and	1300	1303	CCONJ	CC	cc	265	O					2	O		O
+0	16	12	268	postal	postal	1304	1310	ADJ	JJ	amod	269	O					2	B	attr	B-attr
+0	16	13	269	address	address	1311	1318	NOUN	NN	conj	265	O	noun.communication				2	I	attr	I-attr
+0	16	14	270	,	,	1318	1319	PUNCT	,	punct	262	O					2	O		O
+0	16	15	271	and	and	1320	1323	CCONJ	CC	cc	262	O					2	O		O
+0	16	16	272	sometimes	sometimes	1324	1333	ADV	RB	advmod	274	O					2	O		O
+0	16	17	273	we	we	1334	1336	PRON	PRP	nsubj	274	O		20.0	PRON	PER	2	O		O
+0	16	18	274	have	have	1337	1341	VERB	VBP	conj	262	O	verb.possession				2	O		O
+0	16	19	275	a	a	1342	1343	DET	DT	det	278	O					2	O		O
+0	16	20	276	primary	primary	1344	1351	ADJ	JJ	amod	278	O					2	B	attr	B-attr
+0	16	21	277	mailing	mailing	1352	1359	NOUN	NN	compound	278	O	noun.communication				2	I	attr	I-attr
+0	16	22	278	address	address	1360	1367	NOUN	NN	dobj	274	O	noun.communication				2	I	attr	I-attr
+0	16	23	279	that	that	1368	1372	PRON	WDT	nsubj	281	O					2	O		O
+0	16	24	280	could	could	1373	1378	AUX	MD	aux	281	O					2	O		O
+0	16	25	281	be	be	1379	1381	AUX	VB	relcl	278	O	verb.stative				2	O		O
+0	16	26	282	different	different	1382	1391	ADJ	JJ	acomp	281	O					2	O		O
+0	16	27	283	from	from	1392	1396	ADP	IN	prep	282	O					2	O		O
+0	16	28	284	the	the	1397	1400	DET	DT	det	286	O					2	O		O
+0	16	29	285	billing	billing	1401	1408	NOUN	NN	compound	286	O	noun.communication				2	B	attr	B-attr
+0	16	30	286	address	address	1409	1416	NOUN	NN	pobj	283	O	noun.communication				2	I	attr	I-attr
+0	16	31	287	.	.	1416	1417	PUNCT	.	punct	274	O					2	O		O
+0	17	0	288	Analyst	Analyst	1420	1427	PROPN	NNP	ROOT	288	O	noun.person				2	O		O
+0	17	1	289	:	:	1427	1428	PUNCT	:	punct	288	O					2	O		O
+0	17	2	290	Could	could	1429	1434	AUX	MD	aux	292	O					2	O		O
+0	17	3	291	you	you	1435	1438	PRON	PRP	nsubj	292	O		2.0	PRON	PER	2	O		O
+0	17	4	292	have	have	1439	1443	AUX	VB	acl	288	O	verb.possession				2	O		O
+0	17	5	293	a	a	1444	1445	DET	DT	det	294	O					2	O		O
+0	17	6	294	situation	situation	1446	1455	NOUN	NN	dobj	292	O	noun.state				2	O		O
+0	17	7	295	where	where	1456	1461	SCONJ	WRB	advmod	298	O					2	O		O
+0	17	8	296	multiple	multiple	1462	1470	ADJ	JJ	amod	297	O		21.0	NOM	PER	2	O		O
+0	17	9	297	people	people	1471	1477	NOUN	NNS	nsubj	298	O	noun.group	21.0	NOM	PER	2	O		O
+0	17	10	298	have	have	1478	1482	VERB	VBP	relcl	294	O	verb.stative				2	O		O
+0	17	11	299	the	the	1483	1486	DET	DT	det	301	O					2	O		O
+0	17	12	300	same	same	1487	1491	ADJ	JJ	amod	301	O					2	O		O
+0	17	13	301	address	address	1492	1499	NOUN	NN	dobj	298	O	noun.communication				2	B	attr	B-attr
+0	17	14	302	?	?	1499	1500	PUNCT	.	punct	292	O					2	O		O
+0	18	0	303	AP	AP	1502	1504	PROPN	NNP	dep	307	O					2	O		O
+0	18	1	304	:	:	1504	1505	PUNCT	:	punct	307	O					2	O		O
+0	18	2	305	This	this	1506	1510	PRON	DT	nsubj	307	O					2	O		O
+0	18	3	306	does	do	1511	1515	AUX	VBZ	aux	307	O					2	O		O
+0	18	4	307	happen	happen	1516	1522	VERB	VB	ROOT	307	O	verb.change				2	O		O
+0	18	5	308	,	,	1522	1523	PUNCT	,	punct	307	O					2	O		O
+0	18	6	309	for	for	1524	1527	ADP	IN	prep	307	O					2	O		O
+0	18	7	310	example	example	1528	1535	NOUN	NN	pobj	309	O					2	O		O
+0	18	8	311	,	,	1535	1536	PUNCT	,	punct	307	O					2	O		O
+0	18	9	312	when	when	1537	1541	SCONJ	WRB	advmod	314	O					2	O		O
+0	18	10	313	we	we	1542	1544	PRON	PRP	nsubj	314	O		20.0	PRON	PER	2	O		O
+0	18	11	314	contact	contact	1545	1552	VERB	VBP	advcl	307	O	verb.communication				2	O		O
+0	18	12	315	different	different	1553	1562	ADJ	JJ	amod	316	O		22.0	NOM	PER	2	O		O
+0	18	13	316	employees	employee	1563	1572	NOUN	NNS	dobj	314	O	noun.person	22.0	NOM	PER	2	O		O
+0	18	14	317	in	in	1573	1575	ADP	IN	prep	314	O					2	O		O
+0	18	15	318	the	the	1576	1579	DET	DT	det	320	O		23.0	NOM	FAC	2	O		O
+0	18	16	319	same	same	1580	1584	ADJ	JJ	amod	320	O		23.0	NOM	FAC	2	O		O
+0	18	17	320	office	office	1585	1591	NOUN	NN	pobj	317	O	noun.group	23.0	NOM	FAC	2	O		O
+0	18	18	321	.	.	1591	1592	PUNCT	.	punct	307	O					2	O		O
+0	19	0	322	Analyst	Analyst	1595	1602	PROPN	NNP	ROOT	322	O	noun.person				2	O		O
+0	19	1	323	:	:	1602	1603	PUNCT	:	punct	322	O					2	O		O
+0	19	2	324	What	what	1604	1608	PRON	WP	attr	325	O					2	O		O
+0	19	3	325	are	be	1609	1612	AUX	VBP	appos	322	O	verb.stative				2	O		O
+0	19	4	326	your	your	1613	1617	PRON	PRP$	poss	328	O		2.0	PRON	PER	2	O		O
+0	19	5	327	other	other	1618	1623	ADJ	JJ	amod	328	O					2	O		O
+0	19	6	328	responsibilities	responsibility	1624	1640	NOUN	NNS	nsubj	325	O	noun.act				2	O		O
+0	19	7	329	,	,	1640	1641	PUNCT	,	punct	325	O					2	O		O
+0	19	8	330	apart	apart	1642	1647	ADV	RB	advmod	325	O					2	O		O
+0	19	9	331	from	from	1648	1652	ADP	IN	prep	330	O					2	O		O
+0	19	10	332	creating	create	1653	1661	VERB	VBG	pcomp	331	O	verb.creation				2	O		O
+0	19	11	333	cases	case	1662	1667	NOUN	NNS	dobj	332	O	noun.communication				2	O		O
+0	19	12	334	?	?	1667	1668	PUNCT	.	punct	322	O					2	O		O
+0	20	0	335	AP	AP	1670	1672	PROPN	NNP	dep	343	O					2	O		O
+0	20	1	336	:	:	1672	1673	PUNCT	:	punct	343	O					2	O		O
+0	20	2	337	As	as	1674	1676	SCONJ	IN	mark	340	O					2	O		O
+0	20	3	338	a	a	1677	1678	DET	DT	det	339	O					2	O		O
+0	20	4	339	case	case	1679	1683	NOUN	NN	nsubj	340	O	noun.event				2	B	class	B-class
+0	20	5	340	progresses	progress	1684	1694	VERB	VBZ	advcl	343	O	verb.motion				2	O		O
+0	20	6	341	,	,	1694	1695	PUNCT	,	punct	343	O					2	O		O
+0	20	7	342	I	I	1696	1697	PRON	PRP	nsubj	343	O		0.0	PRON	PER	2	O		O
+0	20	8	343	need	need	1698	1702	VERB	VBP	ROOT	343	O					2	O		O
+0	20	9	344	to	to	1703	1705	PART	TO	aux	345	O					2	O		O
+0	20	10	345	record	record	1706	1712	VERB	VB	xcomp	343	O	verb.communication				2	O		O
+0	20	11	346	all	all	1713	1716	DET	PDT	predet	348	O		24.0	NOM	PER	2	O		O
+0	20	12	347	the	the	1717	1720	DET	DT	det	348	O		24.0	NOM	PER	2	O		O
+0	20	13	348	individuals	individual	1721	1732	NOUN	NNS	dobj	345	O	noun.Tops	24.0	NOM	PER	2	B	class	B-class
+0	20	14	349	and	and	1733	1736	CCONJ	CC	cc	348	O		24.0	NOM	PER	2	O		O
+0	20	15	350	organizations	organization	1737	1750	NOUN	NNS	conj	348	O	noun.group	24.0	NOM	PER	2	B	class	B-class
+0	20	16	351	that	that	1751	1755	PRON	WDT	nsubj	352	O		24.0	NOM	PER	2	O		O
+0	20	17	352	take	take	1756	1760	VERB	VBP	relcl	348	O	verb.social	24.0	NOM	PER	2	O		O
+0	20	18	353	part	part	1761	1765	NOUN	NN	dobj	352	O	verb.social	24.0	NOM	PER	2	O		O
+0	20	19	354	in	in	1766	1768	ADP	IN	prep	352	O		24.0	NOM	PER	2	O		O
+0	20	20	355	the	the	1769	1772	DET	DT	det	357	O		24.0	NOM	PER	2	O		O
+0	20	21	356	case	case	1773	1777	NOUN	NN	compound	357	O	noun.person	24.0	NOM	PER	2	O		O
+0	20	22	357	activities	activity	1778	1788	NOUN	NNS	pobj	354	O	noun.act	24.0	NOM	PER	2	O		O
+0	20	23	358	and	and	1789	1792	CCONJ	CC	cc	357	O		24.0	NOM	PER	2	O		O
+0	20	24	359	the	the	1793	1796	DET	DT	det	361	O		24.0	NOM	PER	2	O		O
+0	20	25	360	specific	specific	1797	1805	ADJ	JJ	amod	361	O		24.0	NOM	PER	2	O		O
+0	20	26	361	role	role	1806	1810	NOUN	NN	conj	357	O	noun.act	24.0	NOM	PER	2	B	attr	B-attr
+0	20	27	362	they	they	1811	1815	PRON	PRP	nsubj	363	O		15.0	PRON	PER	2	O		O
+0	20	28	363	play	play	1816	1820	VERB	VBP	relcl	361	O	verb.social	24.0	NOM	PER	2	O		O
+0	20	29	364	.	.	1820	1821	PUNCT	.	punct	343	O					2	O		O
+0	21	0	365	Analyst	Analyst	1823	1830	PROPN	NNP	nsubj	367	O					2	O		O
+0	21	1	366	:	:	1830	1831	PUNCT	:	punct	365	O					2	O		O
+0	21	2	367	Is	be	1832	1834	AUX	VBZ	ROOT	367	O					2	O		O
+0	21	3	368	it	it	1835	1837	PRON	PRP	nsubj	367	O					2	O		O
+0	21	4	369	possible	possible	1838	1846	ADJ	JJ	acomp	367	O					2	O		O
+0	21	5	370	for	for	1847	1850	SCONJ	IN	mark	376	O					2	O		O
+0	21	6	371	an	an	1851	1853	DET	DT	det	372	O		25.0	NOM	PER	2	O		O
+0	21	7	372	individual	individual	1854	1864	NOUN	NN	nsubj	376	O	noun.Tops	25.0	NOM	PER	2	O		O
+0	21	8	373	or	or	1865	1867	CCONJ	CC	cc	372	O		25.0	NOM	PER	2	O		O
+0	21	9	374	organization	organization	1868	1880	NOUN	NN	conj	372	O	noun.group	25.0	NOM	PER	2	O		O
+0	21	10	375	to	to	1881	1883	PART	TO	aux	376	O					2	O		O
+0	21	11	376	participate	participate	1884	1895	VERB	VB	advcl	367	O	verb.social				2	O		O
+0	21	12	377	in	in	1896	1898	ADP	IN	prep	376	O					2	O		O
+0	21	13	378	multiple	multiple	1899	1907	ADJ	JJ	amod	379	O					2	O		O
+0	21	14	379	actions	action	1908	1915	NOUN	NNS	pobj	377	O	noun.act				2	B	attr	B-attr
+0	21	15	380	or	or	1916	1918	CCONJ	CC	cc	379	O					2	O		O
+0	21	16	381	events	event	1919	1925	NOUN	NNS	conj	379	O	noun.event				2	B	attr	B-attr
+0	21	17	382	in	in	1926	1928	ADP	IN	prep	379	O					2	O		O
+0	21	18	383	different	different	1929	1938	ADJ	JJ	amod	384	O					2	O		O
+0	21	19	384	cases	case	1939	1944	NOUN	NNS	pobj	382	O	noun.event				2	B	class	B-class
+0	21	20	385	?	?	1944	1945	PUNCT	.	punct	367	O					2	O		O
+0	22	0	386	AP	AP	1947	1949	PROPN	NNP	nsubj	385	O					2	O		O
+0	22	1	387	:	:	1949	1950	PUNCT	:	punct	386	O					2	O		O
+0	23	0	388	Yes	yes	1951	1954	INTJ	UH	ROOT	388	O	noun.communication				2	O		O
+0	23	1	389	.	.	1954	1955	PUNCT	.	punct	388	O					2	O		O
+0	24	0	390	Not	not	1956	1959	PART	RB	neg	392	O					2	O		O
+0	24	1	391	only	only	1960	1964	ADV	RB	advmod	390	O					2	O		O
+0	24	2	392	that	that	1965	1969	PRON	DT	nsubj	397	O					2	O		O
+0	24	3	393	,	,	1969	1970	PUNCT	,	punct	397	O					2	O		O
+0	24	4	394	but	but	1971	1974	CCONJ	CC	cc	397	O					2	O		O
+0	24	5	395	some	some	1975	1979	PRON	DT	nsubj	397	O					2	O		O
+0	24	6	396	may	may	1980	1983	AUX	MD	aux	397	O					2	O		O
+0	24	7	397	play	play	1984	1988	VERB	VB	ROOT	397	O	verb.social				2	O		O
+0	24	8	398	different	different	1989	1998	ADJ	JJ	amod	399	O					2	O		O
+0	24	9	399	roles	role	1999	2004	NOUN	NNS	dobj	397	O	noun.cognition				2	B	attr	B-attr
+0	24	10	400	within	within	2005	2011	ADP	IN	prep	397	O					2	O		O
+0	24	11	401	the	the	2012	2015	DET	DT	det	403	O					2	O		O
+0	24	12	402	same	same	2016	2020	ADJ	JJ	amod	403	O					2	O		O
+0	24	13	403	case	case	2021	2025	NOUN	NN	pobj	400	O	noun.event				2	B	class	B-class
+0	24	14	404	.	.	2025	2026	PUNCT	.	punct	397	O					2	O		O
+0	25	0	405	For	for	2027	2030	ADP	IN	prep	412	O					2	O		O
+0	25	1	406	example	example	2031	2038	NOUN	NN	pobj	405	O					2	O		O
+0	25	2	407	,	,	2038	2039	PUNCT	,	punct	412	O					2	O		O
+0	25	3	408	the	the	2040	2043	DET	DT	det	410	O		26.0	NOM	PER	2	O		O
+0	25	4	409	same	same	2044	2048	ADJ	JJ	amod	410	O		26.0	NOM	PER	2	O		O
+0	25	5	410	party	party	2049	2054	NOUN	NN	nsubj	412	O	noun.group	26.0	NOM	PER	2	B	class	B-class
+0	25	6	411	can	can	2055	2058	AUX	MD	aux	412	O					2	O		O
+0	25	7	412	be	be	2059	2061	AUX	VB	ROOT	412	O	verb.stative				2	O		O
+0	25	8	413	both	both	2062	2066	CCONJ	CC	preconj	415	O					2	O		O
+0	25	9	414	the	the	2067	2070	DET	DT	det	415	O		27.0	NOM	PER	2	O		O
+0	25	10	415	defendant	defendant	2071	2080	NOUN	NN	attr	412	O	noun.person	27.0	NOM	PER	2	B	attr	B-attr
+0	25	11	416	and	and	2081	2084	CCONJ	CC	cc	415	O					2	O		O
+0	25	12	417	witness	witness	2085	2092	NOUN	NN	conj	415	O	noun.person	28.0	NOM	PER	2	B	attr	B-attr
+0	25	13	418	in	in	2093	2095	ADP	IN	prep	412	O		28.0	NOM	PER	2	O		O
+0	25	14	419	the	the	2096	2099	DET	DT	det	421	O		28.0	NOM	PER	2	O		O
+0	25	15	420	same	same	2100	2104	ADJ	JJ	amod	421	O		28.0	NOM	PER	2	O		O
+0	25	16	421	case	case	2105	2109	NOUN	NN	pobj	418	O	noun.communication	28.0	NOM	PER	2	B	class	B-class
+0	25	17	422	.	.	2109	2110	PUNCT	.	punct	412	O					2	O		O
+0	26	0	423	Analyst	Analyst	2112	2119	PROPN	NNP	ROOT	423	O	noun.person				2	O		O
+0	26	1	424	:	:	2119	2120	PUNCT	:	punct	423	O					2	O		O
+0	27	0	425	So	so	2121	2123	ADV	RB	advmod	428	O					2	O		O
+0	27	1	426	,	,	2123	2124	PUNCT	,	punct	428	O					2	O		O
+0	27	2	427	what	what	2125	2129	PRON	WP	attr	428	O					2	O		O
+0	27	3	428	are	be	2130	2133	AUX	VBP	ROOT	428	O	verb.stative				2	O		O
+0	27	4	429	these	these	2134	2139	DET	DT	det	431	O					2	O		O
+0	27	5	430	different	different	2140	2149	ADJ	JJ	amod	431	O					2	O		O
+0	27	6	431	types	type	2150	2155	NOUN	NNS	nsubj	428	O	noun.cognition				2	O		O
+0	27	7	432	of	of	2156	2158	ADP	IN	prep	431	O					2	O		O
+0	27	8	433	roles	role	2159	2164	NOUN	NNS	pobj	432	O	noun.act				2	O		O
+0	27	9	434	a	a	2165	2166	DET	DT	det	435	O		29.0	NOM	PER	2	O		O
+0	27	10	435	party	party	2167	2172	NOUN	NN	nsubj	437	O	noun.group	29.0	NOM	PER	2	O		O
+0	27	11	436	can	can	2173	2176	AUX	MD	aux	437	O					2	O		O
+0	27	12	437	play	play	2177	2181	VERB	VB	relcl	431	O	verb.social				2	O		O
+0	27	13	438	?	?	2181	2182	PUNCT	.	punct	428	O					2	O		O
+0	28	0	439	AP	AP	2184	2186	PROPN	NNP	ROOT	439	O					2	O		O
+0	28	1	440	:	:	2186	2187	PUNCT	:	punct	439	O					2	O		O
+0	28	2	441	Plaintiff	Plaintiff	2188	2197	PROPN	NNP	appos	439	O	noun.person	30.0	NOM	PER	2	O		O
+0	28	3	442	,	,	2197	2198	PUNCT	,	punct	441	O					2	O		O
+0	28	4	443	witness	witness	2199	2206	NOUN	NN	conj	441	O	noun.person	31.0	NOM	PER	2	O		O
+0	28	5	444	,	,	2206	2207	PUNCT	,	punct	443	O					2	O		O
+0	28	6	445	defendant	defendant	2208	2217	NOUN	NN	conj	443	O	noun.person	32.0	NOM	PER	2	O		O
+0	28	7	446	,	,	2217	2218	PUNCT	,	punct	445	O					2	O		O
+0	28	8	447	judge	judge	2219	2224	NOUN	NN	conj	445	O	noun.person	33.0	NOM	PER	2	O		O
+0	28	9	448	,	,	2224	2225	PUNCT	,	punct	447	O					2	O		O
+0	28	10	449	an	an	2226	2228	DET	DT	det	450	O		34.0	NOM	PER	2	O		O
+0	28	11	450	expert	expert	2229	2235	NOUN	NN	appos	441	O	noun.person	34.0	NOM	PER	2	O		O
+0	28	12	451	in	in	2236	2238	ADP	IN	prep	450	O		34.0	NOM	PER	2	O		O
+0	28	13	452	some	some	2239	2243	DET	DT	det	453	O		34.0	NOM	PER	2	O		O
+0	28	14	453	field	field	2244	2249	NOUN	NN	pobj	451	O	noun.cognition	34.0	NOM	PER	2	O		O
+0	28	15	454	,	,	2249	2250	PUNCT	,	punct	441	O					2	O		O
+0	28	16	455	or	or	2251	2253	CCONJ	CC	cc	441	O					2	O		O
+0	28	17	456	an	an	2254	2256	DET	DT	det	457	O		35.0	NOM	PER	2	O		O
+0	28	18	457	attorney	attorney	2257	2265	NOUN	NN	conj	441	O	noun.person	35.0	NOM	PER	2	O		O
+0	28	19	458	.	.	2265	2266	PUNCT	.	punct	439	O					2	O		O
+0	29	0	459	Analyst	Analyst	2268	2275	PROPN	NNP	ROOT	459	O	noun.person	36.0	NOM	PER	2	O		O
+0	29	1	460	:	:	2275	2276	PUNCT	:	punct	459	O					2	O		O
+0	29	2	461	Can	can	2277	2280	AUX	MD	aux	469	O					2	O		O
+0	29	3	462	your	your	2281	2285	PRON	PRP$	poss	463	O		37.0	NOM	PER	2	O		O
+0	29	4	463	firm	firm	2286	2290	NOUN	NN	poss	465	O	noun.group	37.0	NOM	PER	2	O		O
+0	29	5	464	’s	’s	2290	2292	PART	POS	case	463	O		37.0	NOM	PER	2	O		O
+0	29	6	465	attorneys	attorney	2293	2302	NOUN	NNS	nsubjpass	469	O	noun.person	37.0	NOM	PER	2	O		O
+0	29	7	466	or	or	2303	2305	CCONJ	CC	cc	465	O					2	O		O
+0	29	8	467	judges	judge	2306	2312	NOUN	NNS	conj	465	O	noun.person	38.0	NOM	PER	2	O		O
+0	29	9	468	be	be	2313	2315	AUX	VB	auxpass	469	O					2	O		O
+0	29	10	469	considered	consider	2316	2326	VERB	VBN	acl	459	O	verb.cognition				2	O		O
+0	29	11	470	as	as	2327	2329	ADP	IN	prep	469	O					2	O		O
+0	29	12	471	parties	party	2330	2337	NOUN	NNS	pobj	470	O	noun.person	39.0	NOM	PER	2	B	class	B-class
+0	29	13	472	to	to	2338	2340	ADP	IN	prep	469	O		39.0	NOM	PER	2	O		O
+0	29	14	473	the	the	2341	2344	DET	DT	det	474	O		39.0	NOM	PER	2	O		O
+0	29	15	474	case	case	2345	2349	NOUN	NN	pobj	472	O	noun.act	39.0	NOM	PER	2	B	class	B-class
+0	29	16	475	?	?	2349	2350	PUNCT	.	punct	459	O					2	O		O
+0	30	0	476	AP	AP	2352	2354	PROPN	NNP	ROOT	476	O					2	O		O
+0	30	1	477	:	:	2354	2355	PUNCT	:	punct	476	O					2	O		O
+0	31	0	478	Absolutely	absolutely	2356	2366	ADV	RB	ROOT	478	O					2	O		O
+0	31	1	479	.	.	2366	2367	PUNCT	.	punct	478	O					2	O		O
+0	32	0	480	And	and	2368	2371	CCONJ	CC	cc	483	O					2	O		O
+0	32	1	481	I	I	2372	2373	PRON	PRP	nsubj	483	O		0.0	PRON	PER	2	O		O
+0	32	2	482	must	must	2374	2378	AUX	MD	aux	483	O					2	O		O
+0	32	3	483	record	record	2379	2385	VERB	VB	ROOT	483	O	verb.communication				2	O		O
+0	32	4	484	the	the	2386	2389	DET	DT	det	485	O					2	O		O
+0	32	5	485	information	information	2390	2401	NOUN	NN	dobj	483	O	noun.communication				2	O		O
+0	32	6	486	about	about	2402	2407	ADP	IN	prep	485	O					2	O		O
+0	32	7	487	their	their	2408	2413	PRON	PRP$	poss	488	O		25.0	PRON	PER	2	O		O
+0	32	8	488	involvement	involvement	2414	2425	NOUN	NN	pobj	486	O	noun.act				2	O		O
+0	32	9	489	as	as	2426	2428	ADV	RB	advmod	490	O					2	O		O
+0	32	10	490	well	well	2429	2433	ADV	RB	advmod	483	O					2	O		O
+0	32	11	491	.	.	2433	2434	PUNCT	.	punct	483	O					2	O		O
+0	33	0	492	Analyst	Analyst	2437	2444	PROPN	NNP	nsubj	495	O	noun.person				2	O		O
+0	33	1	493	:	:	2444	2445	PUNCT	:	punct	492	O					2	O		O
+0	33	2	494	Please	please	2446	2452	INTJ	UH	intj	495	O	noun.communication				2	O		O
+0	33	3	495	tell	tell	2453	2457	VERB	VB	ROOT	495	O	verb.communication				2	O		O
+0	33	4	496	me	I	2458	2460	PRON	PRP	dobj	495	O		0.0	PRON	PER	2	O		O
+0	33	5	497	about	about	2461	2466	ADP	IN	prep	495	O					2	O		O
+0	33	6	498	events	event	2467	2473	NOUN	NNS	pobj	497	O	noun.event				2	B	class	B-class
+0	33	7	499	that	that	2474	2478	PRON	WDT	nsubj	500	O					2	O		O
+0	33	8	500	occur	occur	2479	2484	VERB	VBP	relcl	498	O	verb.change				2	O		O
+0	33	9	501	.	.	2484	2485	PUNCT	.	punct	495	O					2	O		O
+0	34	0	502	What	what	2486	2490	DET	WDT	det	503	O					2	O		O
+0	34	1	503	information	information	2491	2502	NOUN	NN	dobj	506	O	noun.communication				2	O		O
+0	34	2	504	do	do	2503	2505	AUX	VBP	aux	506	O					2	O		O
+0	34	3	505	you	you	2506	2509	PRON	PRP	nsubj	506	O		2.0	PRON	PER	2	O		O
+0	34	4	506	record	record	2510	2516	VERB	VB	ROOT	506	O	verb.communication				2	O		O
+0	34	5	507	?	?	2516	2517	PUNCT	.	punct	506	O					2	O		O
+0	35	0	508	AP	AP	2519	2521	PROPN	NNP	dep	515	O	noun.group				2	O		O
+0	35	1	509	:	:	2521	2522	PUNCT	:	punct	508	O					2	O		O
+0	35	2	510	All	all	2523	2526	DET	DT	det	511	O		40.0	NOM	PER	2	O		O
+0	35	3	511	attorneys	attorney	2527	2536	NOUN	NNS	nsubj	515	O	noun.person	40.0	NOM	PER	2	O		O
+0	35	4	512	and	and	2537	2540	CCONJ	CC	cc	511	O					2	O		O
+0	35	5	513	legal	legal	2541	2546	ADJ	JJ	amod	514	O	noun.person	41.0	NOM	PER	2	O		O
+0	35	6	514	assistants	assistant	2547	2557	NOUN	NNS	conj	511	O	noun.person	41.0	NOM	PER	2	O		O
+0	35	7	515	record	record	2558	2564	VERB	VBP	ROOT	515	O	verb.communication				2	O		O
+0	35	8	516	their	their	2565	2570	PRON	PRP$	poss	518	O		40.0	PRON	PER	2	O		O
+0	35	9	517	own	own	2571	2574	ADJ	JJ	amod	518	O					2	O		O
+0	35	10	518	activities	activity	2575	2585	NOUN	NNS	dobj	515	O	noun.act				2	B	class	B-class
+0	35	11	519	,	,	2585	2586	PUNCT	,	punct	518	O					2	O		O
+0	35	12	520	which	which	2587	2592	PRON	WDT	nsubj	521	O					2	O		O
+0	35	13	521	include	include	2593	2600	VERB	VBP	relcl	518	O	verb.stative				2	O		O
+0	35	14	522	the	the	2601	2604	DET	DT	det	523	O					2	O		O
+0	35	15	523	date	date	2605	2609	NOUN	NN	dobj	521	O	noun.time				2	B	attr	B-attr
+0	35	16	524	and	and	2610	2613	CCONJ	CC	cc	523	O					2	O		O
+0	35	17	525	time	time	2614	2618	NOUN	NN	conj	523	O	noun.time				2	B	attr	B-attr
+0	35	18	526	when	when	2619	2623	SCONJ	WRB	advmod	529	O					2	O		O
+0	35	19	527	an	an	2624	2626	DET	DT	det	528	O					2	O		O
+0	35	20	528	activity	activity	2627	2635	NOUN	NN	nsubj	529	O	noun.act				2	B	class	B-class
+0	35	21	529	occurred	occur	2636	2644	VERB	VBD	advcl	521	O	verb.change				2	O		O
+0	35	22	530	,	,	2644	2645	PUNCT	,	punct	518	O					2	O		O
+0	35	23	531	a	a	2646	2647	DET	DT	det	533	O					2	O		O
+0	35	24	532	short	short	2648	2653	ADJ	JJ	amod	533	O					2	B	attr	B-attr
+0	35	25	533	description	description	2654	2665	NOUN	NN	appos	518	O	noun.communication				2	I	attr	I-attr
+0	35	26	534	,	,	2665	2666	PUNCT	,	punct	533	O					2	O		O
+0	35	27	535	and	and	2667	2670	CCONJ	CC	cc	533	O					2	O		O
+0	35	28	536	a	a	2671	2672	DET	DT	det	537	O					2	O		O
+0	35	29	537	duration	duration	2673	2681	NOUN	NN	conj	533	O	noun.time				2	B	attr	B-attr
+0	35	30	538	,	,	2681	2682	PUNCT	,	punct	537	O					2	O		O
+0	35	31	539	and	and	2683	2686	CCONJ	CC	cc	515	O					2	O		O
+0	35	32	540	in	in	2687	2689	ADP	IN	prep	552	O					2	O		O
+0	35	33	541	the	the	2690	2693	DET	DT	det	542	O					2	O		O
+0	35	34	542	case	case	2694	2698	NOUN	NN	pobj	540	O	noun.state				2	O		O
+0	35	35	543	of	of	2699	2701	ADP	IN	prep	542	O					2	O		O
+0	35	36	544	witnesses	witness	2702	2711	NOUN	NNS	pobj	543	O	noun.person	42.0	NOM	PER	2	O		O
+0	35	37	545	,	,	2711	2712	PUNCT	,	punct	544	O					2	O		O
+0	35	38	546	defendants	defendant	2713	2723	NOUN	NNS	conj	544	O	noun.person	43.0	NOM	PER	2	O		O
+0	35	39	547	,	,	2723	2724	PUNCT	,	punct	546	O					2	O		O
+0	35	40	548	and	and	2725	2728	CCONJ	CC	cc	546	O					2	O		O
+0	35	41	549	judges	judge	2729	2735	NOUN	NNS	conj	546	O	noun.person	38.0	NOM	PER	2	O		O
+0	35	42	550	,	,	2735	2736	PUNCT	,	punct	552	O					2	O		O
+0	35	43	551	a	a	2737	2738	DET	DT	det	552	O					2	O		O
+0	35	44	552	list	list	2739	2743	NOUN	NN	conj	515	O	noun.communication				2	B	attr	B-attr
+0	35	45	553	of	of	2744	2746	ADP	IN	prep	552	O					2	I	attr	I-attr
+0	35	46	554	who	who	2747	2750	PRON	WP	nsubjpass	556	O					2	I	attr	I-attr
+0	35	47	555	was	be	2751	2754	AUX	VBD	auxpass	556	O					2	I	attr	I-attr
+0	35	48	556	involved	involve	2755	2763	VERB	VBN	relcl	552	O	verb.social				2	I	attr	I-attr
+0	35	49	557	.	.	2763	2764	PUNCT	.	punct	515	O					2	O		O
+0	36	0	558	We	we	2765	2767	PRON	PRP	nsubj	560	O		45.0	PRON	PER	2	O		O
+0	36	1	559	also	also	2768	2772	ADV	RB	advmod	560	O					2	O		O
+0	36	2	560	need	need	2773	2777	VERB	VBP	ROOT	560	O					2	O		O
+0	36	3	561	to	to	2778	2780	PART	TO	aux	562	O					2	O		O
+0	36	4	562	indicate	indicate	2781	2789	VERB	VB	xcomp	560	O	verb.communication				2	O		O
+0	36	5	563	if	if	2790	2792	SCONJ	IN	mark	566	O					2	O		O
+0	36	6	564	this	this	2793	2797	DET	DT	det	565	O					2	O		O
+0	36	7	565	event	event	2798	2803	NOUN	NN	nsubj	566	O	noun.event				2	O		O
+0	36	8	566	is	be	2804	2806	AUX	VBZ	ccomp	562	O	verb.stative				2	O		O
+0	36	9	567	billable	billable	2807	2815	ADJ	JJ	acomp	566	O					2	B	attr	B-attr
+0	36	10	568	or	or	2816	2818	CCONJ	CC	cc	567	O					2	O		O
+0	36	11	569	not	not	2819	2822	PART	RB	conj	567	O					2	O		O
+0	36	12	570	.	.	2822	2823	PUNCT	.	punct	560	O					2	O		O
+0	37	0	571	Analyst	Analyst	2825	2832	PROPN	NNP	nsubj	573	O	noun.person	36.0	NOM	PER	2	O		O
+0	37	1	572	:	:	2832	2833	PUNCT	:	punct	571	O					2	O		O
+0	37	2	573	Is	be	2834	2836	AUX	VBZ	ROOT	573	O					2	O		O
+0	37	3	574	there	there	2837	2842	PRON	EX	advmod	573	O					2	O		O
+0	37	4	575	anything	anything	2843	2851	PRON	NN	attr	573	O					2	O		O
+0	37	5	576	else	else	2852	2856	ADV	RB	advmod	575	O					2	O		O
+0	37	6	577	you	you	2857	2860	PRON	PRP	nsubj	578	O		2.0	PRON	PER	2	O		O
+0	37	7	578	record	record	2861	2867	VERB	VBP	relcl	575	O	verb.communication				2	O		O
+0	37	8	579	for	for	2868	2871	ADP	IN	prep	578	O					2	O		O
+0	37	9	580	cases	case	2872	2877	NOUN	NNS	pobj	579	O	noun.act				2	B	class	B-class
+0	37	10	581	?	?	2877	2878	PUNCT	.	punct	573	O					2	O		O
+0	38	0	582	AP	AP	2880	2882	PROPN	NNP	ROOT	582	O					2	O		O
+0	38	1	583	:	:	2882	2883	PUNCT	:	punct	582	O					2	O		O
+0	39	0	584	Yes	yes	2884	2887	INTJ	UH	intj	587	O					2	O		O
+0	39	1	585	,	,	2887	2888	PUNCT	,	punct	587	O					2	O		O
+0	39	2	586	we	we	2889	2891	PRON	PRP	nsubj	587	O		45.0	PRON	PER	2	O		O
+0	39	3	587	need	need	2892	2896	VERB	VBP	ROOT	587	O					2	O		O
+0	39	4	588	to	to	2897	2899	PART	TO	aux	589	O					2	O		O
+0	39	5	589	know	know	2900	2904	VERB	VB	xcomp	587	O	verb.cognition				2	O		O
+0	39	6	590	which	which	2905	2910	PRON	WDT	dobj	593	O					2	O		O
+0	39	7	591	documents	document	2911	2920	NOUN	NNS	nsubjpass	593	O	noun.communication				2	B	attr	B-attr
+0	39	8	592	were	be	2921	2925	AUX	VBD	auxpass	593	O					2	O		O
+0	39	9	593	used	use	2926	2930	VERB	VBN	ccomp	589	O	verb.consumption				2	O		O
+0	39	10	594	in	in	2931	2933	ADP	IN	prep	593	O					2	O		O
+0	39	11	595	a	a	2934	2935	DET	DT	det	596	O					2	O		O
+0	39	12	596	case	case	2936	2940	NOUN	NN	pobj	594	O	noun.state				2	B	class	B-class
+0	39	13	597	.	.	2940	2941	PUNCT	.	punct	587	O					2	O		O

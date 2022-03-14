@@ -1,0 +1,350 @@
+paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	lemma	byte_onset	byte_offset	POS_tag	fine_POS_tag	dependency_relation	syntactic_head_ID	event	supersense_category	entity	entity_type	entity_category	document_ID	encoding	target	IOB_tag
+0	0	0	0	The	the	0	3	DET	DT	det	1	O		1.0	NOM	FAC	0	O		O
+0	0	1	1	clinic	clinic	4	10	NOUN	NN	nsubj	3	O	noun.group	1.0	NOM	FAC	0	O		O
+0	0	2	2	basically	basically	11	20	ADV	RB	advmod	3	O					0	O		O
+0	0	3	3	schedules	schedule	21	30	VERB	VBZ	ROOT	3	O	verb.cognition				0	O		O
+0	0	4	4	patients	patient	31	39	NOUN	NNS	dobj	3	O	noun.person	2.0	NOM	PER	0	B	class	B-class
+0	0	5	5	,	,	39	40	PUNCT	,	punct	3	O					0	O		O
+0	0	6	6	provides	provide	41	49	VERB	VBZ	conj	3	O	verb.possession				0	O		O
+0	0	7	7	services	service	50	58	NOUN	NNS	dobj	6	O	noun.act				0	B	class	B-class
+0	0	8	8	for	for	59	62	ADP	IN	prep	6	O					0	O		O
+0	0	9	9	them	they	63	67	PRON	PRP	pobj	8	O		2.0	PRON	PER	0	O		O
+0	0	10	10	,	,	67	68	PUNCT	,	punct	6	O					0	O		O
+0	0	11	11	and	and	69	72	CCONJ	CC	cc	6	O					0	O		O
+0	0	12	12	bills	bill	73	78	VERB	VBZ	conj	6	O	verb.possession				0	O		O
+0	0	13	13	them	they	79	83	PRON	PRP	dobj	12	O		2.0	PRON	PER	0	O		O
+0	0	14	14	for	for	84	87	ADP	IN	prep	12	O					0	O		O
+0	0	15	15	those	those	88	93	DET	DT	det	16	O					0	O		O
+0	0	16	16	services	service	94	102	NOUN	NNS	pobj	14	O	noun.act				0	B	class	B-class
+0	0	17	17	.	.	102	103	PUNCT	.	punct	3	O					0	O		O
+0	1	0	18	New	new	104	107	ADJ	JJ	amod	19	O		3.0	NOM	PER	0	O		O
+0	1	1	19	patients	patient	108	116	NOUN	NNS	nsubj	20	O	noun.person	3.0	NOM	PER	0	B	class	B-class
+0	1	2	20	fill	fill	117	121	VERB	VBP	ROOT	20	O	verb.change				0	O		O
+0	1	3	21	out	out	122	125	ADP	RP	prt	20	O	verb.change				0	O		O
+0	1	4	22	a	a	126	127	DET	DT	det	23	O					0	O		O
+0	1	5	23	form	form	128	132	NOUN	NN	dobj	20	O	noun.communication				0	O		O
+0	1	6	24	listing	list	133	140	VERB	VBG	acl	23	O	verb.communication				0	O		O
+0	1	7	25	their	their	141	146	PRON	PRP$	poss	26	O		3.0	PRON	PER	0	O		O
+0	1	8	26	name	name	147	151	NOUN	NN	dobj	24	O	noun.communication				0	B	attr	B-attr
+0	1	9	27	,	,	151	152	PUNCT	,	punct	26	O					0	O		O
+0	1	10	28	address	address	153	160	NOUN	NN	conj	26	O	noun.communication				0	B	attr	B-attr
+0	1	11	29	,	,	160	161	PUNCT	,	punct	28	O					0	O		O
+0	1	12	30	telephone	telephone	162	171	NOUN	NN	compound	31	O	noun.communication				0	B	attr	B-attr
+0	1	13	31	numbers	number	172	179	NOUN	NNS	conj	28	O	noun.communication				0	I	attr	I-attr
+0	1	14	32	,	,	179	180	PUNCT	,	punct	31	O					0	O		O
+0	1	15	33	allergies	allergy	181	190	NOUN	NNS	conj	31	O	noun.state				0	B	attr	B-attr
+0	1	16	34	,	,	190	191	PUNCT	,	punct	33	O					0	O		O
+0	1	17	35	and	and	192	195	CCONJ	CC	cc	33	O					0	O		O
+0	1	18	36	state	state	196	201	NOUN	NN	conj	33	O	noun.state				0	B	attr	B-attr
+0	1	19	37	of	of	202	204	ADP	IN	prep	36	O					0	I	attr	I-attr
+0	1	20	38	mind	mind	205	209	NOUN	NN	pobj	37	O	noun.cognition				0	I	attr	I-attr
+0	1	21	39	prior	prior	210	215	ADV	RB	advmod	24	O					0	O		O
+0	1	22	40	to	to	216	218	ADP	IN	prep	39	O					0	O		O
+0	1	23	41	scheduling	schedule	219	229	VERB	VBG	pcomp	40	O	verb.communication				0	O		O
+0	1	24	42	their	their	230	235	PRON	PRP$	poss	44	O		3.0	PRON	PER	0	O		O
+0	1	25	43	first	first	236	241	ADJ	JJ	amod	44	O					0	O		O
+0	1	26	44	appointment	appointment	242	253	NOUN	NN	dobj	41	O	noun.act				0	B	class	B-class
+0	1	27	45	.	.	253	254	PUNCT	.	punct	20	O					0	O		O
+0	2	0	46	Existing	exist	255	263	VERB	VBG	amod	47	O		4.0	NOM	PER	0	O		O
+0	2	1	47	patients	patient	264	272	NOUN	NNS	nsubjpass	50	O	noun.person	4.0	NOM	PER	0	B	class	B-class
+0	2	2	48	are	be	273	276	AUX	VBP	auxpass	50	O					0	O		O
+0	2	3	49	normally	normally	277	285	ADV	RB	advmod	50	O					0	O		O
+0	2	4	50	scheduled	schedule	286	295	VERB	VBN	ROOT	50	O	verb.communication				0	O		O
+0	2	5	51	for	for	296	299	ADP	IN	prep	50	O					0	O		O
+0	2	6	52	their	their	300	305	PRON	PRP$	poss	54	O		4.0	PRON	PER	0	O		O
+0	2	7	53	next	next	306	310	ADJ	JJ	amod	54	O					0	O		O
+0	2	8	54	appointment	appointment	311	322	NOUN	NN	pobj	51	O	noun.act				0	B	class	B-class
+0	2	9	55	as	as	323	325	SCONJ	IN	mark	57	O					0	O		O
+0	2	10	56	they	they	326	330	PRON	PRP	nsubj	57	O		4.0	PRON	PER	0	O		O
+0	2	11	57	depart	depart	331	337	VERB	VBP	advcl	50	O	verb.motion				0	O		O
+0	2	12	58	from	from	338	342	ADP	IN	prep	57	O					0	O		O
+0	2	13	59	their	their	343	348	PRON	PRP$	poss	61	O		4.0	PRON	PER	0	O		O
+0	2	14	60	current	current	349	356	ADJ	JJ	amod	61	O					0	O		O
+0	2	15	61	appointment	appointment	357	368	NOUN	NN	pobj	58	O	noun.act				0	B	class	B-class
+0	2	16	62	.	.	368	369	PUNCT	.	punct	50	O					0	O		O
+0	3	0	63	When	when	370	374	SCONJ	WRB	advmod	67	O					0	O		O
+0	3	1	64	the	the	375	378	DET	DT	det	66	O		5.0	NOM	PER	0	O		O
+0	3	2	65	office	office	379	385	NOUN	NN	compound	66	O	noun.artifact	5.0	NOM	PER	0	B	class	B-class
+0	3	3	66	staff	staff	386	391	NOUN	NN	nsubj	67	O	noun.group	5.0	NOM	PER	0	I	class	I-class
+0	3	4	67	forget	forget	392	398	VERB	VBP	advcl	75	O	verb.cognition				0	O		O
+0	3	5	68	to	to	399	401	PART	TO	aux	69	O					0	O		O
+0	3	6	69	do	do	402	404	VERB	VB	xcomp	67	O	verb.social				0	O		O
+0	3	7	70	this	this	405	409	PRON	DT	dobj	69	O					0	O		O
+0	3	8	71	,	,	409	410	PUNCT	,	punct	75	O					0	O		O
+0	3	9	72	a	a	411	412	DET	DT	det	74	O		6.0	NOM	PER	0	O		O
+0	3	10	73	desk	desk	413	417	NOUN	NN	compound	74	O	noun.person	6.0	NOM	PER	0	B	class	B-class
+0	3	11	74	worker	worker	418	424	NOUN	NN	nsubj	75	O	noun.person	6.0	NOM	PER	0	I	class	I-class
+0	3	12	75	has	have	425	428	VERB	VBZ	ROOT	75	O					0	O		O
+0	3	13	76	to	to	429	431	PART	TO	aux	77	O					0	O		O
+0	3	14	77	call	call	432	436	VERB	VB	xcomp	75	O	verb.communication				0	O		O
+0	3	15	78	the	the	437	440	DET	DT	det	79	O		7.0	NOM	PER	0	O		O
+0	3	16	79	patient	patient	441	448	NOUN	NN	dobj	77	O	noun.person	7.0	NOM	PER	0	B	class	B-class
+0	3	17	80	to	to	449	451	PART	TO	aux	81	O					0	O		O
+0	3	18	81	set	set	452	455	VERB	VB	xcomp	77	O	verb.social				0	O		O
+0	3	19	82	up	up	456	458	ADP	RP	prt	81	O	verb.social				0	O		O
+0	3	20	83	a	a	459	460	DET	DT	det	84	O					0	O		O
+0	3	21	84	date	date	461	465	NOUN	NN	dobj	81	O	noun.time				0	B	attr	B-attr
+0	3	22	85	.	.	465	466	PUNCT	.	punct	75	O					0	O		O
+0	4	0	86	Schedules	schedule	467	476	NOUN	NNS	nsubjpass	88	O	noun.communication				0	B	class	B-class
+0	4	1	87	are	be	477	480	AUX	VBP	auxpass	88	O					0	O		O
+0	4	2	88	entered	enter	481	488	VERB	VBN	ccomp	103	O	verb.cognition				0	O		O
+0	4	3	89	into	into	489	493	ADP	IN	prep	88	O					0	O		O
+0	4	4	90	a	a	494	495	DET	DT	det	93	O					0	O		O
+0	4	5	91	central	central	496	503	ADJ	JJ	amod	92	O					0	B	class	B-class
+0	4	6	92	appointment	appointment	504	515	NOUN	NN	compound	93	O	noun.communication				0	I	class	I-class
+0	4	7	93	book	book	516	520	NOUN	NN	pobj	89	O	noun.communication				0	I	class	I-class
+0	4	8	94	";"	";"	520	521	PUNCT	:	punct	103	O					0	O		O
+0	4	9	95	patient	patient	522	529	ADJ	JJ	amod	96	O	noun.person	8.0	NOM	PER	0	B	class	B-class
+0	4	10	96	records	record	530	537	NOUN	NNS	nsubjpass	103	O	noun.communication				0	I	class	I-class
+0	4	11	97	(	(	538	539	PUNCT	-LRB-	punct	96	O					0	O		O
+0	4	12	98	including	include	539	548	VERB	VBG	prep	96	O	verb.stative				0	O		O
+0	4	13	99	contact	contact	549	556	NOUN	NN	compound	100	O	noun.communication				0	B	attr	B-attr
+0	4	14	100	information	information	557	568	NOUN	NN	pobj	98	O	noun.communication				0	I	attr	I-attr
+0	4	15	101	)	)	568	569	PUNCT	-RRB-	punct	96	O					0	O		O
+0	4	16	102	are	be	570	573	AUX	VBP	auxpass	103	O					0	O		O
+0	4	17	103	kept	keep	574	578	VERB	VBN	ROOT	103	O	verb.possession				0	O		O
+0	4	18	104	in	in	579	581	ADP	IN	prep	103	O					0	O		O
+0	4	19	105	paper	paper	582	587	NOUN	NN	compound	106	O	noun.substance				0	O		O
+0	4	20	106	files	file	588	593	NOUN	NNS	pobj	104	O	noun.communication				0	O		O
+0	4	21	107	.	.	593	594	PUNCT	.	punct	103	O					0	O		O
+0	5	0	108	Appointments	appointment	595	607	NOUN	NNS	nsubj	109	O	noun.act				0	B	class	B-class
+0	5	1	109	are	be	608	611	AUX	VBP	ROOT	109	O	verb.stative				0	O		O
+0	5	2	110	for	for	612	615	ADP	IN	prep	109	O					0	O		O
+0	5	3	111	one	one	616	619	NUM	CD	pobj	110	O					0	O		O
+0	5	4	112	of	of	620	622	ADP	IN	prep	111	O					0	O		O
+0	5	5	113	three	three	623	628	NUM	CD	nummod	114	O					0	O		O
+0	5	6	114	procedures	procedure	629	639	NOUN	NNS	pobj	112	O	noun.act				0	B	class	B-class
+0	5	7	115	:	:	639	640	PUNCT	:	punct	111	O					0	O		O
+0	5	8	116	dental	dental	641	647	ADJ	JJ	amod	117	O					0	B	class	B-class
+0	5	9	117	hygiene	hygiene	648	655	NOUN	NN	conj	111	O	noun.act				0	I	class	I-class
+0	5	10	118	,	,	655	656	PUNCT	,	punct	117	O					0	O		O
+0	5	11	119	cavities	cavity	657	665	NOUN	NNS	conj	117	O	noun.artifact				0	B	class	B-class
+0	5	12	120	and	and	666	669	CCONJ	CC	cc	119	O					0	I	class	I-class
+0	5	13	121	fillings	filling	670	678	NOUN	NNS	conj	119	O	noun.substance				0	I	class	I-class
+0	5	14	122	,	,	678	679	PUNCT	,	punct	117	O					0	O		O
+0	5	15	123	and	and	680	683	CCONJ	CC	cc	117	O					0	O		O
+0	5	16	124	oral	oral	684	688	ADJ	JJ	amod	125	O					0	B	class	B-class
+0	5	17	125	surgery	surgery	689	696	NOUN	NN	conj	117	O	noun.act				0	I	class	I-class
+0	5	18	126	(	(	697	698	PUNCT	-LRB-	punct	125	O					0	O		O
+0	5	19	127	including	include	698	707	VERB	VBG	prep	125	O	verb.stative				0	O		O
+0	5	20	128	root	root	708	712	NOUN	NN	compound	129	O	noun.body				0	O		O
+0	5	21	129	canals	canal	713	719	NOUN	NNS	pobj	127	O	noun.body				0	O		O
+0	5	22	130	and	and	720	723	CCONJ	CC	cc	129	O					0	O		O
+0	5	23	131	tooth	tooth	724	729	NOUN	NN	compound	132	O	noun.body				0	O		O
+0	5	24	132	extractions	extraction	730	741	NOUN	NNS	conj	129	O	noun.act				0	O		O
+0	5	25	133	)	)	741	742	PUNCT	-RRB-	punct	109	O					0	O		O
+0	5	26	134	.	.	742	743	PUNCT	.	punct	109	O					0	O		O
+0	6	0	135	For	for	744	747	ADP	IN	prep	140	O					0	O		O
+0	6	1	136	each	each	748	752	DET	DT	det	137	O					0	O		O
+0	6	2	137	procedure	procedure	753	762	NOUN	NN	pobj	135	O	noun.act				0	B	class	B-class
+0	6	3	138	the	the	763	766	DET	DT	det	139	O		7.0	NOM	PER	0	O		O
+0	6	4	139	patient	patient	767	774	NOUN	NN	nsubj	140	O	noun.person	7.0	NOM	PER	0	B	class	B-class
+0	6	5	140	needs	need	775	780	VERB	VBZ	ROOT	140	O					0	O		O
+0	6	6	141	to	to	781	783	PART	TO	aux	142	O					0	O		O
+0	6	7	142	be	be	784	786	AUX	VB	xcomp	140	O					0	O		O
+0	6	8	143	prepared	prepare	787	795	VERB	VBN	acomp	142	O	verb.change				0	O		O
+0	6	9	144	and	and	796	799	CCONJ	CC	cc	142	O					0	O		O
+0	6	10	145	supplies	supply	800	808	NOUN	NNS	nsubj	146	O	noun.artifact				0	B	attr	B-attr
+0	6	11	146	need	need	809	813	VERB	VBP	conj	140	O					0	O		O
+0	6	12	147	to	to	814	816	PART	TO	aux	149	O					0	O		O
+0	6	13	148	be	be	817	819	AUX	VB	auxpass	149	O					0	O		O
+0	6	14	149	collected	collect	820	829	VERB	VBN	xcomp	146	O	verb.contact				0	O		O
+0	6	15	150	(	(	830	831	PUNCT	-LRB-	punct	149	O					0	O		O
+0	6	16	151	e.g.	e.g.	831	835	ADV	RB	amod	153	O	noun.substance				0	O		O
+0	6	17	152	,	,	835	836	PUNCT	,	punct	153	O					0	O		O
+0	6	18	153	probes	probe	837	843	NOUN	NNS	appos	149	O	noun.artifact				0	O		O
+0	6	19	154	,	,	843	844	PUNCT	,	punct	153	O					0	O		O
+0	6	20	155	drill	drill	845	850	VERB	VBP	compound	156	O	noun.artifact				0	O		O
+0	6	21	156	bits	bit	851	855	NOUN	NNS	conj	153	O	noun.artifact				0	O		O
+0	6	22	157	,	,	855	856	PUNCT	,	punct	156	O					0	O		O
+0	6	23	158	cements	cement	857	864	NOUN	NNS	conj	156	O	noun.substance				0	O		O
+0	6	24	159	,	,	864	865	PUNCT	,	punct	158	O					0	O		O
+0	6	25	160	resins	resin	866	872	NOUN	NNS	conj	158	O	noun.substance				0	O		O
+0	6	26	161	,	,	872	873	PUNCT	,	punct	160	O					0	O		O
+0	6	27	162	etc	etc	874	877	X	FW	conj	160	O					0	O		O
+0	6	28	163	.	.	877	878	X	FW	conj	160	O					0	O		O
+0	6	29	164	)	)	878	879	PUNCT	-RRB-	punct	153	O					0	O		O
+0	6	30	165	.	.	879	880	PUNCT	.	punct	146	O					0	O		O
+0	7	0	166	For	for	881	884	ADP	IN	prep	174	O					0	O		O
+0	7	1	167	a	a	885	886	DET	DT	det	168	O					0	O		O
+0	7	2	168	hygienist	hygienist	887	896	NOUN	NN	poss	170	O	noun.person				0	O		O
+0	7	3	169	's	's	896	898	PART	POS	case	168	O					0	O		O
+0	7	4	170	appointment	appointment	899	910	NOUN	NN	pobj	166	O	noun.act				0	B	class	B-class
+0	7	5	171	,	,	910	911	PUNCT	,	punct	174	O					0	O		O
+0	7	6	172	preparation	preparation	912	923	NOUN	NN	nsubj	174	O	noun.act				0	O		O
+0	7	7	173	could	could	924	929	AUX	MD	aux	174	O					0	O		O
+0	7	8	174	be	be	930	932	AUX	VB	ROOT	174	O	verb.stative				0	O		O
+0	7	9	175	as	as	933	935	ADV	RB	advmod	176	O					0	O		O
+0	7	10	176	simple	simple	936	942	ADJ	JJ	acomp	174	O					0	O		O
+0	7	11	177	as	as	943	945	ADP	IN	prep	176	O					0	O		O
+0	7	12	178	seating	seat	946	953	VERB	VBG	pcomp	177	O	verb.social				0	O		O
+0	7	13	179	the	the	954	957	DET	DT	det	180	O		7.0	NOM	PER	0	O		O
+0	7	14	180	patient	patient	958	965	NOUN	NN	dobj	178	O	noun.person	7.0	NOM	PER	0	O		O
+0	7	15	181	in	in	966	968	ADP	IN	prep	178	O					0	O		O
+0	7	16	182	dental	dental	969	975	ADJ	JJ	amod	183	O					0	O		O
+0	7	17	183	chair	chair	976	981	NOUN	NN	pobj	181	O	noun.artifact				0	O		O
+0	7	18	184	and	and	982	985	CCONJ	CC	cc	178	O					0	O		O
+0	7	19	185	putting	put	986	993	VERB	VBG	conj	178	O	verb.contact				0	O		O
+0	7	20	186	a	a	994	995	DET	DT	det	187	O					0	O		O
+0	7	21	187	bib	bib	996	999	NOUN	NN	dobj	185	O	noun.artifact				0	O		O
+0	7	22	188	around	around	1000	1006	ADP	IN	prep	185	O					0	O		O
+0	7	23	189	his	his	1007	1010	PRON	PRP$	pobj	188	O		11.0	PRON	PER	0	O		O
+0	7	24	190	or	or	1011	1013	CCONJ	CC	cc	189	O					0	O		O
+0	7	25	191	her	her	1014	1017	PRON	PRP$	poss	192	O		12.0	PRON	PER	0	O		O
+0	7	26	192	neck	neck	1018	1022	NOUN	NN	conj	189	O	noun.body				0	O		O
+0	7	27	193	.	.	1022	1023	PUNCT	.	punct	174	O					0	O		O
+0	8	0	194	For	for	1024	1027	ADP	IN	prep	204	O					0	O		O
+0	8	1	195	oral	oral	1028	1032	ADJ	JJ	amod	196	O					0	O		O
+0	8	2	196	surgery	surgery	1033	1040	NOUN	NN	pobj	194	O	noun.act				0	O		O
+0	8	3	197	,	,	1040	1041	PUNCT	,	punct	204	O					0	O		O
+0	8	4	198	anesthesia	anesthesia	1042	1052	NOUN	NN	nsubjpass	204	O	noun.state				0	O		O
+0	8	5	199	of	of	1053	1055	ADP	IN	prep	198	O					0	O		O
+0	8	6	200	various	various	1056	1063	ADJ	JJ	amod	201	O					0	O		O
+0	8	7	201	strengths	strength	1064	1073	NOUN	NNS	pobj	199	O	noun.attribute				0	O		O
+0	8	8	202	are	be	1074	1077	AUX	VBP	auxpass	204	O					0	O		O
+0	8	9	203	normally	normally	1078	1086	ADV	RB	advmod	204	O					0	O		O
+0	8	10	204	administered	administer	1087	1099	VERB	VBN	ROOT	204	O	verb.consumption				0	O		O
+0	8	11	205	prior	prior	1100	1105	ADV	RB	advmod	204	O					0	O		O
+0	8	12	206	to	to	1106	1108	ADP	IN	prep	205	O					0	O		O
+0	8	13	207	operation	operation	1109	1118	NOUN	NN	pobj	206	O	noun.act				0	O		O
+0	8	14	208	.	.	1118	1119	PUNCT	.	punct	204	O					0	O		O
+0	9	0	209	Only	only	1120	1124	ADV	RB	advmod	210	O					0	O		O
+0	9	1	210	for	for	1125	1128	ADP	IN	prep	214	O					0	O		O
+0	9	2	211	oral	oral	1129	1133	ADJ	JJ	amod	213	O	noun.act				0	O		O
+0	9	3	212	surgery	surgery	1134	1141	NOUN	NN	compound	213	O	noun.act				0	O		O
+0	9	4	213	procedures	procedure	1142	1152	NOUN	NNS	pobj	210	O	noun.act				0	B	class	B-class
+0	9	5	214	is	be	1153	1155	AUX	VBZ	ROOT	214	O	verb.stative				0	O		O
+0	9	6	215	it	it	1156	1158	PRON	PRP	nsubj	214	O					0	O		O
+0	9	7	216	necessary	necessary	1159	1168	ADJ	JJ	acomp	214	O					0	O		O
+0	9	8	217	to	to	1169	1171	PART	TO	aux	218	O					0	O		O
+0	9	9	218	ask	ask	1172	1175	VERB	VB	advcl	214	O	verb.communication				0	O		O
+0	9	10	219	the	the	1176	1179	DET	DT	det	220	O		7.0	NOM	PER	0	O		O
+0	9	11	220	patient	patient	1180	1187	NOUN	NN	dobj	218	O	noun.person	7.0	NOM	PER	0	B	class	B-class
+0	9	12	221	to	to	1188	1190	PART	TO	aux	222	O					0	O		O
+0	9	13	222	wait	wait	1191	1195	VERB	VB	xcomp	218	O	verb.stative				0	O		O
+0	9	14	223	for	for	1196	1199	ADP	IN	prep	222	O					0	O		O
+0	9	15	224	up	up	1200	1202	ADP	IN	quantmod	226	O					0	O		O
+0	9	16	225	to	to	1203	1205	PART	TO	quantmod	226	O					0	O		O
+0	9	17	226	twenty	twenty	1206	1212	NUM	CD	nummod	227	O					0	O		O
+0	9	18	227	minutes	minute	1213	1220	NOUN	NNS	pobj	223	O	noun.time				0	O		O
+0	9	19	228	before	before	1221	1227	ADP	IN	prep	222	O					0	O		O
+0	9	20	229	performing	perform	1228	1238	VERB	VBG	pcomp	228	O	verb.social				0	O		O
+0	9	21	230	a	a	1239	1240	DET	DT	det	234	O					0	O		O
+0	9	22	231	post	post	1241	1245	ADJ	JJ	amod	234	O					0	O		O
+0	9	23	232	-	-	1245	1246	ADJ	JJ	amod	234	O					0	O		O
+0	9	24	233	operative	operative	1246	1255	ADJ	JJ	amod	234	O					0	O		O
+0	9	25	234	check	check	1256	1261	NOUN	NN	dobj	229	O	noun.possession				0	O		O
+0	9	26	235	.	.	1261	1262	PUNCT	.	punct	214	O					0	O		O
+0	10	0	236	Billing	billing	1263	1270	NOUN	NN	nsubjpass	239	O	noun.communication				0	O		O
+0	10	1	237	is	be	1271	1273	AUX	VBZ	auxpass	239	O					0	O		O
+0	10	2	238	always	always	1274	1280	ADV	RB	advmod	239	O					0	O		O
+0	10	3	239	done	do	1281	1285	VERB	VBN	ROOT	239	O	verb.social				0	O		O
+0	10	4	240	by	by	1286	1288	ADP	IN	agent	239	O					0	O		O
+0	10	5	241	the	the	1289	1292	DET	DT	det	242	O					0	O		O
+0	10	6	242	month	month	1293	1298	NOUN	NN	pobj	240	O	noun.time				0	O		O
+0	10	7	243	,	,	1298	1299	PUNCT	,	punct	239	O					0	O		O
+0	10	8	244	and	and	1300	1303	CCONJ	CC	cc	239	O					0	O		O
+0	10	9	245	bills	bill	1304	1309	NOUN	NNS	nsubjpass	248	O	noun.possession				0	B	class	B-class
+0	10	10	246	are	be	1310	1313	AUX	VBP	auxpass	248	O					0	O		O
+0	10	11	247	always	always	1314	1320	ADV	RB	advmod	248	O					0	O		O
+0	10	12	248	sent	send	1321	1325	VERB	VBN	conj	239	O	verb.motion				0	O		O
+0	10	13	249	by	by	1326	1328	ADP	IN	agent	248	O					0	O		O
+0	10	14	250	mail	mail	1329	1333	NOUN	NN	pobj	249	O	noun.communication				0	O		O
+0	10	15	251	to	to	1334	1336	ADP	IN	dative	248	O					0	O		O
+0	10	16	252	patients	patient	1337	1345	NOUN	NNS	poss	255	O	noun.person	2.0	NOM	PER	0	B	class	B-class
+0	10	17	253	'	'	1345	1346	PART	POS	case	252	O					0	O		O
+0	10	18	254	contact	contact	1347	1354	NOUN	NN	compound	255	O	noun.artifact				0	B	attr	B-attr
+0	10	19	255	addresses	address	1355	1364	NOUN	NNS	pobj	251	O	noun.artifact				0	I	attr	I-attr
+0	10	20	256	.	.	1364	1365	PUNCT	.	punct	248	O					0	O		O
+0	11	0	257	Checks	check	1366	1372	NOUN	NNS	nsubjpass	259	O	noun.possession				0	O		O
+0	11	1	258	are	be	1373	1376	AUX	VBP	auxpass	259	O					0	O		O
+0	11	2	259	received	receive	1377	1385	VERB	VBN	ROOT	259	O	verb.possession				0	O		O
+0	11	3	260	by	by	1386	1388	ADP	IN	agent	259	O					0	O		O
+0	11	4	261	mail	mail	1389	1393	NOUN	NN	pobj	260	O	noun.communication				0	O		O
+0	11	5	262	.	.	1393	1394	PUNCT	.	punct	259	O					0	O		O
+0	12	0	263	HMO	HMO	1395	1398	PROPN	NNP	npadvmod	265	O		15.0	NOM	PER	0	B	class	B-class
+0	12	1	264	-	-	1398	1399	PUNCT	HYPH	punct	265	O		15.0	NOM	PER	0	I	class	I-class
+0	12	2	265	funded	fund	1399	1405	VERB	VBN	amod	266	O	verb.possession	15.0	NOM	PER	0	I	class	I-class
+0	12	3	266	patients	patient	1406	1414	NOUN	NNS	nsubjpass	268	O	noun.person	15.0	NOM	PER	0	I	class	I-class
+0	12	4	267	are	be	1415	1418	AUX	VBP	auxpass	268	O					0	O		O
+0	12	5	268	asked	ask	1419	1424	VERB	VBN	ROOT	268	O	verb.communication				0	O		O
+0	12	6	269	to	to	1425	1427	PART	TO	aux	270	O					0	O		O
+0	12	7	270	make	make	1428	1432	VERB	VB	xcomp	268	O	verb.social				0	O		O
+0	12	8	271	a	a	1433	1434	DET	DT	det	272	O					0	O		O
+0	12	9	272	copayment	copayment	1435	1444	NOUN	NN	dobj	270	O	noun.possession				0	O		O
+0	12	10	273	at	at	1445	1447	ADP	IN	prep	270	O					0	O		O
+0	12	11	274	the	the	1448	1451	DET	DT	det	275	O					0	O		O
+0	12	12	275	time	time	1452	1456	NOUN	NN	pobj	273	O	noun.event				0	O		O
+0	12	13	276	that	that	1457	1461	PRON	WDT	advmod	278	O					0	O		O
+0	12	14	277	they	they	1462	1466	PRON	PRP	nsubj	278	O		15.0	PRON	PER	0	O		O
+0	12	15	278	leave	leave	1467	1472	VERB	VBP	relcl	275	O	verb.motion				0	O		O
+0	12	16	279	the	the	1473	1476	DET	DT	det	280	O		16.0	NOM	FAC	0	O		O
+0	12	17	280	office	office	1477	1483	NOUN	NN	dobj	278	O	noun.artifact	16.0	NOM	FAC	0	O		O
+0	12	18	281	.	.	1483	1484	PUNCT	.	punct	268	O					0	O		O
+0	13	0	282	Each	each	1485	1489	DET	DT	det	283	O		17.0	NOM	PER	0	O		O
+0	13	1	283	patient	patient	1490	1497	NOUN	NN	nsubj	285	O	noun.person	17.0	NOM	PER	0	B	class	B-class
+0	13	2	284	also	also	1498	1502	ADV	RB	advmod	285	O					0	O		O
+0	13	3	285	generates	generate	1503	1512	VERB	VBZ	ROOT	285	O	verb.creation				0	O		O
+0	13	4	286	a	a	1513	1514	DET	DT	det	288	O					0	O		O
+0	13	5	287	reimbursement	reimbursement	1515	1528	NOUN	NN	compound	288	O	noun.possession				0	B	class	B-class
+0	13	6	288	request	request	1529	1536	NOUN	NN	dobj	285	O	noun.communication				0	I	class	I-class
+0	13	7	289	to	to	1537	1539	ADP	IN	prep	288	O					0	O		O
+0	13	8	290	an	an	1540	1542	DET	DT	det	292	O		18.0	NOM	ORG	0	O		O
+0	13	9	291	insurance	insurance	1543	1552	NOUN	NN	compound	292	O	noun.possession	18.0	NOM	ORG	0	B	class	B-class
+0	13	10	292	company	company	1553	1560	NOUN	NN	pobj	289	O	noun.group	18.0	NOM	ORG	0	I	class	I-class
+0	13	11	293	.	.	1560	1561	PUNCT	.	punct	285	O					0	O		O
+0	14	0	294	Insurance	insurance	1562	1571	NOUN	NN	compound	295	O	noun.group	19.0	NOM	ORG	0	B	class	B-class
+0	14	1	295	companies	company	1572	1581	NOUN	NNS	nsubj	298	O	noun.group	19.0	NOM	ORG	0	I	class	I-class
+0	14	2	296	and	and	1582	1585	CCONJ	CC	cc	295	O					0	O		O
+0	14	3	297	HMOs	hmo	1586	1590	NOUN	NNS	conj	295	O		0.0	PROP	PER	0	B	class	B-class
+0	14	4	298	send	send	1591	1595	VERB	VBP	ROOT	298	O	verb.communication				0	O		O
+0	14	5	299	their	their	1596	1601	PRON	PRP$	poss	300	O		20.0	PRON	PER	0	O		O
+0	14	6	300	checks	check	1602	1608	NOUN	NNS	dobj	298	O	noun.possession				0	O		O
+0	14	7	301	by	by	1609	1611	ADP	IN	prep	298	O					0	O		O
+0	14	8	302	mail	mail	1612	1616	NOUN	NN	pobj	301	O	noun.communication				0	O		O
+0	14	9	303	three	three	1617	1622	NUM	CD	nummod	304	O					0	O		O
+0	14	10	304	months	month	1623	1629	NOUN	NNS	npadvmod	305	O	noun.time				0	O		O
+0	14	11	305	after	after	1630	1635	ADP	IN	prep	298	O					0	O		O
+0	14	12	306	receiving	receive	1636	1645	VERB	VBG	pcomp	305	O	verb.possession				0	O		O
+0	14	13	307	a	a	1646	1647	DET	DT	det	309	O					0	O		O
+0	14	14	308	reimbursement	reimbursement	1648	1661	NOUN	NN	compound	309	O	noun.possession				0	B	class	B-class
+0	14	15	309	request	request	1662	1669	NOUN	NN	dobj	306	O	noun.communication				0	I	class	I-class
+0	14	16	310	.	.	1669	1670	PUNCT	.	punct	298	O					0	O		O
+0	15	0	311	The	the	1671	1674	DET	DT	det	312	O		1.0	NOM	FAC	0	O		O
+0	15	1	312	clinic	clinic	1675	1681	NOUN	NN	nsubj	313	O	noun.group	1.0	NOM	FAC	0	B	class	B-class
+0	15	2	313	maintains	maintain	1682	1691	VERB	VBZ	ROOT	313	O	verb.possession				0	O		O
+0	15	3	314	a	a	1692	1693	DET	DT	det	317	O					0	O		O
+0	15	4	315	supplies	supply	1694	1702	NOUN	NNS	compound	317	O	noun.communication				0	B	class	B-class
+0	15	5	316	inventory	inventory	1703	1712	NOUN	NN	compound	317	O					0	I	class	I-class
+0	15	6	317	file	file	1713	1717	NOUN	NN	dobj	313	O	noun.communication				0	O		O
+0	15	7	318	that	that	1718	1722	PRON	WDT	mark	321	O					0	O		O
+0	15	8	319	a	a	1723	1724	DET	DT	det	320	O		22.0	NOM	PER	0	O		O
+0	15	9	320	worker	worker	1725	1731	NOUN	NN	nsubj	321	O	noun.person	22.0	NOM	PER	0	B	class	B-class
+0	15	10	321	fills	fill	1732	1737	VERB	VBZ	relcl	317	O	verb.change				0	O		O
+0	15	11	322	out	out	1738	1741	ADP	RP	advmod	321	O	verb.change				0	O		O
+0	15	12	323	once	once	1742	1746	ADV	RB	advmod	321	O					0	O		O
+0	15	13	324	a	a	1747	1748	DET	DT	det	325	O					0	O		O
+0	15	14	325	week	week	1749	1753	NOUN	NN	npadvmod	323	O	noun.time				0	O		O
+0	15	15	326	by	by	1754	1756	ADP	IN	prep	321	O					0	O		O
+0	15	16	327	physically	physically	1757	1767	ADV	RB	advmod	328	O					0	O		O
+0	15	17	328	inspecting	inspect	1768	1778	VERB	VBG	pcomp	326	O	verb.social				0	O		O
+0	15	18	329	each	each	1779	1783	PRON	DT	dobj	328	O		23.0	NOM	FAC	0	O		O
+0	15	19	330	of	of	1784	1786	ADP	IN	prep	329	O		23.0	NOM	FAC	0	O		O
+0	15	20	331	the	the	1787	1790	DET	DT	det	334	O		24.0	NOM	FAC	0	O		O
+0	15	21	332	three	three	1791	1796	NUM	CD	nummod	333	O		24.0	NOM	FAC	0	O		O
+0	15	22	333	procedures	procedure	1797	1807	NOUN	NNS	compound	334	O	noun.artifact	24.0	NOM	FAC	0	B	class	B-class
+0	15	23	334	rooms	room	1808	1813	NOUN	NNS	pobj	330	O	noun.artifact	24.0	NOM	FAC	0	I	class	I-class
+0	15	24	335	.	.	1813	1814	PUNCT	.	punct	313	O					0	O		O
+0	16	0	336	Supplies	supply	1815	1823	NOUN	NNS	nsubjpass	340	O	noun.artifact				0	B	class	B-class
+0	16	1	337	and	and	1824	1827	CCONJ	CC	cc	336	O					0	O		O
+0	16	2	338	tools	tool	1828	1833	NOUN	NNS	conj	336	O	noun.artifact				0	B	class	B-class
+0	16	3	339	are	be	1834	1837	AUX	VBP	auxpass	340	O					0	O		O
+0	16	4	340	stored	store	1838	1844	VERB	VBN	ROOT	340	O	verb.possession				0	O		O
+0	16	5	341	in	in	1845	1847	ADP	IN	prep	340	O					0	O		O
+0	16	6	342	a	a	1848	1849	DET	DT	det	344	O					0	O		O
+0	16	7	343	standard	standard	1850	1858	ADJ	JJ	amod	344	O					0	O		O
+0	16	8	344	layout	layout	1859	1865	NOUN	NN	pobj	341	O	noun.artifact				0	O		O
+0	16	9	345	in	in	1866	1868	ADP	IN	prep	344	O					0	O		O
+0	16	10	346	each	each	1869	1873	DET	DT	det	347	O		25.0	NOM	FAC	0	O		O
+0	16	11	347	room	room	1874	1878	NOUN	NN	pobj	345	O	noun.artifact	25.0	NOM	FAC	0	B	class	B-class
+0	16	12	348	.	.	1878	1879	PUNCT	.	punct	340	O					0	O		O

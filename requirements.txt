@@ -1,0 +1,4 @@
+booknlp
+nltk
+pandas
+numpy

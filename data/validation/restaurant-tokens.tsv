@@ -1,0 +1,667 @@
+paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	lemma	byte_onset	byte_offset	POS_tag	fine_POS_tag	dependency_relation	syntactic_head_ID	event	supersense_category	entity	entity_type	entity_category	document_ID	encoding	target	IOB_tag
+0	0	0	0	Romano	Romano	0	6	PROPN	NNP	nsubj	2	O	noun.person	0.0	PROP	FAC	4	O		O
+0	0	1	1	's	's	6	8	PART	POS	case	0	O		0.0	PROP	FAC	4	O		O
+0	0	2	2	is	be	9	11	AUX	VBZ	ROOT	2	O	verb.stative				4	O		O
+0	0	3	3	the	the	12	15	DET	DT	det	6	O		3.0	NOM	FAC	4	O		O
+0	0	4	4	finest	fine	16	22	ADJ	JJS	amod	6	O		3.0	NOM	FAC	4	O		O
+0	0	5	5	Italian	italian	23	30	ADJ	JJ	amod	6	O		3.0	NOM	FAC	4	O		O
+0	0	6	6	restaurant	restaurant	31	41	NOUN	NN	attr	2	O	noun.artifact	3.0	NOM	FAC	4	O		O
+0	0	7	7	in	in	42	44	ADP	IN	prep	6	O		3.0	NOM	FAC	4	O		O
+0	0	8	8	the	the	45	48	DET	DT	det	9	O		4.0	NOM	GPE	4	O		O
+0	0	9	9	city	city	49	53	NOUN	NN	pobj	7	O	noun.location	4.0	NOM	GPE	4	O		O
+0	0	10	10	.	.	53	54	PUNCT	.	punct	2	O					4	O		O
+0	1	0	11	Unless	unless	55	61	SCONJ	IN	mark	13	O					4	O		O
+0	1	1	12	you	you	62	65	PRON	PRP	nsubj	13	O		5.0	PRON	PER	4	O		O
+0	1	2	13	are	be	66	69	AUX	VBP	advcl	24	O	verb.stative				4	O		O
+0	1	3	14	a	a	70	71	DET	DT	det	15	O		6.0	NOM	PER	4	O		O
+0	1	4	15	celebrity	celebrity	72	81	NOUN	NN	attr	13	O	noun.person	6.0	NOM	PER	4	O		O
+0	1	5	16	or	or	82	84	CCONJ	CC	cc	15	O					4	O		O
+0	1	6	17	a	a	85	86	DET	DT	det	19	O		7.0	NOM	PER	4	O		O
+0	1	7	18	good	good	87	91	ADJ	JJ	amod	19	O		7.0	NOM	PER	4	O		O
+0	1	8	19	friend	friend	92	98	NOUN	NN	conj	15	O	noun.person	7.0	NOM	PER	4	O		O
+0	1	9	20	of	of	99	101	ADP	IN	prep	19	O		7.0	NOM	PER	4	O		O
+0	1	10	21	Romano	Romano	102	108	PROPN	NNP	pobj	20	O	noun.person	7.0	NOM	PER	4	O		O
+0	1	11	22	you	you	109	112	PRON	PRP	nsubj	24	O		5.0	PRON	PER	4	O		O
+0	1	12	23	will	will	113	117	AUX	MD	aux	24	O					4	O		O
+0	1	13	24	need	need	118	122	VERB	VB	ROOT	24	O	verb.consumption				4	O		O
+0	1	14	25	a	a	123	124	DET	DT	det	26	O					4	O		O
+0	1	15	26	reservation	reservation	125	136	NOUN	NN	dobj	24	O	noun.communication				4	B	class	B-class
+0	1	16	27	.	.	136	137	PUNCT	.	punct	24	O					4	O		O
+0	2	0	28	A	a	138	139	DET	DT	det	29	O					4	O		O
+0	2	1	29	reservation	reservation	140	151	NOUN	NN	nsubjpass	31	O	noun.communication				4	B	class	B-class
+0	2	2	30	is	be	152	154	AUX	VBZ	auxpass	31	O					4	O		O
+0	2	3	31	made	make	155	159	VERB	VBN	ROOT	31	O	verb.social				4	O		O
+0	2	4	32	for	for	160	163	ADP	IN	prep	31	O					4	O		O
+0	2	5	33	a	a	164	165	DET	DT	det	35	O					4	O		O
+0	2	6	34	specific	specific	166	174	ADJ	JJ	amod	35	O					4	O		O
+0	2	7	35	time	time	175	179	NOUN	NN	pobj	32	O	noun.time				4	B	attr	B-attr
+0	2	8	36	,	,	179	180	PUNCT	,	punct	35	O					4	O		O
+0	2	9	37	date	date	181	185	NOUN	NN	conj	35	O	noun.time				4	B	attr	B-attr
+0	2	10	38	and	and	186	189	CCONJ	CC	cc	37	O					4	O		O
+0	2	11	39	number	number	190	196	NOUN	NN	conj	37	O	noun.attribute				4	B	attr	B-attr
+0	2	12	40	of	of	197	199	ADP	IN	prep	39	O					4	I	attr	I-attr
+0	2	13	41	people	people	200	206	NOUN	NNS	pobj	40	O	noun.group	8.0	NOM	PER	4	I	attr	I-attr
+0	2	14	42	.	.	206	207	PUNCT	.	punct	31	O					4	O		O
+0	3	0	43	The	the	208	211	DET	DT	det	44	O		9.0	NOM	FAC	4	O		O
+0	3	1	44	reservation	reservation	212	223	NOUN	NN	nsubj	46	O	noun.communication	9.0	NOM	FAC	4	B	class	B-class
+0	3	2	45	also	also	224	228	ADV	RB	advmod	46	O					4	O		O
+0	3	3	46	captures	capture	229	237	VERB	VBZ	ROOT	46	O	verb.cognition				4	O		O
+0	3	4	47	the	the	238	241	DET	DT	det	48	O					4	O		O
+0	3	5	48	name	name	242	246	NOUN	NN	dobj	46	O	noun.communication				4	B	attr	B-attr
+0	3	6	49	and	and	247	250	CCONJ	CC	cc	48	O					4	O		O
+0	3	7	50	phone	phone	251	256	NOUN	NN	compound	51	O	noun.communication				4	B	attr	B-attr
+0	3	8	51	number	number	257	263	NOUN	NN	conj	48	O	noun.communication				4	I	attr	I-attr
+0	3	9	52	of	of	264	266	ADP	IN	prep	48	O					4	O		O
+0	3	10	53	the	the	267	270	DET	DT	det	54	O		10.0	NOM	PER	4	O		O
+0	3	11	54	person	person	271	277	NOUN	NN	pobj	52	O	noun.person	10.0	NOM	PER	4	B	class	B-class
+0	3	12	55	making	make	278	284	VERB	VBG	acl	54	O	verb.creation	10.0	NOM	PER	4	O		O
+0	3	13	56	the	the	285	288	DET	DT	det	57	O		10.0	NOM	PER	4	O		O
+0	3	14	57	reservation	reservation	289	300	NOUN	NN	dobj	55	O	noun.communication	10.0	NOM	PER	4	B	class	B-class
+0	3	15	58	.	.	300	301	PUNCT	.	punct	46	O					4	O		O
+0	4	0	59	Each	each	302	306	DET	DT	det	60	O		11.0	NOM	FAC	4	O		O
+0	4	1	60	reservation	reservation	307	318	NOUN	NN	nsubjpass	62	O	noun.location	11.0	NOM	FAC	4	B	class	B-class
+0	4	2	61	is	be	319	321	AUX	VBZ	auxpass	62	O					4	O		O
+0	4	3	62	assigned	assign	322	330	VERB	VBN	ROOT	62	O	verb.possession				4	O		O
+0	4	4	63	a	a	331	332	DET	DT	det	66	O					4	O		O
+0	4	5	64	unique	unique	333	339	ADJ	JJ	amod	66	O					4	O		O
+0	4	6	65	reservation	reservation	340	351	NOUN	NN	compound	66	O	noun.communication				4	B	attr	B-attr
+0	4	7	66	number	number	352	358	NOUN	NN	dobj	62	O	noun.communication				4	I	attr	I-attr
+0	4	8	67	.	.	358	359	PUNCT	.	punct	62	O					4	O		O
+0	5	0	68	There	there	360	365	PRON	EX	expl	69	O					4	O		O
+0	5	1	69	are	be	366	369	VERB	VBP	ROOT	69	O	verb.stative				4	O		O
+0	5	2	70	two	two	370	373	NUM	CD	nummod	71	O					4	O		O
+0	5	3	71	categories	category	374	384	NOUN	NNS	attr	69	O	noun.group				4	O		O
+0	5	4	72	of	of	385	387	ADP	IN	prep	71	O					4	O		O
+0	5	5	73	reservations	reservation	388	400	NOUN	NNS	pobj	72	O	noun.communication				4	B	class	B-class
+0	5	6	74	at	at	401	403	ADP	IN	prep	71	O					4	O		O
+0	5	7	75	Romano	Romano	404	410	PROPN	NNP	poss	79	O		0.0	PROP	FAC	4	O		O
+0	5	8	76	's	's	410	412	PART	POS	case	75	O		0.0	PROP	FAC	4	O		O
+0	5	9	77	:	:	412	413	PUNCT	:	punct	75	O					4	O		O
+0	5	10	78	individual	individual	414	424	ADJ	JJ	amod	79	O					4	B	class	B-class
+0	5	11	79	reservations	reservation	425	437	NOUN	NNS	pobj	74	O	noun.communication				4	I	class	I-class
+0	5	12	80	and	and	438	441	CCONJ	CC	cc	79	O					4	O		O
+0	5	13	81	banquet	banquet	442	449	NOUN	NN	compound	82	O	noun.group				4	B	class	B-class
+0	5	14	82	reservations	reservation	450	462	NOUN	NNS	conj	79	O	noun.communication				4	I	class	I-class
+0	5	15	83	.	.	462	463	PUNCT	.	punct	69	O					4	O		O
+0	6	0	84	Additional	additional	464	474	ADJ	JJ	amod	86	O					4	O		O
+0	6	1	85	reservation	reservation	475	486	NOUN	NN	compound	86	O	noun.communication				4	O		O
+0	6	2	86	information	information	487	498	NOUN	NN	nsubj	87	O	noun.communication				4	O		O
+0	6	3	87	captured	capture	499	507	VERB	VBN	ccomp	83	O	verb.change				4	O		O
+0	6	4	88	when	when	508	512	SCONJ	WRB	advmod	91	O					4	O		O
+0	6	5	89	an	an	513	515	DET	DT	det	90	O		12.0	NOM	PER	4	O		O
+0	6	6	90	individual	individual	516	526	NOUN	NN	nsubj	91	O	noun.Tops	12.0	NOM	PER	4	O		O
+0	6	7	91	makes	make	527	532	VERB	VBZ	advcl	87	O	verb.social				4	O		O
+0	6	8	92	a	a	533	534	DET	DT	det	93	O					4	O		O
+0	6	9	93	reservation	reservation	535	546	NOUN	NN	nsubj	94	O	noun.location				4	B	class	B-class
+0	6	10	94	includes	include	547	555	VERB	VBZ	ccomp	91	O	verb.stative				4	O		O
+0	6	11	95	seating	seat	556	563	VERB	VBG	xcomp	94	O	noun.act				4	B	attr	B-attr
+0	6	12	96	preference	preference	564	574	NOUN	NN	dobj	95	O	noun.cognition				4	I	attr	I-attr
+0	6	13	97	(	(	575	576	PUNCT	-LRB-	punct	96	O					4	O		O
+0	6	14	98	inside	inside	576	582	ADV	RB	advmod	95	O					4	O		O
+0	6	15	99	or	or	583	585	CCONJ	CC	cc	98	O					4	O		O
+0	6	16	100	patio	patio	586	591	NOUN	NN	conj	98	O	noun.artifact	13.0	NOM	FAC	4	O		O
+0	6	17	101	)	)	591	592	PUNCT	-RRB-	punct	98	O					4	O		O
+0	6	18	102	and	and	593	596	CCONJ	CC	cc	95	O					4	O		O
+0	6	19	103	smoking	smoke	597	604	VERB	VBG	conj	95	O	noun.act				4	B	attr	B-attr
+0	6	20	104	preference	preference	605	615	NOUN	NN	dobj	103	O	noun.cognition				4	I	attr	I-attr
+0	6	21	105	(	(	616	617	PUNCT	-LRB-	punct	104	O					4	O		O
+0	6	22	106	smoking	smoking	617	624	NOUN	NN	conj	95	O	noun.act				4	O		O
+0	6	23	107	or	or	625	627	CCONJ	CC	cc	106	O					4	O		O
+0	6	24	108	nonsmoking	nonsmoke	628	638	VERB	VBG	conj	106	O					4	O		O
+0	6	25	109	)	)	638	639	PUNCT	-RRB-	punct	87	O					4	O		O
+0	6	26	110	.	.	639	640	PUNCT	.	punct	83	O					4	O		O
+0	7	0	111	Additional	additional	641	651	ADJ	JJ	amod	113	O					4	O		O
+0	7	1	112	reservation	reservation	652	663	NOUN	NN	compound	113	O					4	O		O
+0	7	2	113	information	information	664	675	NOUN	NN	nsubj	118	O	noun.communication				4	O		O
+0	7	3	114	captured	capture	676	684	VERB	VBN	acl	113	O	verb.possession				4	O		O
+0	7	4	115	for	for	685	688	ADP	IN	prep	114	O					4	O		O
+0	7	5	116	banquet	banquet	689	696	NOUN	NN	compound	117	O					4	B	class	B-class
+0	7	6	117	reservations	reservation	697	709	NOUN	NNS	pobj	115	O	noun.communication				4	I	class	I-class
+0	7	7	118	includes	include	710	718	VERB	VBZ	ROOT	118	O	verb.stative				4	O		O
+0	7	8	119	the	the	719	722	DET	DT	det	121	O					4	O		O
+0	7	9	120	group	group	723	728	NOUN	NN	compound	121	O	noun.group				4	B	attr	B-attr
+0	7	10	121	name	name	729	733	NOUN	NN	dobj	118	O	noun.communication				4	I	attr	I-attr
+0	7	11	122	and	and	734	737	CCONJ	CC	cc	121	O					4	O		O
+0	7	12	123	the	the	738	741	DET	DT	det	124	O					4	O		O
+0	7	13	124	method	method	742	748	NOUN	NN	conj	121	O	noun.cognition				4	B	attr	B-attr
+0	7	14	125	of	of	749	751	ADP	IN	prep	124	O					4	I	attr	I-attr
+0	7	15	126	payment	payment	752	759	NOUN	NN	pobj	125	O	noun.act				4	I	attr	I-attr
+0	7	16	127	.	.	759	760	PUNCT	.	punct	118	O					4	O		O
+0	8	0	128	Seating	seating	761	768	NOUN	NN	nsubj	132	O	noun.artifact				4	O		O
+0	8	1	129	at	at	769	771	ADP	IN	prep	128	O					4	O		O
+0	8	2	130	Romano	Romano	772	778	PROPN	NNP	pobj	129	O		1.0	PROP	PER	4	O		O
+0	8	3	131	's	's	778	780	PART	POS	case	130	O					4	O		O
+0	8	4	132	is	be	781	783	AUX	VBZ	ROOT	132	O	verb.stative				4	O		O
+0	8	5	133	limited	limited	784	791	ADJ	JJ	acomp	132	O	verb.change				4	O		O
+0	8	6	134	.	.	791	792	PUNCT	.	punct	132	O					4	O		O
+0	9	0	135	Romano	Romano	793	799	PROPN	NNP	nsubj	137	O	noun.person	1.0	PROP	PER	4	O		O
+0	9	1	136	's	's	799	801	PART	POS	case	135	O					4	O		O
+0	9	2	137	has	have	802	805	VERB	VBZ	ROOT	137	O	verb.possession				4	O		O
+0	9	3	138	a	a	806	807	DET	DT	det	140	O					4	O		O
+0	9	4	139	fixed	fix	808	813	VERB	VBN	amod	140	O					4	O		O
+0	9	5	140	number	number	814	820	NOUN	NN	dobj	137	O	noun.attribute				4	O		O
+0	9	6	141	of	of	821	823	ADP	IN	prep	140	O					4	O		O
+0	9	7	142	tables	table	824	830	NOUN	NNS	pobj	141	O	noun.artifact				4	O		O
+0	9	8	143	.	.	830	831	PUNCT	.	punct	137	O					4	O		O
+0	10	0	144	Each	each	832	836	DET	DT	det	145	O		14.0	NOM	FAC	4	O		O
+0	10	1	145	table	table	837	842	NOUN	NN	nsubjpass	147	O	noun.group	14.0	NOM	FAC	4	B	class	B-class
+0	10	2	146	is	be	843	845	AUX	VBZ	auxpass	147	O					4	O		O
+0	10	3	147	identified	identify	846	856	VERB	VBN	ROOT	147	O	verb.cognition				4	O		O
+0	10	4	148	by	by	857	859	ADP	IN	agent	147	O					4	O		O
+0	10	5	149	a	a	860	861	DET	DT	det	152	O					4	O		O
+0	10	6	150	unique	unique	862	868	ADJ	JJ	amod	152	O					4	O		O
+0	10	7	151	table	table	869	874	NOUN	NN	compound	152	O	noun.group				4	B	attr	B-attr
+0	10	8	152	number	number	875	881	NOUN	NN	pobj	148	O	noun.communication				4	I	attr	I-attr
+0	10	9	153	.	.	881	882	PUNCT	.	punct	147	O					4	O		O
+0	11	0	154	Each	each	883	887	PRON	DT	nsubjpass	160	O					4	O		O
+0	11	1	155	of	of	888	890	ADP	IN	prep	154	O					4	O		O
+0	11	2	156	the	the	891	894	DET	DT	det	157	O					4	O		O
+0	11	3	157	tables	table	895	901	NOUN	NNS	pobj	155	O	noun.group				4	B	class	B-class
+0	11	4	158	is	be	902	904	AUX	VBZ	auxpass	160	O					4	O		O
+0	11	5	159	further	far	905	912	ADV	RB	advmod	160	O					4	O		O
+0	11	6	160	described	describe	913	922	VERB	VBN	ROOT	160	O	verb.communication				4	O		O
+0	11	7	161	by	by	923	925	ADP	IN	agent	160	O					4	O		O
+0	11	8	162	a	a	926	927	DET	DT	det	166	O					4	O		O
+0	11	9	163	unique	unique	928	934	ADJ	JJ	amod	166	O					4	O		O
+0	11	10	164	free	free	935	939	ADJ	JJ	amod	165	O					4	B	attr	B-attr
+0	11	11	165	form	form	940	944	NOUN	NN	compound	166	O					4	I	attr	I-attr
+0	11	12	166	description	description	945	956	NOUN	NN	pobj	161	O	noun.communication				4	I	attr	I-attr
+0	11	13	167	such	such	957	961	ADJ	JJ	amod	168	O					4	O		O
+0	11	14	168	as	as	962	964	ADP	IN	prep	166	O					4	O		O
+0	11	15	169	""""	""""	965	966	PUNCT	``	punct	168	O					4	O		O
+0	11	16	170	located	locate	966	973	VERB	VBN	pcomp	168	O					4	O		O
+0	11	17	171	by	by	974	976	ADP	IN	agent	170	O					4	O		O
+0	11	18	172	the	the	977	980	DET	DT	det	174	O					4	O		O
+0	11	19	173	North	north	981	986	ADJ	JJ	compound	174	O					4	O		O
+0	11	20	174	window	window	987	993	NOUN	NN	pobj	171	O	noun.artifact				4	O		O
+0	11	21	175	""""	""""	993	994	PUNCT	''	punct	168	O					4	O		O
+0	11	22	176	,	,	994	995	PUNCT	,	punct	168	O					4	O		O
+0	11	23	177	""""	""""	996	997	PUNCT	``	punct	168	O					4	O		O
+0	11	24	178	located	locate	997	1004	VERB	VBN	pcomp	168	O					4	O		O
+0	11	25	179	in	in	1005	1007	ADP	IN	prep	178	O					4	O		O
+0	11	26	180	front	front	1008	1013	NOUN	NN	pobj	179	O					4	O		O
+0	11	27	181	of	of	1014	1016	ADP	IN	prep	180	O					4	O		O
+0	11	28	182	the	the	1017	1020	DET	DT	det	183	O					4	O		O
+0	11	29	183	fountain	fountain	1021	1029	NOUN	NN	pobj	181	O	noun.artifact				4	O		O
+0	11	30	184	""""	""""	1029	1030	PUNCT	''	punct	178	O					4	O		O
+0	11	31	185	,	,	1030	1031	PUNCT	,	punct	178	O					4	O		O
+0	11	32	186	""""	""""	1032	1033	PUNCT	``	punct	178	O					4	O		O
+0	11	33	187	by	by	1033	1035	ADP	IN	agent	178	O					4	O		O
+0	11	34	188	the	the	1036	1039	DET	DT	det	190	O					4	O		O
+0	11	35	189	kitchen	kitchen	1040	1047	NOUN	NN	compound	190	O	noun.artifact				4	O		O
+0	11	36	190	door	door	1048	1052	NOUN	NN	pobj	187	O	noun.artifact				4	O		O
+0	11	37	191	""""	""""	1052	1053	PUNCT	''	punct	160	O					4	O		O
+0	11	38	192	.	.	1053	1054	PUNCT	.	punct	160	O					4	O		O
+0	12	0	193	Each	each	1055	1059	DET	DT	det	194	O					4	O		O
+0	12	1	194	table	table	1060	1065	NOUN	NN	nsubjpass	196	O	noun.group				4	B	class	B-class
+0	12	2	195	is	be	1066	1068	AUX	VBZ	auxpass	196	O					4	O		O
+0	12	3	196	classified	classify	1069	1079	VERB	VBN	ROOT	196	O	verb.communication				4	O		O
+0	12	4	197	as	as	1080	1082	ADP	IN	prep	196	O					4	O		O
+0	12	5	198	a	a	1083	1084	DET	DT	det	210	O		15.0	NOM	PER	4	O		O
+0	12	6	199	2	2	1085	1086	NUM	CD	nummod	201	O		15.0	NOM	PER	4	B	attr	B-attr
+0	12	7	200	-	-	1086	1087	PUNCT	HYPH	punct	201	O		15.0	NOM	PER	4	I	attr	I-attr
+0	12	8	201	person	person	1087	1093	NOUN	NN	nmod	210	O	noun.person	15.0	NOM	PER	4	I	attr	I-attr
+0	12	9	202	,	,	1093	1094	PUNCT	,	punct	201	O		15.0	NOM	PER	4	O		O
+0	12	10	203	4	4	1095	1096	NUM	CD	nummod	205	O		15.0	NOM	PER	4	B	attr	B-attr
+0	12	11	204	-	-	1096	1097	PUNCT	HYPH	punct	205	O		15.0	NOM	PER	4	I	attr	I-attr
+0	12	12	205	person	person	1097	1103	NOUN	NN	nmod	210	O	noun.person	15.0	NOM	PER	4	I	attr	I-attr
+0	12	13	206	or	or	1104	1106	CCONJ	CC	cc	205	O		15.0	NOM	PER	4	O		O
+0	12	14	207	6	6	1107	1108	NUM	CD	nummod	209	O		15.0	NOM	PER	4	B	attr	B-attr
+0	12	15	208	-	-	1108	1109	PUNCT	HYPH	punct	209	O		15.0	NOM	PER	4	I	attr	I-attr
+0	12	16	209	person	person	1109	1115	NOUN	NN	compound	210	O	noun.person	15.0	NOM	PER	4	I	attr	I-attr
+0	12	17	210	table	table	1116	1121	NOUN	NN	pobj	197	O	noun.artifact	15.0	NOM	PER	4	I	attr	I-attr
+0	12	18	211	.	.	1121	1122	PUNCT	.	punct	196	O					4	O		O
+0	13	0	212	When	when	1123	1127	SCONJ	WRB	advmod	216	O					4	O		O
+0	13	1	213	a	a	1128	1129	DET	DT	det	214	O					4	O		O
+0	13	2	214	reservation	reservation	1130	1141	NOUN	NN	nsubjpass	216	O	noun.communication				4	B	class	B-class
+0	13	3	215	is	be	1142	1144	AUX	VBZ	auxpass	216	O					4	O		O
+0	13	4	216	made	make	1145	1149	VERB	VBN	advcl	219	O	verb.social				4	O		O
+0	13	5	217	,	,	1149	1150	PUNCT	,	punct	219	O					4	O		O
+0	13	6	218	Romano	Romano	1151	1157	PROPN	NNP	nsubj	219	O	noun.person	1.0	PROP	PER	4	O		O
+0	13	7	219	associates	associate	1158	1168	VERB	VBZ	ROOT	219	O	verb.possession				4	O		O
+0	13	8	220	a	a	1169	1170	DET	DT	det	222	O					4	O		O
+0	13	9	221	specific	specific	1171	1179	ADJ	JJ	amod	222	O					4	O		O
+0	13	10	222	number	number	1180	1186	NOUN	NN	dobj	219	O	noun.communication				4	B	attr	B-attr
+0	13	11	223	to	to	1187	1189	ADP	IN	prep	222	O					4	O		O
+0	13	12	224	the	the	1190	1193	DET	DT	det	225	O					4	O		O
+0	13	13	225	reservation	reservation	1194	1205	NOUN	NN	pobj	223	O	noun.communication				4	B	class	B-class
+0	13	14	226	.	.	1205	1206	PUNCT	.	punct	219	O					4	O		O
+0	14	0	227	A	a	1207	1208	DET	DT	det	228	O					4	O		O
+0	14	1	228	table	table	1209	1214	NOUN	NN	nsubjpass	231	O	noun.group				4	B	class	B-class
+0	14	2	229	can	can	1215	1218	AUX	MD	aux	231	O					4	O		O
+0	14	3	230	be	be	1219	1221	AUX	VB	auxpass	231	O					4	O		O
+0	14	4	231	utilized	utilize	1222	1230	VERB	VBN	ROOT	231	O	verb.consumption				4	O		O
+0	14	5	232	many	many	1231	1235	ADJ	JJ	amod	233	O					4	O		O
+0	14	6	233	times	time	1236	1241	NOUN	NNS	npadvmod	231	O	noun.event				4	O		O
+0	14	7	234	over	over	1242	1246	ADP	IN	prep	231	O					4	O		O
+0	14	8	235	the	the	1247	1250	DET	DT	det	236	O					4	O		O
+0	14	9	236	evening	evening	1251	1258	NOUN	NN	pobj	234	O	noun.time				4	O		O
+0	14	10	237	by	by	1259	1261	ADP	IN	agent	231	O					4	O		O
+0	14	11	238	many	many	1262	1266	ADJ	JJ	amod	239	O					4	O		O
+0	14	12	239	reservations	reservation	1267	1279	NOUN	NNS	pobj	237	O	noun.communication				4	B	class	B-class
+0	14	13	240	.	.	1279	1280	PUNCT	.	punct	231	O					4	O		O
+0	15	0	241	Romano	Romano	1281	1287	PROPN	NNP	nsubj	242	O	noun.person	1.0	PROP	PER	4	O		O
+0	15	1	242	tends	tend	1288	1293	VERB	VBZ	ROOT	242	O	verb.stative				4	O		O
+0	15	2	243	to	to	1294	1296	PART	TO	aux	244	O					4	O		O
+0	15	3	244	overbook	overbook	1297	1305	NOUN	NN	xcomp	242	O	verb.social				4	O		O
+0	15	4	245	tables	table	1306	1312	NOUN	NNS	dobj	244	O	noun.group				4	B	class	B-class
+0	15	5	246	.	.	1312	1313	PUNCT	.	punct	242	O					4	O		O
+0	16	0	247	Therefore	therefore	1314	1323	ADV	RB	advmod	252	O					4	O		O
+0	16	1	248	,	,	1323	1324	PUNCT	,	punct	252	O					4	O		O
+0	16	2	249	there	there	1325	1330	PRON	EX	expl	252	O					4	O		O
+0	16	3	250	can	can	1331	1334	AUX	MD	aux	252	O					4	O		O
+0	16	4	251	be	be	1335	1337	AUX	VB	aux	252	O					4	O		O
+0	16	5	252	overlapping	overlap	1338	1349	VERB	VBG	ROOT	252	O					4	O		O
+0	16	6	253	table	table	1350	1355	NOUN	NN	compound	254	O	noun.group				4	B	class	B-class
+0	16	7	254	reservations	reservation	1356	1368	NOUN	NNS	dobj	252	O	noun.communication				4	I	class	I-class
+0	16	8	255	.	.	1368	1369	PUNCT	.	punct	252	O					4	O		O
+0	17	0	256	The	the	1370	1373	DET	DT	det	258	O					4	O		O
+0	17	1	257	management	management	1374	1384	NOUN	NN	compound	258	O	noun.group				4	O		O
+0	17	2	258	structure	structure	1385	1394	NOUN	NN	nsubj	262	O	noun.cognition				4	O		O
+0	17	3	259	at	at	1395	1397	ADP	IN	prep	258	O					4	O		O
+0	17	4	260	Romano	Romano	1398	1404	PROPN	NNP	pobj	259	O	noun.person	1.0	PROP	PER	4	O		O
+0	17	5	261	's	's	1404	1406	PART	POS	case	260	O					4	O		O
+0	17	6	262	is	be	1407	1409	AUX	VBZ	ROOT	262	O	verb.stative				4	O		O
+0	17	7	263	hierarchical	hierarchical	1410	1422	ADJ	JJ	acomp	262	O					4	O		O
+0	17	8	264	.	.	1422	1423	PUNCT	.	punct	262	O					4	O		O
+0	18	0	265	There	there	1424	1429	PRON	EX	expl	266	O					4	O		O
+0	18	1	266	are	be	1430	1433	VERB	VBP	ROOT	266	O	verb.stative				4	O		O
+0	18	2	267	several	several	1434	1441	ADJ	JJ	amod	269	O		16.0	NOM	PER	4	O		O
+0	18	3	268	restaurant	restaurant	1442	1452	NOUN	NN	compound	269	O	noun.artifact	16.0	NOM	PER	4	B	class	B-class
+0	18	4	269	managers	manager	1453	1461	NOUN	NNS	attr	266	O	noun.person	16.0	NOM	PER	4	I	class	I-class
+0	18	5	270	who	who	1462	1465	PRON	WP	nsubj	271	O		16.0	NOM	PER	4	O		O
+0	18	6	271	report	report	1466	1472	VERB	VBP	relcl	269	O	verb.communication	16.0	NOM	PER	4	O		O
+0	18	7	272	to	to	1473	1475	ADP	IN	prep	271	O		16.0	NOM	PER	4	O		O
+0	18	8	273	Romano	Romano	1476	1482	PROPN	NNP	pobj	272	O	noun.person	1.0	PROP	PER	4	B	class	B-class
+0	18	9	274	.	.	1482	1483	PUNCT	.	punct	266	O					4	O		O
+0	19	0	275	The	the	1484	1487	DET	DT	det	276	O		17.0	NOM	PER	4	O		O
+0	19	1	276	managers	manager	1488	1496	NOUN	NNS	nsubj	277	O	noun.person	17.0	NOM	PER	4	B	class	B-class
+0	19	2	277	are	be	1497	1500	AUX	VBP	ROOT	277	O					4	O		O
+0	19	3	278	responsible	responsible	1501	1512	ADJ	JJ	acomp	277	O					4	O		O
+0	19	4	279	for	for	1513	1516	ADP	IN	prep	278	O					4	O		O
+0	19	5	280	managing	manage	1517	1525	VERB	VBG	pcomp	279	O	verb.social				4	O		O
+0	19	6	281	the	the	1526	1529	DET	DT	det	282	O		18.0	NOM	PER	4	O		O
+0	19	7	282	Maitre'd	Maitre'd	1530	1538	PROPN	NNPS	dobj	280	O	noun.person	18.0	NOM	PER	4	B	class	B-class
+0	19	8	283	and	and	1539	1542	CCONJ	CC	cc	282	O					4	O		O
+0	19	9	284	the	the	1543	1546	DET	DT	det	285	O		19.0	NOM	PER	4	O		O
+0	19	10	285	chefs	chef	1547	1552	NOUN	NNS	conj	282	O	noun.person	19.0	NOM	PER	4	B	class	B-class
+0	19	11	286	as	as	1553	1555	ADV	RB	advmod	288	O					4	O		O
+0	19	12	287	well	well	1556	1560	ADV	RB	advmod	288	O					4	O		O
+0	19	13	288	as	as	1561	1563	ADP	IN	cc	280	O					4	O		O
+0	19	14	289	ensuring	ensure	1564	1572	VERB	VBG	conj	280	O	verb.stative				4	O		O
+0	19	15	290	that	that	1573	1577	SCONJ	IN	mark	293	O					4	O		O
+0	19	16	291	the	the	1578	1581	DET	DT	det	292	O		20.0	NOM	PER	4	O		O
+0	19	17	292	guests	guest	1582	1588	NOUN	NNS	nsubj	293	O	noun.person	20.0	NOM	PER	4	B	class	B-class
+0	19	18	293	have	have	1589	1593	VERB	VBP	ccomp	289	O	verb.possession				4	O		O
+0	19	19	294	a	a	1594	1595	DET	DT	det	297	O					4	O		O
+0	19	20	295	pleasant	pleasant	1596	1604	ADJ	JJ	amod	297	O					4	O		O
+0	19	21	296	dining	dining	1605	1611	NOUN	NN	compound	297	O					4	O		O
+0	19	22	297	experience	experience	1612	1622	NOUN	NN	dobj	293	O	noun.cognition				4	O		O
+0	19	23	298	.	.	1622	1623	PUNCT	.	punct	277	O					4	O		O
+0	20	0	299	The	the	1624	1627	DET	DT	det	300	O		2.0	PROP	PER	4	O		O
+0	20	1	300	Maitre'd	Maitre'd	1628	1636	PROPN	NNPS	nsubj	301	O	noun.person	2.0	PROP	PER	4	B	class	B-class
+0	20	2	301	is	be	1637	1639	AUX	VBZ	ROOT	301	O					4	O		O
+0	20	3	302	responsible	responsible	1640	1651	ADJ	JJ	acomp	301	O					4	O		O
+0	20	4	303	for	for	1652	1655	ADP	IN	prep	302	O					4	O		O
+0	20	5	304	managing	manage	1656	1664	VERB	VBG	pcomp	303	O	verb.social				4	O		O
+0	20	6	305	the	the	1665	1668	DET	DT	det	306	O		21.0	NOM	PER	4	O		O
+0	20	7	306	waiters	waiter	1669	1676	NOUN	NNS	dobj	304	O	noun.person	21.0	NOM	PER	4	B	class	B-class
+0	20	8	307	,	,	1676	1677	PUNCT	,	punct	306	O					4	O		O
+0	20	9	308	bartenders	bartender	1678	1688	NOUN	NNS	conj	306	O	noun.person	22.0	NOM	PER	4	B	class	B-class
+0	20	10	309	and	and	1689	1692	CCONJ	CC	cc	308	O					4	O		O
+0	20	11	310	bus	bus	1693	1696	NOUN	NN	compound	311	O	noun.artifact	23.0	NOM	PER	4	B	class	B-class
+0	20	12	311	personnel	personnel	1697	1706	NOUN	NNS	conj	308	O	noun.group	23.0	NOM	PER	4	I	class	I-class
+0	20	13	312	.	.	1706	1707	PUNCT	.	punct	301	O					4	O		O
+0	21	0	313	The	the	1708	1711	DET	DT	det	314	O		19.0	NOM	PER	4	O		O
+0	21	1	314	Chefs	Chefs	1712	1717	PROPN	NNPS	nsubj	315	O	noun.person	19.0	NOM	PER	4	B	class	B-class
+0	21	2	315	are	be	1718	1721	AUX	VBP	ROOT	315	O					4	O		O
+0	21	3	316	responsible	responsible	1722	1733	ADJ	JJ	acomp	315	O					4	O		O
+0	21	4	317	for	for	1734	1737	ADP	IN	prep	316	O					4	O		O
+0	21	5	318	managing	manage	1738	1746	VERB	VBG	pcomp	317	O	verb.social				4	O		O
+0	21	6	319	the	the	1747	1750	DET	DT	det	320	O		25.0	NOM	PER	4	O		O
+0	21	7	320	cooks	cook	1751	1756	NOUN	NNS	dobj	318	O	noun.person	25.0	NOM	PER	4	B	class	B-class
+0	21	8	321	and	and	1757	1760	CCONJ	CC	cc	320	O		25.0	NOM	PER	4	O		O
+0	21	9	322	dishwashers	dishwasher	1761	1772	NOUN	NNS	conj	320	O	noun.artifact	25.0	NOM	PER	4	B	class	B-class
+0	21	10	323	.	.	1772	1773	PUNCT	.	punct	315	O					4	O		O
+0	22	0	324	Each	each	1774	1778	DET	DT	det	325	O		26.0	NOM	PER	4	O		O
+0	22	1	325	person	person	1779	1785	NOUN	NN	nsubj	326	O	noun.person	26.0	NOM	PER	4	B	class	B-class
+0	22	2	326	working	work	1786	1793	VERB	VBG	csubjpass	332	O	verb.social	26.0	NOM	PER	4	O		O
+0	22	3	327	for	for	1794	1797	ADP	IN	prep	326	O		26.0	NOM	PER	4	O		O
+0	22	4	328	Romano	Romano	1798	1804	PROPN	NNP	pobj	327	O	noun.group	26.0	NOM	PER	4	O		O
+0	22	5	329	's	's	1804	1806	PART	POS	case	328	O		26.0	NOM	PER	4	O		O
+0	22	6	330	must	must	1807	1811	AUX	MD	aux	332	O					4	O		O
+0	22	7	331	be	be	1812	1814	AUX	VB	auxpass	332	O					4	O		O
+0	22	8	332	classified	classify	1815	1825	VERB	VBN	ROOT	332	O	verb.communication				4	O		O
+0	22	9	333	as	as	1826	1828	ADP	IN	prep	332	O					4	O		O
+0	22	10	334	either	either	1829	1835	CCONJ	CC	preconj	336	O					4	O		O
+0	22	11	335	a	a	1836	1837	DET	DT	det	336	O		27.0	NOM	PER	4	O		O
+0	22	12	336	manager	manager	1838	1845	NOUN	NN	pobj	333	O	noun.person	27.0	NOM	PER	4	B	attr	B-attr
+0	22	13	337	,	,	1845	1846	PUNCT	,	punct	336	O					4	O		O
+0	22	14	338	Maitre'd	Maitre'd	1847	1855	PROPN	NNP	appos	336	O	noun.person	28.0	NOM	PER	4	B	attr	B-attr
+0	22	15	339	,	,	1855	1856	PUNCT	,	punct	338	O					4	O		O
+0	22	16	340	waiter	waiter	1857	1863	NOUN	NN	conj	338	O	noun.person	29.0	NOM	PER	4	B	attr	B-attr
+0	22	17	341	,	,	1863	1864	PUNCT	,	punct	340	O					4	O		O
+0	22	18	342	bartender	bartender	1865	1874	NOUN	NN	conj	340	O	noun.person	30.0	NOM	PER	4	B	attr	B-attr
+0	22	19	343	,	,	1874	1875	PUNCT	,	punct	342	O					4	O		O
+0	22	20	344	chef	chef	1876	1880	NOUN	NN	conj	342	O	noun.person	31.0	NOM	PER	4	B	attr	B-attr
+0	22	21	345	,	,	1880	1881	PUNCT	,	punct	344	O		31.0	NOM	PER	4	O		O
+0	22	22	346	cook	cook	1882	1886	NOUN	NN	conj	344	O	noun.person	31.0	NOM	PER	4	B	attr	B-attr
+0	22	23	347	,	,	1886	1887	PUNCT	,	punct	346	O					4	O		O
+0	22	24	348	bus	bus	1888	1891	NOUN	NN	compound	349	O	noun.person	32.0	NOM	PER	4	B	attr	B-attr
+0	22	25	349	person	person	1892	1898	NOUN	NN	conj	346	O	noun.person	32.0	NOM	PER	4	I	attr	I-attr
+0	22	26	350	or	or	1899	1901	CCONJ	CC	cc	349	O					4	O		O
+0	22	27	351	dishwasher	dishwasher	1902	1912	NOUN	NN	conj	349	O	noun.artifact				4	B	attr	B-attr
+0	22	28	352	.	.	1912	1913	PUNCT	.	punct	332	O					4	O		O
+0	23	0	353	Additional	additional	1914	1924	ADJ	JJ	amod	354	O					4	O		O
+0	23	1	354	information	information	1925	1936	NOUN	NN	nsubj	362	O	noun.communication				4	O		O
+0	23	2	355	maintained	maintain	1937	1947	VERB	VBN	acl	354	O	verb.social				4	O		O
+0	23	3	356	by	by	1948	1950	ADP	IN	agent	355	O					4	O		O
+0	23	4	357	Romano	Romano	1951	1957	PROPN	NNP	pobj	356	O	noun.person	1.0	PROP	PER	4	O		O
+0	23	5	358	's	's	1957	1959	PART	POS	case	357	O					4	O		O
+0	23	6	359	for	for	1960	1963	SCONJ	IN	mark	362	O					4	O		O
+0	23	7	360	each	each	1964	1968	DET	DT	det	361	O		33.0	NOM	PER	4	O		O
+0	23	8	361	person	person	1969	1975	NOUN	NN	nsubj	362	O	noun.person	33.0	NOM	PER	4	B	class	B-class
+0	23	9	362	includes	include	1976	1984	VERB	VBZ	ROOT	362	O	verb.stative				4	O		O
+0	23	10	363	the	the	1985	1988	DET	DT	det	365	O		34.0	NOM	PER	4	O		O
+0	23	11	364	persons	person	1989	1996	NOUN	NNS	compound	365	O	noun.person	34.0	NOM	PER	4	O		O
+0	23	12	365	name	name	1997	2001	NOUN	NN	dobj	362	O	noun.communication				4	B	attr	B-attr
+0	23	13	366	,	,	2001	2002	PUNCT	,	punct	365	O					4	O		O
+0	23	14	367	date	date	2003	2007	NOUN	NN	conj	365	O	noun.time				4	B	attr	B-attr
+0	23	15	368	of	of	2008	2010	ADP	IN	prep	367	O					4	I	attr	I-attr
+0	23	16	369	birth	birth	2011	2016	NOUN	NN	pobj	368	O	noun.time				4	I	attr	I-attr
+0	23	17	370	and	and	2017	2020	CCONJ	CC	cc	369	O					4	O		O
+0	23	18	371	drivers	driver	2021	2028	NOUN	NNS	compound	373	O	noun.communication				4	B	attr	B-attr
+0	23	19	372	license	license	2029	2036	NOUN	NN	compound	373	O	noun.communication				4	I	attr	I-attr
+0	23	20	373	number	number	2037	2043	NOUN	NN	conj	367	O	noun.communication				4	I	attr	I-attr
+0	23	21	374	.	.	2043	2044	PUNCT	.	punct	362	O					4	O		O
+0	24	0	375	When	when	2045	2049	SCONJ	WRB	advmod	379	O					4	O		O
+0	24	1	376	the	the	2050	2053	DET	DT	det	378	O		35.0	NOM	PER	4	O		O
+0	24	2	377	reservation	reservation	2054	2065	NOUN	NN	compound	378	O	noun.group	35.0	NOM	PER	4	O		O
+0	24	3	378	party	party	2066	2071	NOUN	NN	nsubj	379	O	noun.group	35.0	NOM	PER	4	O		O
+0	24	4	379	arrives	arrive	2072	2079	VERB	VBZ	advcl	386	O	verb.motion				4	O		O
+0	24	5	380	at	at	2080	2082	ADP	IN	prep	379	O	verb.motion				4	O		O
+0	24	6	381	Romano	Romano	2083	2089	PROPN	NNP	poss	384	O	noun.person	0.0	PROP	FAC	4	O		O
+0	24	7	382	's	's	2089	2091	PART	POS	case	381	O		0.0	PROP	FAC	4	O		O
+0	24	8	383	the	the	2092	2095	DET	DT	det	384	O					4	O		O
+0	24	9	384	reservation	reservation	2096	2107	NOUN	NN	pobj	380	O	noun.location				4	B	class	B-class
+0	24	10	385	is	be	2108	2110	AUX	VBZ	auxpass	386	O					4	O		O
+0	24	11	386	assigned	assign	2111	2119	VERB	VBN	ROOT	386	O	verb.possession				4	O		O
+0	24	12	387	to	to	2120	2122	ADP	IN	prep	386	O					4	O		O
+0	24	13	388	one	one	2123	2126	NUM	CD	nummod	389	O		36.0	NOM	PER	4	O		O
+0	24	14	389	waiter	waiter	2127	2133	NOUN	NN	pobj	387	O	noun.person	36.0	NOM	PER	4	B	class	B-class
+0	24	15	390	.	.	2133	2134	PUNCT	.	punct	386	O					4	O		O
+0	25	0	391	A	a	2135	2136	DET	DT	det	392	O		37.0	NOM	PER	4	O		O
+0	25	1	392	waiter	waiter	2137	2143	NOUN	NN	nsubjpass	395	O	noun.person	37.0	NOM	PER	4	B	class	B-class
+0	25	2	393	can	can	2144	2147	AUX	MD	aux	395	O					4	O		O
+0	25	3	394	be	be	2148	2150	AUX	VB	auxpass	395	O					4	O		O
+0	25	4	395	assigned	assign	2151	2159	VERB	VBN	ROOT	395	O	verb.cognition				4	O		O
+0	25	5	396	to	to	2160	2162	ADP	IN	prep	395	O					4	O		O
+0	25	6	397	many	many	2163	2167	ADJ	JJ	amod	398	O					4	O		O
+0	25	7	398	reservations	reservation	2168	2180	NOUN	NNS	pobj	396	O	noun.communication				4	B	class	B-class
+0	25	8	399	during	during	2181	2187	ADP	IN	prep	395	O					4	O		O
+0	25	9	400	the	the	2188	2191	DET	DT	det	401	O					4	O		O
+0	25	10	401	course	course	2192	2198	NOUN	NN	pobj	399	O	noun.group				4	O		O
+0	25	11	402	of	of	2199	2201	ADP	IN	prep	401	O					4	O		O
+0	25	12	403	the	the	2202	2205	DET	DT	det	404	O					4	O		O
+0	25	13	404	evening	evening	2206	2213	NOUN	NN	pobj	402	O	noun.time				4	O		O
+0	25	14	405	""""	""""	2213	2214	PUNCT	''	punct	395	O					4	O		O
+0	25	15	406	.	.	2214	2215	PUNCT	.	punct	395	O					4	O		O
+0	26	0	407	The	the	2216	2219	DET	DT	det	408	O					4	O		O
+0	26	1	408	menu	menu	2220	2224	NOUN	NN	nsubj	412	O	noun.communication				4	B	class	B-class
+0	26	2	409	at	at	2225	2227	ADP	IN	prep	408	O					4	O		O
+0	26	3	410	Romano	Romano	2228	2234	PROPN	NNP	pobj	409	O	noun.person	1.0	PROP	PER	4	O		O
+0	26	4	411	's	's	2234	2236	PART	POS	case	410	O					4	O		O
+0	26	5	412	is	be	2237	2239	AUX	VBZ	ROOT	412	O	verb.stative				4	O		O
+0	26	6	413	exquisite	exquisite	2240	2249	ADJ	JJ	acomp	412	O					4	O		O
+0	26	7	414	.	.	2249	2250	PUNCT	.	punct	412	O					4	O		O
+0	27	0	415	There	there	2251	2256	PRON	EX	expl	416	O					4	O		O
+0	27	1	416	are	be	2257	2260	VERB	VBP	ROOT	416	O	verb.stative				4	O		O
+0	27	2	417	many	many	2261	2265	ADJ	JJ	amod	421	O					4	O		O
+0	27	3	418	exciting	exciting	2266	2274	ADJ	JJ	amod	421	O					4	O		O
+0	27	4	419	and	and	2275	2278	CCONJ	CC	cc	418	O					4	O		O
+0	27	5	420	exotic	exotic	2279	2285	ADJ	JJ	conj	418	O					4	O		O
+0	27	6	421	items	item	2286	2291	NOUN	NNS	attr	416	O	noun.artifact				4	B	class	B-class
+0	27	7	422	.	.	2291	2292	PUNCT	.	punct	416	O					4	O		O
+0	28	0	423	Each	each	2293	2297	DET	DT	det	425	O					4	O		O
+0	28	1	424	menu	menu	2298	2302	NOUN	NN	compound	425	O	noun.communication				4	B	class	B-class
+0	28	2	425	item	item	2303	2307	NOUN	NN	nsubjpass	427	O	noun.communication				4	I	class	I-class
+0	28	3	426	is	be	2308	2310	AUX	VBZ	auxpass	427	O					4	O		O
+0	28	4	427	identified	identify	2311	2321	VERB	VBN	ROOT	427	O	verb.cognition				4	O		O
+0	28	5	428	by	by	2322	2324	ADP	IN	agent	427	O					4	O		O
+0	28	6	429	a	a	2325	2326	DET	DT	det	433	O					4	O		O
+0	28	7	430	unique	unique	2327	2333	ADJ	JJ	amod	433	O					4	O		O
+0	28	8	431	menu	menu	2334	2338	NOUN	NN	compound	433	O	noun.communication				4	B	attr	B-attr
+0	28	9	432	item	item	2339	2343	NOUN	NN	compound	433	O	noun.communication				4	I	attr	I-attr
+0	28	10	433	number	number	2344	2350	NOUN	NN	pobj	428	O	noun.communication				4	I	attr	I-attr
+0	28	11	434	.	.	2350	2351	PUNCT	.	punct	427	O					4	O		O
+0	29	0	435	Information	information	2352	2363	NOUN	NN	nsubj	436	O	noun.communication				4	O		O
+0	29	1	436	maintained	maintain	2364	2374	VERB	VBN	ROOT	436	O	verb.possession				4	O		O
+0	29	2	437	by	by	2375	2377	ADP	IN	agent	436	O					4	O		O
+0	29	3	438	Romano	Romano	2378	2384	PROPN	NNP	pobj	437	O	noun.person	1.0	PROP	PER	4	O		O
+0	29	4	439	's	's	2384	2386	PART	POS	case	438	O					4	O		O
+0	29	5	440	for	for	2387	2390	ADP	IN	prep	436	O					4	O		O
+0	29	6	441	each	each	2391	2395	DET	DT	det	443	O					4	O		O
+0	29	7	442	menu	menu	2396	2400	NOUN	NN	compound	443	O	noun.communication				4	B	class	B-class
+0	29	8	443	item	item	2401	2405	NOUN	NN	pobj	440	O	noun.communication				4	I	class	I-class
+0	29	9	444	includes	include	2406	2414	VERB	VBZ	ccomp	436	O	verb.stative				4	O		O
+0	29	10	445	an	an	2415	2417	DET	DT	det	447	O					4	O		O
+0	29	11	446	item	item	2418	2422	NOUN	NN	compound	447	O	noun.communication				4	B	attr	B-attr
+0	29	12	447	description	description	2423	2434	NOUN	NN	dobj	444	O	noun.communication				4	I	attr	I-attr
+0	29	13	448	of	of	2435	2437	ADP	IN	prep	447	O					4	O		O
+0	29	14	449	(	(	2438	2439	PUNCT	-LRB-	punct	448	O					4	O		O
+0	29	15	450	e.g.	e.g.	2439	2443	ADV	RB	amod	453	O	noun.communication				4	O		O
+0	29	16	451	""""	""""	2444	2445	PUNCT	``	punct	453	O					4	O		O
+0	29	17	452	chicken	chicken	2445	2452	NOUN	NN	compound	453	O	noun.food				4	O		O
+0	29	18	453	marsala	marsala	2453	2460	NOUN	NN	pobj	448	O	noun.food				4	O		O
+0	29	19	454	""""	""""	2460	2461	PUNCT	''	punct	453	O					4	O		O
+0	29	20	455	,	,	2461	2462	PUNCT	,	punct	453	O					4	O		O
+0	29	21	456	""""	""""	2463	2464	PUNCT	``	punct	458	O					4	O		O
+0	29	22	457	fish	fish	2464	2468	NOUN	NN	compound	458	O	noun.food				4	O		O
+0	29	23	458	soup	soup	2469	2473	NOUN	NN	appos	453	O	noun.food				4	O		O
+0	29	24	459	""""	""""	2473	2474	PUNCT	''	punct	458	O					4	O		O
+0	29	25	460	,	,	2474	2475	PUNCT	,	punct	453	O					4	O		O
+0	29	26	461	""""	""""	2476	2477	PUNCT	``	punct	465	O					4	O		O
+0	29	27	462	endive	endive	2477	2483	ADJ	JJ	amod	465	O					4	O		O
+0	29	28	463	"salad"",""1988"	"salad"",""1988"	2484	2496	NUM	CD	nummod	465	O					4	O		O
+0	29	29	464	Merlot	merlot	2497	2503	NOUN	NN	compound	465	O					4	O		O
+0	29	30	465	wine	wine	2504	2508	NOUN	NN	appos	453	O	noun.food				4	O		O
+0	29	31	466	""""	""""	2508	2509	PUNCT	''	punct	465	O					4	O		O
+0	29	32	467	,	,	2509	2510	PUNCT	,	punct	465	O					4	O		O
+0	29	33	468	etc	etc	2511	2514	X	FW	conj	465	O					4	O		O
+0	29	34	469	.	.	2514	2515	X	FW	conj	465	O					4	O		O
+0	29	35	470	)	)	2515	2516	PUNCT	-RRB-	punct	465	O					4	O		O
+0	29	36	471	,	,	2516	2517	PUNCT	,	punct	453	O					4	O		O
+0	29	37	472	and	and	2518	2521	CCONJ	CC	cc	453	O					4	O		O
+0	29	38	473	item	item	2522	2526	NOUN	NN	nmod	475	O	noun.artifact				4	B	attr	B-attr
+0	29	39	474	prep	prep	2527	2531	NOUN	NN	amod	475	O	noun.act				4	I	attr	I-attr
+0	29	40	475	time	time	2532	2536	NOUN	NN	npadvmod	444	O	noun.time				4	I	attr	I-attr
+0	29	41	476	.	.	2536	2537	PUNCT	.	punct	436	O					4	O		O
+0	30	0	477	Each	each	2538	2542	DET	DT	det	479	O					4	O		O
+0	30	1	478	menu	menu	2543	2547	NOUN	NN	compound	479	O	noun.communication				4	B	class	B-class
+0	30	2	479	item	item	2548	2552	NOUN	NN	nsubjpass	481	O	noun.communication				4	I	class	I-class
+0	30	3	480	is	be	2553	2555	AUX	VBZ	auxpass	481	O					4	O		O
+0	30	4	481	classified	classify	2556	2566	VERB	VBN	ROOT	481	O	verb.cognition				4	O		O
+0	30	5	482	by	by	2567	2569	ADP	IN	agent	481	O					4	O		O
+0	30	6	483	Romano	Romano	2570	2576	PROPN	NNP	pobj	482	O	noun.person	1.0	PROP	PER	4	O		O
+0	30	7	484	's	's	2576	2578	PART	POS	case	483	O					4	O		O
+0	30	8	485	as	as	2579	2581	ADP	IN	prep	481	O					4	O		O
+0	30	9	486	""""	""""	2582	2583	PUNCT	``	punct	485	O					4	O		O
+0	30	10	487	appetizer	appetizer	2583	2592	NOUN	NN	pobj	485	O	noun.food				4	B	attr	B-attr
+0	30	11	488	""""	""""	2592	2593	PUNCT	''	punct	487	O					4	O		O
+0	30	12	489	,	,	2593	2594	PUNCT	,	punct	481	O					4	O		O
+0	30	13	490	""""	""""	2595	2596	PUNCT	``	punct	495	O					4	O		O
+0	30	14	491	entree	entree	2596	2602	ADJ	JJ	amod	495	O	noun.food				4	B	attr	B-attr
+0	30	15	492	""""	""""	2602	2603	PUNCT	''	punct	495	O					4	O		O
+0	30	16	493	,	,	2603	2604	PUNCT	,	punct	495	O					4	O		O
+0	30	17	494	""""	""""	2605	2606	PUNCT	``	punct	495	O					4	O		O
+0	30	18	495	dessert	dessert	2606	2613	NOUN	NN	appos	479	O	noun.food				4	B	attr	B-attr
+0	30	19	496	""""	""""	2613	2614	PUNCT	''	punct	495	O					4	O		O
+0	30	20	497	or	or	2615	2617	CCONJ	CC	cc	495	O					4	O		O
+0	30	21	498	""""	""""	2618	2619	PUNCT	``	punct	499	O					4	O		O
+0	30	22	499	beverage	beverage	2619	2627	NOUN	NN	conj	495	O	noun.food				4	B	attr	B-attr
+0	30	23	500	""""	""""	2627	2628	PUNCT	''	punct	499	O					4	O		O
+0	30	24	501	.	.	2628	2629	PUNCT	.	punct	481	O					4	O		O
+0	31	0	502	The	the	2630	2633	DET	DT	det	503	O					4	O		O
+0	31	1	503	price	price	2634	2639	NOUN	NN	nsubj	509	O	noun.attribute				4	B	attr	B-attr
+0	31	2	504	of	of	2640	2642	ADP	IN	prep	503	O					4	O		O
+0	31	3	505	each	each	2643	2647	DET	DT	det	507	O					4	O		O
+0	31	4	506	menu	menu	2648	2652	NOUN	NN	compound	507	O	noun.communication				4	B	class	B-class
+0	31	5	507	item	item	2653	2657	NOUN	NN	pobj	504	O	noun.communication				4	I	class	I-class
+0	31	6	508	can	can	2658	2661	AUX	MD	aux	509	O					4	O		O
+0	31	7	509	vary	vary	2662	2666	VERB	VB	ROOT	509	O	verb.change				4	O		O
+0	31	8	510	based	base	2667	2672	VERB	VBN	prep	509	O					4	O		O
+0	31	9	511	on	on	2673	2675	ADP	IN	prep	510	O					4	O		O
+0	31	10	512	the	the	2676	2679	DET	DT	det	513	O					4	O		O
+0	31	11	513	time	time	2680	2684	NOUN	NN	pobj	511	O	noun.time				4	O		O
+0	31	12	514	of	of	2685	2687	ADP	IN	prep	513	O	noun.time				4	O		O
+0	31	13	515	day	day	2688	2691	NOUN	NN	pobj	514	O	noun.time				4	O		O
+0	31	14	516	.	.	2691	2692	PUNCT	.	punct	509	O					4	O		O
+0	32	0	517	For	for	2693	2696	ADP	IN	prep	525	O					4	O		O
+0	32	1	518	example	example	2697	2704	NOUN	NN	pobj	517	O					4	O		O
+0	32	2	519	,	,	2704	2705	PUNCT	,	punct	525	O					4	O		O
+0	32	3	520	some	some	2706	2710	PRON	DT	nsubj	525	O					4	O		O
+0	32	4	521	of	of	2711	2713	ADP	IN	prep	520	O					4	O		O
+0	32	5	522	the	the	2714	2717	DET	DT	det	524	O					4	O		O
+0	32	6	523	menu	menu	2718	2722	NOUN	NN	compound	524	O	noun.communication				4	B	class	B-class
+0	32	7	524	items	item	2723	2728	NOUN	NNS	pobj	521	O	noun.communication				4	I	class	I-class
+0	32	8	525	have	have	2729	2733	VERB	VBP	ROOT	525	O	verb.stative				4	O		O
+0	32	9	526	different	different	2734	2743	ADJ	JJ	amod	527	O					4	O		O
+0	32	10	527	lunch	lunch	2744	2749	NOUN	NN	nmod	530	O	noun.food				4	B	attr	B-attr
+0	32	11	528	and	and	2750	2753	CCONJ	CC	cc	527	O					4	O		O
+0	32	12	529	dinner	dinner	2754	2760	NOUN	NN	compound	530	O	noun.food				4	B	attr	B-attr
+0	32	13	530	prices	price	2761	2767	NOUN	NNS	dobj	525	O	noun.attribute				4	I	attr	I-attr
+0	32	14	531	.	.	2767	2768	PUNCT	.	punct	525	O					4	O		O
+0	33	0	532	Some	some	2769	2773	PRON	DT	nsubj	537	O					4	O		O
+0	33	1	533	of	of	2774	2776	ADP	IN	prep	532	O					4	O		O
+0	33	2	534	the	the	2777	2780	DET	DT	det	536	O					4	O		O
+0	33	3	535	menu	menu	2781	2785	NOUN	NN	compound	536	O	noun.communication				4	B	class	B-class
+0	33	4	536	items	item	2786	2791	NOUN	NNS	pobj	533	O	noun.artifact				4	I	class	I-class
+0	33	5	537	change	change	2792	2798	VERB	VBP	ROOT	537	O	verb.change				4	O		O
+0	33	6	538	prices	price	2799	2805	NOUN	NNS	dobj	537	O	noun.attribute				4	B	attr	B-attr
+0	33	7	539	for	for	2806	2809	ADP	IN	prep	537	O					4	I	attr	I-attr
+0	33	8	540	happy	happy	2810	2815	ADJ	JJ	amod	541	O					4	I	attr	I-attr
+0	33	9	541	hour	hour	2816	2820	NOUN	NN	pobj	539	O	noun.time				4	I	attr	I-attr
+0	33	10	542	.	.	2820	2821	PUNCT	.	punct	537	O					4	O		O
+0	34	0	543	In	in	2822	2824	ADP	IN	prep	558	O					4	O		O
+0	34	1	544	order	order	2825	2830	NOUN	NN	pobj	543	O					4	O		O
+0	34	2	545	to	to	2831	2833	PART	TO	aux	546	O					4	O		O
+0	34	3	546	calculate	calculate	2834	2843	VERB	VB	acl	544	O	verb.cognition				4	O		O
+0	34	4	547	the	the	2844	2847	DET	DT	det	548	O					4	O		O
+0	34	5	548	check	check	2848	2853	NOUN	NN	dobj	546	O	noun.possession				4	B	class	B-class
+0	34	6	549	at	at	2854	2856	ADP	IN	prep	546	O					4	O		O
+0	34	7	550	the	the	2857	2860	DET	DT	det	551	O					4	O		O
+0	34	8	551	end	end	2861	2864	NOUN	NN	pobj	549	O	noun.event				4	O		O
+0	34	9	552	of	of	2865	2867	ADP	IN	prep	551	O					4	O		O
+0	34	10	553	the	the	2868	2871	DET	DT	det	554	O					4	O		O
+0	34	11	554	dinner	dinner	2872	2878	NOUN	NN	pobj	552	O	noun.food				4	O		O
+0	34	12	555	,	,	2878	2879	PUNCT	,	punct	558	O					4	O		O
+0	34	13	556	the	the	2880	2883	DET	DT	det	557	O		38.0	NOM	PER	4	O		O
+0	34	14	557	waiter	waiter	2884	2890	NOUN	NN	nsubj	558	O	noun.person	38.0	NOM	PER	4	B	class	B-class
+0	34	15	558	maintains	maintain	2891	2900	VERB	VBZ	ROOT	558	O	verb.possession				4	O		O
+0	34	16	559	a	a	2901	2902	DET	DT	det	560	O					4	O		O
+0	34	17	560	list	list	2903	2907	NOUN	NN	dobj	558	O	noun.communication				4	B	class	B-class
+0	34	18	561	,	,	2907	2908	PUNCT	,	punct	558	O					4	O		O
+0	34	19	562	by	by	2909	2911	ADP	IN	prep	558	O					4	O		O
+0	34	20	563	reservation	reservation	2912	2923	NOUN	NN	compound	564	O	noun.communication				4	B	attr	B-attr
+0	34	21	564	number	number	2924	2930	NOUN	NN	pobj	562	O	noun.attribute				4	I	attr	I-attr
+0	34	22	565	,	,	2930	2931	PUNCT	,	punct	564	O					4	O		O
+0	34	23	566	of	of	2932	2934	ADP	IN	prep	564	O					4	O		O
+0	34	24	567	the	the	2935	2938	DET	DT	det	569	O					4	O		O
+0	34	25	568	menu	menu	2939	2943	NOUN	NN	compound	569	O	noun.communication				4	B	class	B-class
+0	34	26	569	items	item	2944	2949	NOUN	NNS	pobj	566	O	noun.artifact				4	I	class	I-class
+0	34	27	570	ordered	order	2950	2957	VERB	VBN	acl	569	O	verb.communication				4	O		O
+0	34	28	571	and	and	2958	2961	CCONJ	CC	cc	569	O					4	O		O
+0	34	29	572	the	the	2962	2965	DET	DT	det	573	O					4	O		O
+0	34	30	573	time	time	2966	2970	NOUN	NN	conj	569	O	noun.time				4	B	attr	B-attr
+0	34	31	574	that	that	2971	2975	PRON	WDT	advmod	579	O					4	I	attr	I-attr
+0	34	32	575	the	the	2976	2979	DET	DT	det	577	O					4	I	attr	I-attr
+0	34	33	576	menu	menu	2980	2984	NOUN	NN	compound	577	O	noun.communication				4	I	attr	I-attr
+0	34	34	577	item	item	2985	2989	NOUN	NN	nsubjpass	579	O	noun.communication				4	I	attr	I-attr
+0	34	35	578	was	be	2990	2993	AUX	VBD	auxpass	579	O					4	I	attr	I-attr
+0	34	36	579	ordered	order	2994	3001	VERB	VBN	relcl	573	O	verb.communication				4	I	attr	I-attr
+0	34	37	580	.	.	3001	3002	PUNCT	.	punct	558	O					4	O		O
+0	35	0	581	In	in	3003	3005	ADP	IN	prep	589	O					4	O		O
+0	35	1	582	other	other	3006	3011	ADJ	JJ	amod	583	O					4	O		O
+0	35	2	583	words	word	3012	3017	NOUN	NNS	pobj	581	O					4	O		O
+0	35	3	584	,	,	3017	3018	PUNCT	,	punct	589	O					4	O		O
+0	35	4	585	each	each	3019	3023	DET	DT	det	586	O					4	O		O
+0	35	5	586	reservation	reservation	3024	3035	NOUN	NN	nsubjpass	589	O	noun.communication				4	B	class	B-class
+0	35	6	587	can	can	3036	3039	AUX	MD	aux	589	O					4	O		O
+0	35	7	588	be	be	3040	3042	AUX	VB	auxpass	589	O					4	O		O
+0	35	8	589	associated	associate	3043	3053	VERB	VBN	ROOT	589	O	verb.cognition				4	O		O
+0	35	9	590	with	with	3054	3058	ADP	IN	prep	589	O					4	O		O
+0	35	10	591	many	many	3059	3063	ADJ	JJ	amod	593	O					4	O		O
+0	35	11	592	menu	menu	3064	3068	NOUN	NN	compound	593	O	noun.communication				4	B	class	B-class
+0	35	12	593	items	item	3069	3074	NOUN	NNS	pobj	590	O	noun.communication				4	I	class	I-class
+0	35	13	594	and	and	3075	3078	CCONJ	CC	cc	593	O					4	O		O
+0	35	14	595	a	a	3079	3080	DET	DT	det	597	O					4	O		O
+0	35	15	596	menu	menu	3081	3085	NOUN	NN	compound	597	O	noun.communication				4	B	class	B-class
+0	35	16	597	item	item	3086	3090	NOUN	NN	nsubjpass	600	O	noun.artifact				4	I	class	I-class
+0	35	17	598	can	can	3091	3094	AUX	MD	aux	600	O					4	O		O
+0	35	18	599	be	be	3095	3097	AUX	VB	auxpass	600	O					4	O		O
+0	35	19	600	associated	associate	3098	3108	VERB	VBN	conj	589	O	verb.cognition				4	O		O
+0	35	20	601	with	with	3109	3113	ADP	IN	prep	600	O					4	O		O
+0	35	21	602	many	many	3114	3118	ADJ	JJ	amod	603	O					4	O		O
+0	35	22	603	reservations	reservation	3119	3131	NOUN	NNS	pobj	601	O	noun.communication				4	B	class	B-class
+0	35	23	604	.	.	3131	3132	PUNCT	.	punct	600	O					4	O		O
+0	36	0	605	In	in	3133	3135	ADP	IN	prep	613	O					4	O		O
+0	36	1	606	addition	addition	3136	3144	NOUN	NN	pobj	605	O					4	O		O
+0	36	2	607	to	to	3145	3147	ADP	IN	prep	606	O					4	O		O
+0	36	3	608	menu	menu	3148	3152	NOUN	NN	compound	609	O	noun.communication				4	B	class	B-class
+0	36	4	609	items	item	3153	3158	NOUN	NNS	pobj	607	O	noun.communication				4	I	class	I-class
+0	36	5	610	,	,	3158	3159	PUNCT	,	punct	613	O					4	O		O
+0	36	6	611	Romano	Romano	3160	3166	PROPN	NNP	nsubj	613	O	noun.person	1.0	PROP	PER	4	O		O
+0	36	7	612	's	's	3166	3168	PART	POS	case	611	O					4	O		O
+0	36	8	613	maintains	maintain	3169	3178	VERB	VBZ	ROOT	613	O	verb.possession				4	O		O
+0	36	9	614	a	a	3179	3180	DET	DT	det	615	O					4	O		O
+0	36	10	615	list	list	3181	3185	NOUN	NN	dobj	613	O	noun.communication				4	B	class	B-class
+0	36	11	616	of	of	3186	3188	ADP	IN	prep	615	O					4	O		O
+0	36	12	617	the	the	3189	3192	DET	DT	det	619	O					4	O		O
+0	36	13	618	food	food	3193	3197	NOUN	NN	compound	619	O	noun.food				4	B	class	B-class
+0	36	14	619	items	item	3198	3203	NOUN	NNS	pobj	616	O	noun.artifact				4	I	class	I-class
+0	36	15	620	that	that	3204	3208	PRON	WDT	nsubjpass	622	O					4	O		O
+0	36	16	621	are	be	3209	3212	AUX	VBP	auxpass	622	O					4	O		O
+0	36	17	622	utilized	utilize	3213	3221	VERB	VBN	relcl	619	O	verb.consumption				4	O		O
+0	36	18	623	by	by	3222	3224	ADP	IN	agent	622	O					4	O		O
+0	36	19	624	the	the	3225	3228	DET	DT	det	625	O		39.0	NOM	FAC	4	O		O
+0	36	20	625	restaurant	restaurant	3229	3239	NOUN	NN	pobj	623	O	noun.artifact	39.0	NOM	FAC	4	O		O
+0	36	21	626	such	such	3240	3244	ADJ	JJ	amod	627	O					4	O		O
+0	36	22	627	as	as	3245	3247	ADP	IN	prep	625	O					4	O		O
+0	36	23	628	chicken	chicken	3248	3255	NOUN	NN	pobj	627	O	noun.food				4	O		O
+0	36	24	629	,	,	3255	3256	PUNCT	,	punct	628	O					4	O		O
+0	36	25	630	mushrooms	mushroom	3257	3266	NOUN	NNS	conj	628	O	noun.artifact				4	O		O
+0	36	26	631	,	,	3266	3267	PUNCT	,	punct	630	O					4	O		O
+0	36	27	632	bread	bread	3268	3273	NOUN	NN	compound	633	O	noun.food				4	O		O
+0	36	28	633	sticks	stick	3274	3280	NOUN	NNS	conj	630	O	noun.artifact				4	O		O
+0	36	29	634	,	,	3280	3281	PUNCT	,	punct	633	O					4	O		O
+0	36	30	635	red	red	3282	3285	ADJ	JJ	amod	636	O	noun.food				4	O		O
+0	36	31	636	sauce	sauce	3286	3291	NOUN	NN	conj	633	O	noun.food				4	O		O
+0	36	32	637	,	,	3291	3292	PUNCT	,	punct	636	O					4	O		O
+0	36	33	638	cream	cream	3293	3298	NOUN	NN	compound	639	O	noun.food				4	O		O
+0	36	34	639	sauce	sauce	3299	3304	NOUN	NN	conj	636	O	noun.food				4	O		O
+0	36	35	640	,	,	3304	3305	PUNCT	,	punct	639	O					4	O		O
+0	36	36	641	etc	etc	3306	3309	X	FW	conj	639	O					4	O		O
+0	36	37	642	.	.	3309	3310	X	FW	punct	613	O					4	O		O
+0	37	0	643	Food	food	3311	3315	NOUN	NN	compound	644	O	noun.communication				4	B	class	B-class
+0	37	1	644	items	item	3316	3321	NOUN	NNS	nsubjpass	646	O	noun.artifact				4	I	class	I-class
+0	37	2	645	are	be	3322	3325	AUX	VBP	auxpass	646	O					4	O		O
+0	37	3	646	utilized	utilize	3326	3334	VERB	VBN	ROOT	646	O	verb.consumption				4	O		O
+0	37	4	647	in	in	3335	3337	ADP	IN	prep	646	O					4	O		O
+0	37	5	648	the	the	3338	3341	DET	DT	det	649	O					4	O		O
+0	37	6	649	preparation	preparation	3342	3353	NOUN	NN	pobj	647	O	noun.act				4	O		O
+0	37	7	650	of	of	3354	3356	ADP	IN	prep	649	O					4	O		O
+0	37	8	651	menu	menu	3357	3361	NOUN	NN	compound	652	O	noun.communication				4	B	class	B-class
+0	37	9	652	items	item	3362	3367	NOUN	NNS	pobj	650	O	noun.communication				4	I	class	I-class
+0	37	10	653	.	.	3367	3368	PUNCT	.	punct	646	O					4	O		O
+0	38	0	654	Each	each	3369	3373	DET	DT	det	656	O					4	O		O
+0	38	1	655	food	food	3374	3378	NOUN	NN	compound	656	O	noun.food				4	B	class	B-class
+0	38	2	656	item	item	3379	3383	NOUN	NN	nsubjpass	658	O	noun.artifact				4	I	class	I-class
+0	38	3	657	is	be	3384	3386	AUX	VBZ	auxpass	658	O					4	O		O
+0	38	4	658	identified	identify	3387	3397	VERB	VBN	ROOT	658	O	verb.communication				4	O		O
+0	38	5	659	by	by	3398	3400	ADP	IN	agent	658	O					4	O		O
+0	38	6	660	a	a	3401	3402	DET	DT	det	664	O					4	O		O
+0	38	7	661	unique	unique	3403	3409	ADJ	JJ	amod	664	O					4	O		O
+0	38	8	662	food	food	3410	3414	NOUN	NN	compound	663	O	noun.communication				4	B	attr	B-attr
+0	38	9	663	item	item	3415	3419	NOUN	NN	compound	664	O	noun.communication				4	I	attr	I-attr
+0	38	10	664	number	number	3420	3426	NOUN	NN	pobj	659	O	noun.communication				4	I	attr	I-attr
+0	38	11	665	.	.	3426	3427	PUNCT	.	punct	658	O					4	O		O

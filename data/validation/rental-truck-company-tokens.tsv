@@ -1,0 +1,619 @@
+paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	lemma	byte_onset	byte_offset	POS_tag	fine_POS_tag	dependency_relation	syntactic_head_ID	event	supersense_category	entity	entity_type	entity_category	document_ID	encoding	target	IOB_tag
+0	0	0	0	The	the	0	3	DET	DT	det	6	O		1.0	NOM	ORG	3	O		O
+0	0	1	1	Right	right	4	9	ADJ	JJ	amod	3	O	noun.group	1.0	NOM	ORG	3	O		O
+0	0	2	2	-	-	9	10	PUNCT	HYPH	punct	3	O	noun.group	1.0	NOM	ORG	3	O		O
+0	0	3	3	Way	way	10	13	NOUN	NN	compound	6	O	noun.group	1.0	NOM	ORG	3	O		O
+0	0	4	4	Rental	Rental	14	20	PROPN	NNP	compound	5	O	noun.group	1.0	NOM	ORG	3	O		O
+0	0	5	5	Truck	Truck	21	26	PROPN	NNP	compound	6	O	noun.group	1.0	NOM	ORG	3	O		O
+0	0	6	6	Company	Company	27	34	PROPN	NNP	nsubj	7	O	noun.group	1.0	NOM	ORG	3	O		O
+0	0	7	7	rents	rent	35	40	VERB	VBZ	ROOT	7	O	verb.possession				3	O		O
+0	0	8	8	small	small	41	46	ADJ	JJ	amod	10	O		2.0	NOM	VEH	3	O		O
+0	0	9	9	moving	move	47	53	VERB	VBG	amod	10	O	verb.motion	2.0	NOM	VEH	3	O		O
+0	0	10	10	trucks	truck	54	60	NOUN	NNS	dobj	7	O	noun.artifact	2.0	NOM	VEH	3	O		O
+0	0	11	11	and	and	61	64	CCONJ	CC	cc	10	O		2.0	NOM	VEH	3	O		O
+0	0	12	12	trailers	trailer	65	73	NOUN	NNS	conj	10	O	noun.artifact	2.0	NOM	VEH	3	O		O
+0	0	13	13	for	for	74	77	ADP	IN	prep	10	O					3	O		O
+0	0	14	14	local	local	78	83	ADJ	JJ	amod	19	O					3	O		O
+0	0	15	15	and	and	84	87	CCONJ	CC	cc	14	O					3	O		O
+0	0	16	16	one	one	88	91	NUM	CD	nummod	18	O					3	O		O
+0	0	17	17	-	-	91	92	PUNCT	HYPH	punct	18	O					3	O		O
+0	0	18	18	way	way	92	95	NOUN	NN	conj	14	O					3	O		O
+0	0	19	19	usage	usage	96	101	NOUN	NN	pobj	13	O	noun.act				3	O		O
+0	0	20	20	.	.	101	102	PUNCT	.	punct	7	O					3	O		O
+0	1	0	21	We	we	103	105	PRON	PRP	nsubj	22	O		3.0	PRON	PER	3	O		O
+0	1	1	22	have	have	106	110	VERB	VBP	ROOT	22	O	verb.possession				3	O		O
+0	1	2	23	347	347	111	114	NUM	CD	nummod	25	O		4.0	NOM	FAC	3	O		O
+0	1	3	24	rental	rental	115	121	ADJ	JJ	amod	25	O		4.0	NOM	FAC	3	B	class	B-class
+0	1	4	25	offices	office	122	129	NOUN	NNS	dobj	22	O	noun.group	4.0	NOM	FAC	3	I	class	I-class
+0	1	5	26	across	across	130	136	ADP	IN	prep	25	O		4.0	NOM	FAC	3	O		O
+0	1	6	27	the	the	137	140	DET	DT	det	30	O		5.0	NOM	GPE	3	O		O
+0	1	7	28	western	western	141	148	ADJ	JJ	amod	30	O		5.0	NOM	GPE	3	O		O
+0	1	8	29	United	United	149	155	PROPN	NNP	compound	30	O	noun.location	5.0	NOM	GPE	3	O		O
+0	1	9	30	States	States	156	162	PROPN	NNP	pobj	26	O	noun.location	5.0	NOM	GPE	3	O		O
+0	1	10	31	.	.	162	163	PUNCT	.	punct	22	O					3	O		O
+0	2	0	32	Our	our	164	167	PRON	PRP$	poss	34	O		3.0	PRON	PER	3	O		O
+0	2	1	33	rental	rental	168	174	ADJ	JJ	amod	34	O	noun.possession				3	B	class	B-class
+0	2	2	34	stock	stock	175	180	NOUN	NN	nsubj	35	O	noun.possession				3	I	class	I-class
+0	2	3	35	includes	include	181	189	VERB	VBZ	ROOT	35	O	verb.stative				3	O		O
+0	2	4	36	a	a	190	191	DET	DT	det	37	O					3	O		O
+0	2	5	37	total	total	192	197	NOUN	NN	dobj	35	O	noun.artifact				3	O		O
+0	2	6	38	of	of	198	200	ADP	IN	prep	37	O					3	O		O
+0	2	7	39	5,78	5,78	201	206	NUM	CD	nummod	40	O		6.0	NOM	VEH	3	O		O
+0	2	8	40	vehicles	vehicle	207	215	NOUN	NNS	pobj	38	O	noun.artifact	6.0	NOM	VEH	3	B	class	B-class
+0	2	9	41	including	include	216	225	VERB	VBG	prep	40	O	verb.stative	6.0	NOM	VEH	3	O		O
+0	2	10	42	various	various	226	233	ADJ	JJ	amod	43	O		6.0	NOM	VEH	3	O		O
+0	2	11	43	types	type	234	239	NOUN	NNS	pobj	41	O	noun.cognition	6.0	NOM	VEH	3	O		O
+0	2	12	44	of	of	240	242	ADP	IN	prep	43	O		6.0	NOM	VEH	3	O		O
+0	2	13	45	trucks	truck	243	249	NOUN	NNS	pobj	44	O	noun.artifact	6.0	NOM	VEH	3	B	class	B-class
+0	2	14	46	and	and	250	253	CCONJ	CC	cc	45	O					3	O		O
+0	2	15	47	trailers	trailer	254	262	NOUN	NNS	conj	45	O	noun.communication				3	B	class	B-class
+0	2	16	48	.	.	262	263	PUNCT	.	punct	35	O					3	O		O
+0	3	0	49	We	we	264	266	PRON	PRP	nsubj	50	O		3.0	PRON	PER	3	O		O
+0	3	1	50	need	need	267	271	VERB	VBP	ROOT	50	O					3	O		O
+0	3	2	51	to	to	272	274	PART	TO	aux	52	O					3	O		O
+0	3	3	52	implement	implement	275	284	VERB	VB	xcomp	50	O	verb.creation				3	O		O
+0	3	4	53	a	a	285	286	DET	DT	det	54	O					3	O		O
+0	3	5	54	system	system	287	293	NOUN	NN	dobj	52	O	noun.artifact				3	O		O
+0	3	6	55	to	to	294	296	PART	TO	aux	56	O					3	O		O
+0	3	7	56	track	track	297	302	VERB	VB	relcl	54	O	verb.perception				3	O		O
+0	3	8	57	our	our	303	306	PRON	PRP$	poss	59	O		3.0	PRON	PER	3	O		O
+0	3	9	58	rental	rental	307	313	ADJ	JJ	amod	59	O	noun.possession				3	B	class	B-class
+0	3	10	59	agreements	agreement	314	324	NOUN	NNS	dobj	56	O	noun.communication				3	I	class	I-class
+0	3	11	60	and	and	325	328	CCONJ	CC	cc	59	O					3	O		O
+0	3	12	61	our	our	329	332	PRON	PRP$	poss	63	O		3.0	PRON	PER	3	O		O
+0	3	13	62	vehicle	vehicle	333	340	NOUN	NN	compound	63	O	noun.artifact				3	B	class	B-class
+0	3	14	63	assignments	assignment	341	352	NOUN	NNS	conj	59	O	noun.act				3	I	class	I-class
+0	3	15	64	.	.	352	353	PUNCT	.	punct	50	O					3	O		O
+0	4	0	65	Each	each	354	358	DET	DT	det	69	O		7.0	NOM	FAC	3	O		O
+0	4	1	66	rental	rental	359	365	ADJ	JJ	amod	68	O		7.0	NOM	FAC	3	B	class	B-class
+0	4	2	67	office	office	366	372	NOUN	NN	compound	68	O	noun.group	7.0	NOM	FAC	3	I	class	I-class
+0	4	3	68	rents	rent	373	378	NOUN	NNS	compound	69	O	verb.possession				3	O		O
+0	4	4	69	vehicles	vehicle	379	387	NOUN	NNS	nsubj	77	O	noun.artifact				3	B	class	B-class
+0	4	5	70	that	that	388	392	PRON	WDT	dobj	72	O					3	O		O
+0	4	6	71	they	they	393	397	PRON	PRP	nsubj	72	O		7.0	PRON	PER	3	O		O
+0	4	7	72	have	have	398	402	VERB	VBP	relcl	69	O	verb.possession				3	O		O
+0	4	8	73	in	in	403	405	ADP	IN	prep	72	O					3	O		O
+0	4	9	74	stock	stock	406	411	NOUN	NN	pobj	73	O	noun.possession				3	O		O
+0	4	10	75	to	to	412	414	ADP	IN	prep	72	O					3	O		O
+0	4	11	76	customers	customer	415	424	NOUN	NNS	pobj	75	O	noun.person	9.0	NOM	PER	3	B	class	B-class
+0	4	12	77	ready	ready	425	430	ADJ	JJ	acomp	64	O		9.0	NOM	PER	3	O		O
+0	4	13	78	to	to	431	433	PART	TO	aux	79	O		9.0	NOM	PER	3	O		O
+0	4	14	79	take	take	434	438	VERB	VB	xcomp	77	O	verb.social	9.0	NOM	PER	3	O		O
+0	4	15	80	possession	possession	439	449	NOUN	NN	dobj	79	O	verb.social	9.0	NOM	PER	3	O		O
+0	4	16	81	of	of	450	452	ADP	IN	prep	80	O		9.0	NOM	PER	3	O		O
+0	4	17	82	the	the	453	456	DET	DT	det	83	O		10.0	NOM	VEH	3	O		O
+0	4	18	83	vehicle	vehicle	457	464	NOUN	NN	pobj	81	O	noun.artifact	10.0	NOM	VEH	3	B	class	B-class
+0	4	19	84	.	.	464	465	PUNCT	.	punct	64	O					3	O		O
+0	5	0	85	We	we	466	468	PRON	PRP	nsubj	88	O		3.0	PRON	PER	3	O		O
+0	5	1	86	do	do	469	471	AUX	VBP	aux	88	O					3	O		O
+0	5	2	87	n’t	not	471	474	PART	RB	neg	88	O					3	O		O
+0	5	3	88	take	take	475	479	VERB	VB	ROOT	88	O	verb.possession				3	O		O
+0	5	4	89	reservations	reservation	480	492	NOUN	NNS	dobj	88	O	noun.act				3	B	class	B-class
+0	5	5	90	,	,	492	493	PUNCT	,	punct	88	O					3	O		O
+0	5	6	91	or	or	494	496	CCONJ	CC	cc	88	O					3	O		O
+0	5	7	92	speculate	speculate	497	506	VERB	VB	conj	88	O	verb.cognition				3	O		O
+0	5	8	93	on	on	507	509	ADP	IN	prep	92	O					3	O		O
+0	5	9	94	when	when	510	514	SCONJ	WRB	advmod	98	O					3	O		O
+0	5	10	95	the	the	515	518	DET	DT	det	96	O		11.0	NOM	PER	3	O		O
+0	5	11	96	customer	customer	519	527	NOUN	NN	nsubj	98	O	noun.person	11.0	NOM	PER	3	B	class	B-class
+0	5	12	97	will	will	528	532	AUX	MD	aux	98	O					3	O		O
+0	5	13	98	return	return	533	539	VERB	VB	pcomp	93	O	verb.possession				3	O		O
+0	5	14	99	rented	rent	540	546	VERB	VBN	amod	100	O		12.0	NOM	VEH	3	O		O
+0	5	15	100	vehicles	vehicle	547	555	NOUN	NNS	dobj	98	O	noun.artifact	12.0	NOM	VEH	3	B	class	B-class
+0	5	16	101	.	.	555	556	PUNCT	.	punct	88	O					3	O		O
+0	6	0	102	The	the	557	560	DET	DT	det	104	O		13.0	NOM	FAC	3	O		O
+0	6	1	103	central	central	561	568	ADJ	JJ	amod	104	O		13.0	NOM	FAC	3	B	class	B-class
+0	6	2	104	office	office	569	575	NOUN	NN	nsubj	105	O	noun.group	13.0	NOM	FAC	3	I	class	I-class
+0	6	3	105	oversees	oversee	576	584	VERB	VBZ	ROOT	105	O	verb.social				3	O		O
+0	6	4	106	the	the	585	588	DET	DT	det	108	O					3	O		O
+0	6	5	107	vehicle	vehicle	589	596	NOUN	NN	compound	108	O	noun.artifact				3	O		O
+0	6	6	108	distribution	distribution	597	609	NOUN	NN	dobj	105	O	noun.act				3	O		O
+0	6	7	109	,	,	609	610	PUNCT	,	punct	105	O					3	O		O
+0	6	8	110	and	and	611	614	CCONJ	CC	cc	105	O					3	O		O
+0	6	9	111	directs	direct	615	622	VERB	VBZ	conj	105	O	verb.motion				3	O		O
+0	6	10	112	transfers	transfer	623	632	NOUN	NNS	dobj	111	O	noun.possession				3	O		O
+0	6	11	113	of	of	633	635	ADP	IN	prep	112	O					3	O		O
+0	6	12	114	vehicles	vehicle	636	644	NOUN	NNS	pobj	113	O	noun.artifact	14.0	NOM	VEH	3	O		O
+0	6	13	115	from	from	645	649	ADP	IN	prep	111	O					3	O		O
+0	6	14	116	one	one	650	653	NUM	CD	nummod	118	O		15.0	NOM	FAC	3	O		O
+0	6	15	117	rental	rental	654	660	ADJ	JJ	amod	118	O		15.0	NOM	FAC	3	B	class	B-class
+0	6	16	118	office	office	661	667	NOUN	NN	pobj	115	O	noun.artifact	15.0	NOM	FAC	3	I	class	I-class
+0	6	17	119	to	to	668	670	ADP	IN	prep	111	O					3	O		O
+0	6	18	120	another	another	671	678	PRON	DT	pobj	119	O					3	O		O
+0	6	19	121	.	.	678	679	PUNCT	.	punct	105	O					3	O		O
+0	7	0	122	Each	each	680	684	DET	DT	det	124	O		7.0	NOM	FAC	3	O		O
+0	7	1	123	rental	rental	685	691	ADJ	JJ	amod	124	O		7.0	NOM	FAC	3	B	class	B-class
+0	7	2	124	office	office	692	698	NOUN	NN	nsubj	125	O	noun.artifact	7.0	NOM	FAC	3	I	class	I-class
+0	7	3	125	has	have	699	702	VERB	VBZ	ROOT	125	O	verb.possession				3	O		O
+0	7	4	126	an	an	703	705	DET	DT	det	128	O					3	O		O
+0	7	5	127	office	office	706	712	NOUN	NN	compound	128	O	noun.communication				3	B	attr	B-attr
+0	7	6	128	name	name	713	717	NOUN	NN	dobj	125	O	noun.communication				3	I	attr	I-attr
+0	7	7	129	like	like	718	722	ADP	IN	prep	128	O					3	O		O
+0	7	8	130	“	""""	723	724	PUNCT	``	punct	129	O					3	O		O
+0	7	9	131	Littleton	Littleton	724	733	PROPN	NNP	compound	134	O	noun.group				3	O		O
+0	7	10	132	Right	right	734	739	ADJ	JJ	compound	134	O	noun.group				3	O		O
+0	7	11	133	-	-	739	740	PUNCT	HYPH	punct	134	O					3	O		O
+0	7	12	134	Way	way	740	743	NOUN	NN	pobj	129	O					3	O		O
+0	7	13	135	”	""""	743	744	PUNCT	''	punct	134	O					3	O		O
+0	7	14	136	.	.	744	745	PUNCT	.	punct	125	O					3	O		O
+0	8	0	137	Each	each	746	750	DET	DT	det	138	O		17.0	NOM	FAC	3	O		O
+0	8	1	138	office	office	751	757	NOUN	NN	nsubj	140	O	noun.artifact	17.0	NOM	FAC	3	B	class	B-class
+0	8	2	139	also	also	758	762	ADV	RB	advmod	140	O					3	O		O
+0	8	3	140	has	have	763	766	VERB	VBZ	ROOT	140	O	verb.possession				3	O		O
+0	8	4	141	a	a	767	768	DET	DT	det	146	O					3	O		O
+0	8	5	142	unique	unique	769	775	ADJ	JJ	amod	146	O					3	B	attr	B-attr
+0	8	6	143	three	three	776	781	NUM	CD	nummod	144	O					3	I	attr	I-attr
+0	8	7	144	digit	digit	782	787	NOUN	NN	compound	146	O	noun.quantity				3	I	attr	I-attr
+0	8	8	145	office	office	788	794	NOUN	NN	compound	146	O	noun.artifact				3	I	attr	I-attr
+0	8	9	146	number	number	795	801	NOUN	NN	dobj	140	O	noun.communication				3	I	attr	I-attr
+0	8	10	147	.	.	801	802	PUNCT	.	punct	140	O					3	O		O
+0	9	0	148	We	we	804	806	PRON	PRP	nsubj	150	O		3.0	PRON	PER	3	O		O
+0	9	1	149	also	also	807	811	ADV	RB	advmod	150	O					3	O		O
+0	9	2	150	keep	keep	812	816	VERB	VBP	ROOT	150	O	verb.possession				3	O		O
+0	9	3	151	each	each	817	821	DET	DT	det	152	O		17.0	NOM	FAC	3	O		O
+0	9	4	152	office	office	822	828	NOUN	NN	poss	154	O	noun.artifact	17.0	NOM	FAC	3	O		O
+0	9	5	153	’s	’s	828	830	PART	POS	case	152	O					3	O		O
+0	9	6	154	address	address	831	838	NOUN	NN	dobj	150	O	noun.communication				3	B	attr	B-attr
+0	9	7	155	.	.	838	839	PUNCT	.	punct	150	O					3	O		O
+0	10	0	156	Each	each	840	844	DET	DT	det	157	O		17.0	NOM	FAC	3	O		O
+0	10	1	157	office	office	845	851	NOUN	NN	nsubj	158	O	noun.artifact	17.0	NOM	FAC	3	B	class	B-class
+0	10	2	158	is	be	852	854	AUX	VBZ	ROOT	158	O	verb.stative				3	O		O
+0	10	3	159	a	a	855	856	DET	DT	det	161	O		20.0	NOM	FAC	3	O		O
+0	10	4	160	home	home	857	861	NOUN	NN	compound	161	O	noun.artifact	20.0	NOM	FAC	3	O		O
+0	10	5	161	office	office	862	868	NOUN	NN	attr	158	O	noun.artifact	20.0	NOM	FAC	3	O		O
+0	10	6	162	for	for	869	872	ADP	IN	prep	161	O		20.0	NOM	FAC	3	O		O
+0	10	7	163	some	some	873	877	PRON	DT	pobj	162	O		20.0	NOM	FAC	3	O		O
+0	10	8	164	of	of	878	880	ADP	IN	prep	163	O		20.0	NOM	FAC	3	O		O
+0	10	9	165	our	our	881	884	PRON	PRP$	poss	166	O		3.0	PRON	PER	3	O		O
+0	10	10	166	vehicles	vehicle	885	893	NOUN	NNS	pobj	164	O	noun.artifact	20.0	NOM	FAC	3	B	class	B-class
+0	10	11	167	,	,	893	894	PUNCT	,	punct	158	O					3	O		O
+0	10	12	168	and	and	895	898	CCONJ	CC	cc	158	O					3	O		O
+0	10	13	169	each	each	899	903	DET	DT	det	170	O					3	O		O
+0	10	14	170	vehicle	vehicle	904	911	NOUN	NN	nsubjpass	172	O	noun.artifact				3	B	class	B-class
+0	10	15	171	is	be	912	914	AUX	VBZ	auxpass	172	O					3	O		O
+0	10	16	172	based	base	915	920	VERB	VBN	conj	158	O					3	O		O
+0	10	17	173	out	out	921	924	ADP	IN	prep	172	O					3	O		O
+0	10	18	174	of	of	925	927	ADP	IN	prep	173	O					3	O		O
+0	10	19	175	a	a	928	929	DET	DT	det	178	O		21.0	NOM	FAC	3	O		O
+0	10	20	176	single	single	930	936	ADJ	JJ	amod	178	O		21.0	NOM	FAC	3	O		O
+0	10	21	177	home	home	937	941	NOUN	NN	compound	178	O	noun.artifact	21.0	NOM	FAC	3	O		O
+0	10	22	178	office	office	942	948	NOUN	NN	pobj	174	O	noun.artifact	21.0	NOM	FAC	3	B	class	B-class
+0	10	23	179	.	.	948	949	PUNCT	.	punct	172	O					3	O		O
+0	11	0	180	Each	each	950	954	DET	DT	det	181	O					3	O		O
+0	11	1	181	vehicle	vehicle	955	962	NOUN	NN	nsubj	182	O	noun.artifact				3	B	class	B-class
+0	11	2	182	has	have	963	966	VERB	VBZ	ROOT	182	O	verb.possession				3	O		O
+0	11	3	183	a	a	967	968	DET	DT	det	184	O		22.0	NOM	VEH	3	O		O
+0	11	4	184	vehicle	vehicle	969	976	NOUN	NN	dobj	182	O	noun.artifact	22.0	NOM	VEH	3	B	attr	B-attr
+0	11	5	185	i	I	977	978	PRON	PRP	prep	184	O		0.0	PRON	PER	3	I	attr	I-attr
+0	11	6	186	d	d	978	979	PROPN	NNP	appos	184	O					3	I	attr	I-attr
+0	11	7	187	,	,	979	980	PUNCT	,	punct	184	O					3	O		O
+0	11	8	188	state	state	981	986	NOUN	NN	appos	184	O	noun.location				3	B	attr	B-attr
+0	11	9	189	of	of	987	989	ADP	IN	prep	188	O					3	I	attr	I-attr
+0	11	10	190	registration	registration	990	1002	NOUN	NN	pobj	189	O	noun.communication				3	I	attr	I-attr
+0	11	11	191	,	,	1002	1003	PUNCT	,	punct	182	O					3	O		O
+0	11	12	192	and	and	1004	1007	CCONJ	CC	cc	182	O					3	O		O
+0	11	13	193	a	a	1008	1009	DET	DT	det	197	O					3	O		O
+0	11	14	194	license	license	1010	1017	NOUN	NN	compound	195	O	noun.communication				3	B	attr	B-attr
+0	11	15	195	plate	plate	1018	1023	NOUN	NN	compound	197	O	noun.communication				3	I	attr	I-attr
+0	11	16	196	registration	registration	1024	1036	NOUN	NN	compound	197	O	noun.communication				3	I	attr	I-attr
+0	11	17	197	number	number	1037	1043	NOUN	NN	conj	182	O	noun.communication				3	I	attr	I-attr
+0	11	18	198	.	.	1043	1044	PUNCT	.	punct	182	O					3	O		O
+0	12	0	199	We	we	1045	1047	PRON	PRP	nsubj	200	O		3.0	PRON	PER	3	O		O
+0	12	1	200	have	have	1048	1052	VERB	VBP	ROOT	200	O	verb.possession				3	O		O
+0	12	2	201	five	five	1053	1057	NUM	CD	nummod	203	O		23.0	NOM	VEH	3	O		O
+0	12	3	202	different	different	1058	1067	ADJ	JJ	amod	203	O		23.0	NOM	VEH	3	O		O
+0	12	4	203	types	type	1068	1073	NOUN	NNS	dobj	200	O	noun.cognition	23.0	NOM	VEH	3	O		O
+0	12	5	204	of	of	1074	1076	ADP	IN	prep	203	O		23.0	NOM	VEH	3	O		O
+0	12	6	205	vehicles	vehicle	1077	1085	NOUN	NNS	pobj	204	O	noun.artifact	23.0	NOM	VEH	3	B	class	B-class
+0	12	7	206	:	:	1085	1086	PUNCT	:	punct	203	O					3	O		O
+0	12	8	207	36	36	1087	1089	NUM	CD	nummod	208	O		24.0	NOM	VEH	3	B	class	B-class
+0	12	9	208	trucks	truck	1090	1096	NOUN	NNS	appos	203	O	noun.artifact	24.0	NOM	VEH	3	I	class	I-class
+0	12	10	209	,	,	1096	1097	PUNCT	,	punct	208	O					3	O		O
+0	12	11	210	24	24	1098	1100	NUM	CD	nummod	212	O		53.0	NOM	VEH	3	B	class	B-class
+0	12	12	211	’	'	1100	1101	PUNCT	''	punct	212	O		53.0	NOM	VEH	3	I	class	I-class
+0	12	13	212	trucks	truck	1102	1108	NOUN	NNS	appos	208	O	noun.artifact	53.0	NOM	VEH	3	I	class	I-class
+0	12	14	213	,	,	1108	1109	PUNCT	,	punct	212	O					3	O		O
+0	12	15	214	10	10	1110	1112	NUM	CD	nummod	216	O		54.0	NOM	VEH	3	B	class	B-class
+0	12	16	215	’	'	1112	1113	PUNCT	''	punct	216	O		54.0	NOM	VEH	3	I	class	I-class
+0	12	17	216	trucks	truck	1114	1120	NOUN	NNS	appos	212	O	noun.artifact	54.0	NOM	VEH	3	I	class	I-class
+0	12	18	217	,	,	1120	1121	PUNCT	,	punct	216	O		54.0	NOM	VEH	3	O		O
+0	12	19	218	8	8	1122	1123	NUM	CD	punct	200	O		54.0	NOM	VEH	3	B	class	B-class
+0	12	20	219	’	'	1123	1124	PUNCT	''	punct	218	O		54.0	NOM	VEH	3	I	class	I-class
+0	12	21	220	covered	cover	1125	1132	VERB	VBD	ccomp	200	O		54.0	NOM	VEH	3	I	class	I-class
+0	12	22	221	trailers	trailer	1133	1141	NOUN	NNS	dobj	220	O	noun.communication	54.0	NOM	VEH	3	I	class	I-class
+0	12	23	222	,	,	1141	1142	PUNCT	,	punct	220	O					3	O		O
+0	12	24	223	and	and	1143	1146	CCONJ	CC	cc	220	O					3	O		O
+0	12	25	224	6	6	1147	1148	NUM	CD	nummod	227	O		55.0	NOM	VEH	3	B	class	B-class
+0	12	26	225	’	'	1148	1149	PUNCT	''	punct	227	O		55.0	NOM	VEH	3	I	class	I-class
+0	12	27	226	open	open	1150	1154	ADJ	JJ	amod	227	O		55.0	NOM	VEH	3	I	class	I-class
+0	12	28	227	trailers	trailer	1155	1163	NOUN	NNS	conj	220	O	noun.artifact	55.0	NOM	VEH	3	I	class	I-class
+0	12	29	228	.	.	1163	1164	PUNCT	.	punct	200	O					3	O		O
+0	13	0	229	Yes	yes	1165	1168	INTJ	UH	intj	233	O	noun.communication				3	O		O
+0	13	1	230	,	,	1168	1169	PUNCT	,	punct	233	O					3	O		O
+0	13	2	231	we	we	1170	1172	PRON	PRP	nsubj	233	O		3.0	PRON	PER	3	O		O
+0	13	3	232	do	do	1173	1175	AUX	VBP	aux	233	O					3	O		O
+0	13	4	233	have	have	1176	1180	VERB	VB	ROOT	233	O	verb.possession				3	O		O
+0	13	5	234	a	a	1181	1182	DET	DT	det	237	O					3	O		O
+0	13	6	235	vehicle	vehicle	1183	1190	NOUN	NN	compound	237	O	noun.artifact				3	B	attr	B-attr
+0	13	7	236	type	type	1191	1195	NOUN	NN	compound	237	O	noun.cognition				3	I	attr	I-attr
+0	13	8	237	code	code	1196	1200	NOUN	NN	dobj	233	O	noun.communication				3	I	attr	I-attr
+0	13	9	238	.	.	1200	1201	PUNCT	.	punct	233	O					3	O		O
+0	14	0	239	For	for	1202	1205	ADP	IN	prep	245	O					3	O		O
+0	14	1	240	all	all	1206	1209	DET	DT	det	242	O		25.0	NOM	VEH	3	O		O
+0	14	2	241	our	our	1210	1213	PRON	PRP$	poss	242	O		3.0	PRON	PER	3	O		O
+0	14	3	242	vehicles	vehicle	1214	1222	NOUN	NNS	pobj	239	O	noun.artifact	25.0	NOM	VEH	3	B	class	B-class
+0	14	4	243	,	,	1222	1223	PUNCT	,	punct	245	O					3	O		O
+0	14	5	244	we	we	1224	1226	PRON	PRP	nsubj	245	O		3.0	PRON	PER	3	O		O
+0	14	6	245	need	need	1227	1231	VERB	VBP	ROOT	245	O					3	O		O
+0	14	7	246	to	to	1232	1234	PART	TO	aux	247	O					3	O		O
+0	14	8	247	track	track	1235	1240	VERB	VB	xcomp	245	O	verb.communication				3	O		O
+0	14	9	248	the	the	1241	1244	DET	DT	det	251	O					3	O		O
+0	14	10	249	last	last	1245	1249	ADJ	JJ	amod	251	O					3	B	attr	B-attr
+0	14	11	250	maintenance	maintenance	1250	1261	NOUN	NN	compound	251	O	noun.time				3	I	attr	I-attr
+0	14	12	251	date	date	1262	1266	NOUN	NN	dobj	247	O	noun.time				3	I	attr	I-attr
+0	14	13	252	,	,	1266	1267	PUNCT	,	punct	245	O					3	O		O
+0	14	14	253	and	and	1268	1271	CCONJ	CC	cc	245	O					3	O		O
+0	14	15	254	expiration	expiration	1272	1282	NOUN	NN	compound	255	O	noun.time				3	B	attr	B-attr
+0	14	16	255	date	date	1283	1287	NOUN	NN	conj	245	O	noun.time				3	I	attr	I-attr
+0	14	17	256	of	of	1288	1290	ADP	IN	prep	255	O					3	I	attr	I-attr
+0	14	18	257	its	its	1291	1294	PRON	PRP$	poss	258	O		25.0	PRON	PER	3	I	attr	I-attr
+0	14	19	258	registration	registration	1295	1307	NOUN	NN	pobj	256	O	noun.act				3	I	attr	I-attr
+0	14	20	259	.	.	1307	1308	PUNCT	.	punct	245	O					3	O		O
+0	15	0	260	For	for	1309	1312	ADP	IN	prep	265	O					3	O		O
+0	15	1	261	our	our	1313	1316	PRON	PRP$	poss	262	O		26.0	NOM	VEH	3	O		O
+0	15	2	262	trucks	truck	1317	1323	NOUN	NNS	pobj	260	O	noun.artifact	26.0	NOM	VEH	3	B	class	B-class
+0	15	3	263	,	,	1323	1324	PUNCT	,	punct	265	O					3	O		O
+0	15	4	264	we	we	1325	1327	PRON	PRP	nsubj	265	O		3.0	PRON	PER	3	O		O
+0	15	5	265	need	need	1328	1332	VERB	VBP	ROOT	265	O					3	O		O
+0	15	6	266	to	to	1333	1335	PART	TO	aux	267	O					3	O		O
+0	15	7	267	know	know	1336	1340	VERB	VB	xcomp	265	O	verb.cognition				3	O		O
+0	15	8	268	the	the	1341	1344	DET	DT	det	271	O					3	O		O
+0	15	9	269	current	current	1345	1352	ADJ	JJ	amod	271	O					3	B	attr	B-attr
+0	15	10	270	odometer	odometer	1353	1361	ADJ	JJ	amod	271	O	noun.artifact				3	I	attr	I-attr
+0	15	11	271	reading	reading	1362	1369	NOUN	NN	dobj	267	O	noun.cognition				3	I	attr	I-attr
+0	15	12	272	,	,	1369	1370	PUNCT	,	punct	271	O					3	O		O
+0	15	13	273	the	the	1371	1374	DET	DT	det	276	O					3	O		O
+0	15	14	274	gas	gas	1375	1378	NOUN	NN	compound	275	O	noun.artifact				3	B	attr	B-attr
+0	15	15	275	tank	tank	1379	1383	NOUN	NN	compound	276	O	noun.artifact				3	I	attr	I-attr
+0	15	16	276	capacity	capacity	1384	1392	NOUN	NN	conj	271	O	noun.attribute				3	I	attr	I-attr
+0	15	17	277	,	,	1392	1393	PUNCT	,	punct	271	O					3	O		O
+0	15	18	278	and	and	1394	1397	CCONJ	CC	cc	265	O					3	O		O
+0	15	19	279	whether	whether	1398	1405	SCONJ	IN	mark	283	O					3	O		O
+0	15	20	280	or	or	1406	1408	CCONJ	CC	cc	283	O					3	O		O
+0	15	21	281	not	not	1409	1412	PART	RB	neg	283	O					3	O		O
+0	15	22	282	it	it	1413	1415	PRON	PRP	nsubj	283	O		26.0	PRON	VEH	3	O		O
+0	15	23	283	has	have	1416	1419	VERB	VBZ	conj	265	O	verb.stative				3	O		O
+0	15	24	284	a	a	1420	1421	DET	DT	det	286	O					3	O		O
+0	15	25	285	working	work	1422	1429	VERB	VBG	amod	286	O					3	B	attr	B-attr
+0	15	26	286	radio	radio	1430	1435	NOUN	NN	dobj	283	O	noun.communication				3	I	attr	I-attr
+0	15	27	287	.	.	1435	1436	PUNCT	.	punct	265	O					3	O		O
+0	16	0	288	For	for	1437	1440	ADP	IN	prep	294	O					3	O		O
+0	16	1	289	long	long	1441	1445	ADJ	JJ	amod	290	O					3	O		O
+0	16	2	290	moves	move	1446	1451	NOUN	NNS	pobj	288	O	noun.act				3	O		O
+0	16	3	291	,	,	1451	1452	PUNCT	,	punct	294	O					3	O		O
+0	16	4	292	customers	customer	1453	1462	NOUN	NNS	nsubj	294	O	noun.person	8.0	NOM	PER	3	B	class	B-class
+0	16	5	293	really	really	1463	1469	ADV	RB	advmod	294	O					3	O		O
+0	16	6	294	prefer	prefer	1470	1476	VERB	VBP	ROOT	294	O	verb.emotion				3	O		O
+0	16	7	295	a	a	1477	1478	DET	DT	det	296	O					3	O		O
+0	16	8	296	radio	radio	1479	1484	NOUN	NN	dobj	294	O	noun.communication				3	O		O
+0	16	9	297	.	.	1484	1485	PUNCT	.	punct	294	O					3	O		O
+0	17	0	298	We	we	1486	1488	PRON	PRP	nsubj	299	O		3.0	PRON	PER	3	O		O
+0	17	1	299	log	log	1489	1492	VERB	VBP	ROOT	299	O	verb.communication				3	O		O
+0	17	2	300	the	the	1493	1496	DET	DT	det	302	O					3	O		O
+0	17	3	301	current	current	1497	1504	ADJ	JJ	amod	302	O					3	B	attr	B-attr
+0	17	4	302	mileage	mileage	1505	1512	NOUN	NN	dobj	299	O	noun.attribute				3	I	attr	I-attr
+0	17	5	303	just	just	1513	1517	ADV	RB	advmod	306	O					3	O		O
+0	17	6	304	before	before	1518	1524	SCONJ	IN	mark	306	O					3	O		O
+0	17	7	305	we	we	1525	1527	PRON	PRP	nsubj	306	O		3.0	PRON	PER	3	O		O
+0	17	8	306	rent	rent	1528	1532	VERB	VBP	advcl	299	O	verb.social				3	O		O
+0	17	9	307	a	a	1533	1534	DET	DT	det	308	O		28.0	NOM	VEH	3	O		O
+0	17	10	308	truck	truck	1535	1540	NOUN	NN	dobj	306	O	noun.artifact	28.0	NOM	VEH	3	B	class	B-class
+0	17	11	309	,	,	1540	1541	PUNCT	,	punct	299	O					3	O		O
+0	17	12	310	and	and	1542	1545	CCONJ	CC	cc	299	O					3	O		O
+0	17	13	311	then	then	1546	1550	ADV	RB	advmod	312	O					3	O		O
+0	17	14	312	again	again	1551	1556	ADV	RB	conj	299	O					3	O		O
+0	17	15	313	when	when	1557	1561	SCONJ	WRB	advmod	316	O					3	O		O
+0	17	16	314	it	it	1562	1564	PRON	PRP	nsubjpass	316	O					3	O		O
+0	17	17	315	is	be	1565	1567	AUX	VBZ	auxpass	316	O					3	O		O
+0	17	18	316	returned	return	1568	1576	VERB	VBN	advcl	312	O	verb.possession				3	O		O
+0	17	19	317	.	.	1576	1577	PUNCT	.	punct	299	O					3	O		O
+0	18	0	318	Most	Most	1578	1582	ADJ	JJS	nsubj	323	O					3	O		O
+0	18	1	319	of	of	1583	1585	ADP	IN	prep	318	O					3	O		O
+0	18	2	320	our	our	1586	1589	PRON	PRP$	poss	322	O		3.0	PRON	PER	3	O		O
+0	18	3	321	rental	rental	1590	1596	ADJ	JJ	amod	322	O	noun.act				3	B	class	B-class
+0	18	4	322	agreements	agreement	1597	1607	NOUN	NNS	pobj	319	O	noun.act				3	I	class	I-class
+0	18	5	323	are	be	1608	1611	AUX	VBP	ROOT	323	O	verb.stative				3	O		O
+0	18	6	324	for	for	1612	1615	ADP	IN	prep	323	O					3	O		O
+0	18	7	325	individual	individual	1616	1626	ADJ	JJ	amod	326	O		29.0	NOM	PER	3	B	class	B-class
+0	18	8	326	customers	customer	1627	1636	NOUN	NNS	pobj	324	O	noun.person	29.0	NOM	PER	3	I	class	I-class
+0	18	9	327	,	,	1636	1637	PUNCT	,	punct	323	O					3	O		O
+0	18	10	328	but	but	1638	1641	CCONJ	CC	cc	323	O					3	O		O
+0	18	11	329	a	a	1642	1643	DET	DT	det	331	O					3	O		O
+0	18	12	330	rental	rental	1644	1650	ADJ	JJ	amod	331	O	noun.communication				3	B	class	B-class
+0	18	13	331	agreement	agreement	1651	1660	NOUN	NN	nsubj	334	O	noun.communication				3	I	class	I-class
+0	18	14	332	can	can	1661	1664	AUX	MD	aux	334	O					3	O		O
+0	18	15	333	either	either	1665	1671	CCONJ	CC	preconj	334	O					3	O		O
+0	18	16	334	be	be	1672	1674	AUX	VB	conj	323	O	verb.stative				3	O		O
+0	18	17	335	for	for	1675	1678	ADP	IN	prep	334	O					3	O		O
+0	18	18	336	an	an	1679	1681	DET	DT	det	337	O		30.0	NOM	PER	3	O		O
+0	18	19	337	individual	individual	1682	1692	NOUN	NN	pobj	335	O	noun.Tops	30.0	NOM	PER	3	B	class	B-class
+0	18	20	338	or	or	1693	1695	CCONJ	CC	cc	335	O					3	O		O
+0	18	21	339	for	for	1696	1699	ADP	IN	conj	335	O					3	O		O
+0	18	22	340	a	a	1700	1701	DET	DT	det	341	O		31.0	NOM	PER	3	O		O
+0	18	23	341	company	company	1702	1709	NOUN	NN	pobj	339	O	noun.group	31.0	NOM	PER	3	B	class	B-class
+0	18	24	342	.	.	1709	1710	PUNCT	.	punct	334	O					3	O		O
+0	19	0	343	We	we	1711	1713	PRON	PRP	nsubj	345	O		3.0	PRON	PER	3	O		O
+0	19	1	344	do	do	1714	1716	AUX	VBP	aux	345	O					3	O		O
+0	19	2	345	rent	rent	1717	1721	VERB	VB	ROOT	345	O	verb.possession				3	O		O
+0	19	3	346	a	a	1722	1723	DET	DT	det	348	O					3	O		O
+0	19	4	347	small	small	1724	1729	ADJ	JJ	amod	348	O					3	O		O
+0	19	5	348	percentage	percentage	1730	1740	NOUN	NN	dobj	345	O	noun.possession				3	O		O
+0	19	6	349	of	of	1741	1743	ADP	IN	prep	348	O					3	O		O
+0	19	7	350	our	our	1744	1747	PRON	PRP$	poss	351	O		26.0	NOM	VEH	3	O		O
+0	19	8	351	trucks	truck	1748	1754	NOUN	NNS	pobj	349	O	noun.artifact	26.0	NOM	VEH	3	B	class	B-class
+0	19	9	352	to	to	1755	1757	ADP	IN	prep	345	O					3	O		O
+0	19	10	353	companies	company	1758	1767	NOUN	NNS	pobj	352	O	noun.group	33.0	NOM	PER	3	B	class	B-class
+0	19	11	354	.	.	1767	1768	PUNCT	.	punct	345	O					3	O		O
+0	20	0	355	We	we	1769	1771	PRON	PRP	nsubj	356	O		3.0	PRON	PER	3	O		O
+0	20	1	356	assign	assign	1772	1778	VERB	VBP	ROOT	356	O	verb.possession				3	O		O
+0	20	2	357	each	each	1779	1783	DET	DT	det	358	O		34.0	NOM	PER	3	O		O
+0	20	3	358	company	company	1784	1791	NOUN	NN	dative	356	O	noun.group	34.0	NOM	PER	3	B	class	B-class
+0	20	4	359	an	an	1792	1794	DET	DT	det	362	O					3	O		O
+0	20	5	360	identifying	identify	1795	1806	VERB	VBG	amod	362	O					3	B	attr	B-attr
+0	20	6	361	company	company	1807	1814	NOUN	NN	compound	362	O	noun.communication				3	I	attr	I-attr
+0	20	7	362	number	number	1815	1821	NOUN	NN	dobj	356	O	noun.communication				3	I	attr	I-attr
+0	20	8	363	and	and	1822	1825	CCONJ	CC	cc	356	O					3	O		O
+0	20	9	364	track	track	1826	1831	VERB	VB	conj	356	O	verb.communication				3	O		O
+0	20	10	365	the	the	1832	1835	DET	DT	det	366	O		35.0	NOM	PER	3	O		O
+0	20	11	366	company	company	1836	1843	NOUN	NN	poss	368	O	noun.group	35.0	NOM	PER	3	O		O
+0	20	12	367	’s	’s	1843	1845	PART	POS	case	366	O					3	O		O
+0	20	13	368	name	name	1846	1850	NOUN	NN	dobj	364	O	noun.communication				3	B	attr	B-attr
+0	20	14	369	and	and	1851	1854	CCONJ	CC	cc	368	O					3	O		O
+0	20	15	370	address	address	1855	1862	NOUN	NN	conj	368	O	noun.communication				3	B	attr	B-attr
+0	20	16	371	.	.	1862	1863	PUNCT	.	punct	356	O					3	O		O
+0	21	0	372	No	no	1864	1866	INTJ	UH	intj	377	O					3	O		O
+0	21	1	373	,	,	1866	1867	PUNCT	,	punct	377	O					3	O		O
+0	21	2	374	we	we	1868	1870	PRON	PRP	nsubj	377	O		3.0	PRON	PER	3	O		O
+0	21	3	375	do	do	1871	1873	AUX	VBP	aux	377	O					3	O		O
+0	21	4	376	n’t	not	1873	1876	PART	RB	neg	377	O					3	O		O
+0	21	5	377	need	need	1877	1881	VERB	VB	ROOT	377	O					3	O		O
+0	21	6	378	to	to	1882	1884	PART	TO	aux	379	O					3	O		O
+0	21	7	379	worry	worry	1885	1890	VERB	VB	xcomp	377	O	verb.emotion				3	O		O
+0	21	8	380	about	about	1891	1896	ADP	IN	prep	379	O					3	O		O
+0	21	9	381	any	any	1897	1900	DET	DT	det	383	O					3	O		O
+0	21	10	382	additional	additional	1901	1911	ADJ	JJ	amod	383	O					3	O		O
+0	21	11	383	information	information	1912	1923	NOUN	NN	pobj	380	O	noun.cognition				3	O		O
+0	21	12	384	about	about	1924	1929	ADP	IN	prep	383	O					3	O		O
+0	21	13	385	a	a	1930	1931	DET	DT	det	386	O		31.0	NOM	ORG	3	O		O
+0	21	14	386	company	company	1932	1939	NOUN	NN	pobj	384	O	noun.group	31.0	NOM	ORG	3	O		O
+0	21	15	387	.	.	1939	1940	PUNCT	.	punct	377	O					3	O		O
+0	22	0	388	Our	our	1941	1944	PRON	PRP$	poss	391	O		37.0	NOM	ORG	3	O		O
+0	22	1	389	corporate	corporate	1945	1954	ADJ	JJ	amod	391	O		37.0	NOM	ORG	3	O		O
+0	22	2	390	sales	sale	1955	1960	NOUN	NNS	compound	391	O	noun.act	37.0	NOM	ORG	3	O		O
+0	22	3	391	group	group	1961	1966	NOUN	NN	nsubj	392	O	noun.group	37.0	NOM	ORG	3	O		O
+0	22	4	392	handles	handle	1967	1974	VERB	VBZ	ROOT	392	O	verb.social				3	O		O
+0	22	5	393	all	all	1975	1978	DET	PDT	predet	395	O					3	O		O
+0	22	6	394	that	that	1979	1983	DET	DT	det	395	O					3	O		O
+0	22	7	395	information	information	1984	1995	NOUN	NN	dobj	392	O	noun.cognition				3	O		O
+0	22	8	396	separately	separately	1996	2006	ADV	RB	advmod	392	O					3	O		O
+0	22	9	397	.	.	2006	2007	PUNCT	.	punct	392	O					3	O		O
+0	23	0	398	For	for	2008	2011	ADP	IN	prep	404	O					3	O		O
+0	23	1	399	each	each	2012	2016	DET	DT	det	401	O		38.0	NOM	PER	3	O		O
+0	23	2	400	individual	individual	2017	2027	ADJ	JJ	amod	401	O		38.0	NOM	PER	3	B	class	B-class
+0	23	3	401	customer	customer	2028	2036	NOUN	NN	pobj	398	O	noun.person	38.0	NOM	PER	3	I	class	I-class
+0	23	4	402	,	,	2036	2037	PUNCT	,	punct	404	O					3	O		O
+0	23	5	403	we	we	2038	2040	PRON	PRP	nsubj	404	O		3.0	PRON	PER	3	O		O
+0	23	6	404	record	record	2041	2047	VERB	VBP	ROOT	404	O	verb.communication				3	O		O
+0	23	7	405	the	the	2048	2051	DET	DT	det	408	O		11.0	NOM	PER	3	O		O
+0	23	8	406	customer	customer	2052	2060	NOUN	NN	nmod	408	O	noun.person	11.0	NOM	PER	3	O		O
+0	23	9	407	’s	’s	2060	2062	PART	POS	case	406	O					3	O		O
+0	23	10	408	name	name	2063	2067	NOUN	NN	dobj	404	O	noun.communication				3	B	attr	B-attr
+0	23	11	409	,	,	2067	2068	PUNCT	,	punct	408	O					3	O		O
+0	23	12	410	home	home	2069	2073	NOUN	NN	compound	411	O	noun.communication	40.0	NOM	FAC	3	B	attr	B-attr
+0	23	13	411	phone	phone	2074	2079	NOUN	NN	conj	408	O	noun.communication				3	I	attr	I-attr
+0	23	14	412	,	,	2079	2080	PUNCT	,	punct	411	O					3	O		O
+0	23	15	413	address	address	2081	2088	NOUN	NN	conj	411	O	noun.communication				3	B	attr	B-attr
+0	23	16	414	,	,	2088	2089	PUNCT	,	punct	413	O					3	O		O
+0	23	17	415	and	and	2090	2093	CCONJ	CC	cc	413	O					3	O		O
+0	23	18	416	driver	driver	2094	2100	NOUN	NN	conj	413	O	noun.person	41.0	NOM	PER	3	B	attr	B-attr
+0	23	19	417	’s	’s	2100	2102	PART	POS	case	416	O					3	I	attr	I-attr
+0	23	20	418	license	license	2103	2110	NOUN	NN	compound	419	O	noun.communication				3	I	attr	I-attr
+0	23	21	419	state	state	2111	2116	NOUN	NN	conj	413	O	noun.location				3	I	attr	I-attr
+0	23	22	420	,	,	2116	2117	PUNCT	,	punct	419	O					3	O		O
+0	23	23	421	number	number	2118	2124	NOUN	NN	conj	419	O	noun.communication				3	B	attr	B-attr
+0	23	24	422	,	,	2124	2125	PUNCT	,	punct	421	O					3	O		O
+0	23	25	423	and	and	2126	2129	CCONJ	CC	cc	421	O					3	O		O
+0	23	26	424	expiration	expiration	2130	2140	NOUN	NN	compound	425	O	noun.time				3	B	attr	B-attr
+0	23	27	425	date	date	2141	2145	NOUN	NN	conj	421	O	noun.time				3	I	attr	I-attr
+0	23	28	426	.	.	2145	2146	PUNCT	.	punct	404	O					3	O		O
+0	24	0	427	We	we	2147	2149	PRON	PRP	nsubj	428	O		3.0	PRON	PER	3	O		O
+0	24	1	428	like	like	2150	2154	VERB	VBP	prep	426	O					3	O		O
+0	24	2	429	to	to	2155	2157	PART	TO	aux	430	O					3	O		O
+0	24	3	430	keep	keep	2158	2162	VERB	VB	xcomp	428	O	verb.stative				3	O		O
+0	24	4	431	track	track	2163	2168	NOUN	NN	dobj	430	O	noun.cognition				3	O		O
+0	24	5	432	of	of	2169	2171	ADP	IN	prep	431	O					3	O		O
+0	24	6	433	all	all	2172	2175	DET	PDT	predet	435	O					3	O		O
+0	24	7	434	our	our	2176	2179	PRON	PRP$	poss	435	O		42.0	NOM	PER	3	O		O
+0	24	8	435	customers	customer	2180	2189	NOUN	NNS	pobj	432	O	noun.person	42.0	NOM	PER	3	B	class	B-class
+0	24	9	436	.	.	2189	2190	PUNCT	.	punct	428	O					3	O		O
+0	25	0	437	If	if	2191	2193	SCONJ	IN	mark	440	O					3	O		O
+0	25	1	438	a	a	2194	2195	DET	DT	det	439	O		43.0	NOM	PER	3	O		O
+0	25	2	439	customer	customer	2196	2204	NOUN	NN	nsubj	440	O	noun.person	43.0	NOM	PER	3	B	class	B-class
+0	25	3	440	damaged	damage	2205	2212	VERB	VBD	advcl	444	O	verb.possession				3	O		O
+0	25	4	441	a	a	2213	2214	DET	DT	det	442	O		22.0	NOM	VEH	3	O		O
+0	25	5	442	vehicle	vehicle	2215	2222	NOUN	NN	dobj	440	O	noun.artifact	22.0	NOM	VEH	3	B	class	B-class
+0	25	6	443	,	,	2222	2223	PUNCT	,	punct	440	O					3	O		O
+0	25	7	444	abandoned	abandon	2224	2233	VERB	VBD	advcl	457	O	verb.possession				3	O		O
+0	25	8	445	it	it	2234	2236	PRON	PRP	dobj	444	O		22.0	PRON	PER	3	O		O
+0	25	9	446	,	,	2236	2237	PUNCT	,	punct	444	O					3	O		O
+0	25	10	447	or	or	2238	2240	CCONJ	CC	cc	444	O					3	O		O
+0	25	11	448	did	do	2241	2244	AUX	VBD	aux	451	O					3	O		O
+0	25	12	449	n’t	not	2244	2247	PART	RB	neg	451	O					3	O		O
+0	25	13	450	fully	fully	2248	2253	ADV	RB	advmod	451	O					3	O		O
+0	25	14	451	pay	pay	2254	2257	VERB	VB	conj	444	O	verb.possession				3	O		O
+0	25	15	452	the	the	2258	2261	DET	DT	det	453	O					3	O		O
+0	25	16	453	bill	bill	2262	2266	NOUN	NN	dobj	451	O	noun.communication				3	O		O
+0	25	17	454	,	,	2266	2267	PUNCT	,	punct	457	O					3	O		O
+0	25	18	455	then	then	2268	2272	ADV	RB	advmod	457	O					3	O		O
+0	25	19	456	we	we	2273	2275	PRON	PRP	nsubj	457	O		3.0	PRON	PER	3	O		O
+0	25	20	457	tag	tag	2276	2279	VERB	VBP	ROOT	457	O	verb.communication				3	O		O
+0	25	21	458	the	the	2280	2283	DET	DT	det	459	O		11.0	NOM	PER	3	O		O
+0	25	22	459	customer	customer	2284	2292	NOUN	NN	dobj	457	O	noun.person	11.0	NOM	PER	3	B	class	B-class
+0	25	23	460	as	as	2293	2295	ADP	IN	prep	457	O					3	O		O
+0	25	24	461	a	a	2296	2297	DET	DT	det	463	O					3	O		O
+0	25	25	462	poor	poor	2298	2302	ADJ	JJ	amod	463	O					3	B	attr	B-attr
+0	25	26	463	risk	risk	2303	2307	NOUN	NN	pobj	460	O	noun.state				3	I	attr	I-attr
+0	25	27	464	,	,	2307	2308	PUNCT	,	punct	457	O					3	O		O
+0	25	28	465	and	and	2309	2312	CCONJ	CC	cc	457	O					3	O		O
+0	25	29	466	wo	will	2313	2315	AUX	MD	aux	468	O	verb.cognition				3	O		O
+0	25	30	467	n’t	not	2315	2318	PART	RB	neg	468	O					3	O		O
+0	25	31	468	rent	rent	2319	2323	VERB	VB	conj	457	O	verb.possession				3	O		O
+0	25	32	469	to	to	2324	2326	ADP	IN	prep	468	O					3	O		O
+0	25	33	470	that	that	2327	2331	DET	DT	det	471	O		46.0	NOM	PER	3	O		O
+0	25	34	471	customer	customer	2332	2340	NOUN	NN	pobj	469	O	noun.person	46.0	NOM	PER	3	B	class	B-class
+0	25	35	472	again	again	2341	2346	ADV	RB	advmod	468	O					3	O		O
+0	25	36	473	.	.	2346	2347	PUNCT	.	punct	457	O					3	O		O
+0	26	0	474	We	we	2348	2350	PRON	PRP	nsubj	476	O		3.0	PRON	PER	3	O		O
+0	26	1	475	only	only	2351	2355	ADV	RB	advmod	476	O					3	O		O
+0	26	2	476	allow	allow	2356	2361	VERB	VBP	ROOT	476	O	verb.social				3	O		O
+0	26	3	477	a	a	2362	2363	DET	DT	det	479	O		47.0	NOM	PER	3	O		O
+0	26	4	478	single	single	2364	2370	ADJ	JJ	amod	479	O		47.0	NOM	PER	3	O		O
+0	26	5	479	individual	individual	2371	2381	NOUN	NN	dobj	476	O	noun.Tops	47.0	NOM	PER	3	B	class	B-class
+0	26	6	480	or	or	2382	2384	CCONJ	CC	cc	479	O		47.0	NOM	PER	3	O		O
+0	26	7	481	company	company	2385	2392	NOUN	NN	conj	479	O	noun.group	47.0	NOM	PER	3	B	class	B-class
+0	26	8	482	for	for	2393	2396	ADP	IN	prep	479	O					3	O		O
+0	26	9	483	a	a	2397	2398	DET	DT	det	486	O					3	O		O
+0	26	10	484	given	give	2399	2404	VERB	VBN	amod	486	O					3	O		O
+0	26	11	485	rental	rental	2405	2411	ADJ	JJ	amod	486	O	noun.communication				3	B	class	B-class
+0	26	12	486	agreement	agreement	2412	2421	NOUN	NN	pobj	482	O	noun.communication				3	I	class	I-class
+0	26	13	487	,	,	2421	2422	PUNCT	,	punct	476	O					3	O		O
+0	26	14	488	and	and	2423	2426	CCONJ	CC	cc	476	O					3	O		O
+0	26	15	489	we	we	2427	2429	PRON	PRP	nsubj	490	O		3.0	PRON	PER	3	O		O
+0	26	16	490	write	write	2430	2435	VERB	VBP	conj	476	O	verb.creation				3	O		O
+0	26	17	491	a	a	2436	2437	DET	DT	det	494	O					3	O		O
+0	26	18	492	separate	separate	2438	2446	ADJ	JJ	amod	494	O					3	O		O
+0	26	19	493	rental	rental	2447	2453	ADJ	JJ	amod	494	O	noun.communication				3	B	class	B-class
+0	26	20	494	agreement	agreement	2454	2463	NOUN	NN	dobj	490	O	noun.communication				3	I	class	I-class
+0	26	21	495	for	for	2464	2467	ADP	IN	prep	494	O					3	O		O
+0	26	22	496	each	each	2468	2472	DET	DT	det	497	O		48.0	NOM	VEH	3	O		O
+0	26	23	497	vehicle	vehicle	2473	2480	NOUN	NN	pobj	495	O	noun.artifact	48.0	NOM	VEH	3	B	class	B-class
+0	26	24	498	.	.	2480	2481	PUNCT	.	punct	490	O					3	O		O
+0	27	0	499	Yes	yes	2482	2485	INTJ	UH	intj	503	O					3	O		O
+0	27	1	500	,	,	2485	2486	PUNCT	,	punct	503	O					3	O		O
+0	27	2	501	we	we	2487	2489	PRON	PRP	nsubj	503	O		3.0	PRON	PER	3	O		O
+0	27	3	502	do	do	2490	2492	AUX	VBP	aux	503	O					3	O		O
+0	27	4	503	have	have	2493	2497	VERB	VB	ROOT	503	O	verb.possession				3	O		O
+0	27	5	504	customers	customer	2498	2507	NOUN	NNS	nsubj	505	O	noun.person	8.0	NOM	PER	3	B	class	B-class
+0	27	6	505	rent	rent	2508	2512	VERB	VB	ccomp	503	O	verb.social				3	O		O
+0	27	7	506	two	two	2513	2516	NUM	CD	nummod	509	O		50.0	NOM	VEH	3	O		O
+0	27	8	507	or	or	2517	2519	CCONJ	CC	cc	506	O		50.0	NOM	VEH	3	O		O
+0	27	9	508	more	more	2520	2524	ADJ	JJR	conj	506	O		50.0	NOM	VEH	3	O		O
+0	27	10	509	vehicles	vehicle	2525	2533	NOUN	NNS	dobj	505	O	noun.artifact	50.0	NOM	VEH	3	B	class	B-class
+0	27	11	510	at	at	2534	2536	ADP	IN	prep	505	O					3	O		O
+0	27	12	511	the	the	2537	2540	DET	DT	det	513	O					3	O		O
+0	27	13	512	same	same	2541	2545	ADJ	JJ	amod	513	O					3	O		O
+0	27	14	513	time	time	2546	2550	NOUN	NN	pobj	510	O					3	O		O
+0	27	15	514	.	.	2550	2551	PUNCT	.	punct	503	O					3	O		O
+0	28	0	515	Each	each	2552	2556	DET	DT	det	517	O					3	O		O
+0	28	1	516	rental	rental	2557	2563	ADJ	JJ	amod	517	O	noun.communication				3	B	class	B-class
+0	28	2	517	agreement	agreement	2564	2573	NOUN	NN	nsubjpass	519	O	noun.communication				3	I	class	I-class
+0	28	3	518	is	be	2574	2576	AUX	VBZ	auxpass	519	O					3	O		O
+0	28	4	519	identified	identify	2577	2587	VERB	VBN	ROOT	519	O	verb.communication				3	O		O
+0	28	5	520	by	by	2588	2590	ADP	IN	agent	519	O					3	O		O
+0	28	6	521	the	the	2591	2594	DET	DT	det	525	O					3	O		O
+0	28	7	522	originating	originate	2595	2606	VERB	VBG	amod	525	O					3	B	attr	B-attr
+0	28	8	523	rental	rental	2607	2613	ADJ	JJ	amod	525	O					3	I	attr	I-attr
+0	28	9	524	office	office	2614	2620	NOUN	NN	compound	525	O	noun.artifact				3	I	attr	I-attr
+0	28	10	525	number	number	2621	2627	NOUN	NN	pobj	520	O	noun.attribute				3	I	attr	I-attr
+0	28	11	526	and	and	2628	2631	CCONJ	CC	cc	525	O					3	O		O
+0	28	12	527	a	a	2632	2633	DET	DT	det	530	O					3	O		O
+0	28	13	528	rental	rental	2634	2640	ADJ	JJ	amod	530	O	noun.communication				3	B	attr	B-attr
+0	28	14	529	agreement	agreement	2641	2650	NOUN	NN	compound	530	O	noun.communication				3	I	attr	I-attr
+0	28	15	530	number	number	2651	2657	NOUN	NN	conj	525	O	noun.communication				3	I	attr	I-attr
+0	28	16	531	.	.	2657	2658	PUNCT	.	punct	519	O					3	O		O
+0	29	0	532	We	we	2659	2661	PRON	PRP	nsubj	534	O		3.0	PRON	PER	3	O		O
+0	29	1	533	also	also	2662	2666	ADV	RB	advmod	534	O					3	O		O
+0	29	2	534	need	need	2667	2671	VERB	VBP	ROOT	534	O					3	O		O
+0	29	3	535	to	to	2672	2674	PART	TO	aux	536	O					3	O		O
+0	29	4	536	track	track	2675	2680	VERB	VB	xcomp	534	O	verb.cognition				3	O		O
+0	29	5	537	the	the	2681	2684	DET	DT	det	539	O					3	O		O
+0	29	6	538	rental	rental	2685	2691	ADJ	JJ	amod	539	O	noun.possession				3	B	attr	B-attr
+0	29	7	539	date	date	2692	2696	NOUN	NN	dobj	536	O	noun.time				3	I	attr	I-attr
+0	29	8	540	,	,	2696	2697	PUNCT	,	punct	539	O					3	O		O
+0	29	9	541	the	the	2698	2701	DET	DT	det	543	O					3	O		O
+0	29	10	542	anticipated	anticipate	2702	2713	VERB	VBN	amod	543	O					3	B	attr	B-attr
+0	29	11	543	duration	duration	2714	2722	NOUN	NN	appos	539	O	noun.time				3	I	attr	I-attr
+0	29	12	544	of	of	2723	2725	ADP	IN	prep	543	O					3	I	attr	I-attr
+0	29	13	545	the	the	2726	2729	DET	DT	det	546	O					3	I	attr	I-attr
+0	29	14	546	rental	rental	2730	2736	NOUN	NN	pobj	544	O	noun.possession				3	I	attr	I-attr
+0	29	15	547	,	,	2736	2737	PUNCT	,	punct	543	O					3	O		O
+0	29	16	548	the	the	2738	2741	DET	DT	det	551	O		51.0	NOM	FAC	3	O		O
+0	29	17	549	originating	originate	2742	2753	VERB	VBG	amod	551	O		51.0	NOM	FAC	3	B	attr	B-attr
+0	29	18	550	rental	rental	2754	2760	ADJ	JJ	amod	551	O	noun.artifact	51.0	NOM	FAC	3	I	attr	I-attr
+0	29	19	551	office	office	2761	2767	NOUN	NN	conj	543	O	noun.artifact	51.0	NOM	FAC	3	I	attr	I-attr
+0	29	20	552	,	,	2767	2768	PUNCT	,	punct	551	O					3	O		O
+0	29	21	553	the	the	2769	2772	DET	DT	det	558	O		52.0	NOM	FAC	3	O		O
+0	29	22	554	drop	drop	2773	2777	NOUN	NN	amod	557	O	noun.act	52.0	NOM	FAC	3	B	attr	B-attr
+0	29	23	555	-	-	2777	2778	PUNCT	HYPH	punct	554	O		52.0	NOM	FAC	3	I	attr	I-attr
+0	29	24	556	off	off	2778	2781	ADP	RP	prt	554	O		52.0	NOM	FAC	3	I	attr	I-attr
+0	29	25	557	rental	rental	2782	2788	ADJ	JJ	amod	558	O	noun.artifact	52.0	NOM	FAC	3	I	attr	I-attr
+0	29	26	558	office	office	2789	2795	NOUN	NN	appos	551	O	noun.artifact	52.0	NOM	FAC	3	I	attr	I-attr
+0	29	27	559	,	,	2795	2796	PUNCT	,	punct	551	O					3	O		O
+0	29	28	560	the	the	2797	2800	DET	DT	det	561	O					3	O		O
+0	29	29	561	amount	amount	2801	2807	NOUN	NN	appos	539	O	noun.possession				3	B	attr	B-attr
+0	29	30	562	of	of	2808	2810	ADP	IN	prep	561	O					3	I	attr	I-attr
+0	29	31	563	the	the	2811	2814	DET	DT	det	564	O					3	I	attr	I-attr
+0	29	32	564	deposit	deposit	2815	2822	NOUN	NN	pobj	562	O	noun.possession				3	I	attr	I-attr
+0	29	33	565	paid	pay	2823	2827	VERB	VBN	acl	561	O	verb.possession				3	I	attr	I-attr
+0	29	34	566	,	,	2827	2828	PUNCT	,	punct	539	O					3	O		O
+0	29	35	567	the	the	2829	2832	DET	DT	det	571	O					3	O		O
+0	29	36	568	quoted	quote	2833	2839	VERB	VBN	amod	571	O					3	I	attr	I-attr
+0	29	37	569	daily	daily	2840	2845	ADJ	JJ	amod	571	O					3	I	attr	I-attr
+0	29	38	570	rental	rental	2846	2852	ADJ	JJ	amod	571	O	noun.possession				3	I	attr	I-attr
+0	29	39	571	rate	rate	2853	2857	NOUN	NN	conj	539	O	noun.possession				3	I	attr	I-attr
+0	29	40	572	,	,	2857	2858	PUNCT	,	punct	571	O					3	O		O
+0	29	41	573	and	and	2859	2862	CCONJ	CC	cc	571	O					3	O		O
+0	29	42	574	the	the	2863	2866	DET	DT	det	576	O					3	O		O
+0	29	43	575	quoted	quoted	2867	2873	ADJ	JJ	amod	576	O					3	B	attr	B-attr
+0	29	44	576	rate	rate	2874	2878	NOUN	NN	conj	571	O	noun.possession				3	I	attr	I-attr
+0	29	45	577	per	per	2879	2882	ADP	IN	prep	576	O					3	I	attr	I-attr
+0	29	46	578	mile	mile	2883	2887	NOUN	NN	pobj	577	O	noun.quantity				3	I	attr	I-attr
+0	29	47	579	.	.	2887	2888	PUNCT	.	punct	534	O					3	O		O
+0	30	0	580	Of	of	2889	2891	ADV	RB	advmod	581	O					3	O		O
+0	30	1	581	course	course	2892	2898	ADV	RB	advmod	582	O					3	O		O
+0	30	2	582	for	for	2899	2902	ADP	IN	prep	587	O					3	O		O
+0	30	3	583	the	the	2903	2906	DET	DT	det	584	O					3	O		O
+0	30	4	584	trailers	trailer	2907	2915	NOUN	NNS	pobj	582	O	noun.artifact				3	B	class	B-class
+0	30	5	585	,	,	2915	2916	PUNCT	,	punct	587	O					3	O		O
+0	30	6	586	there	there	2917	2922	PRON	EX	expl	587	O					3	O		O
+0	30	7	587	is	be	2923	2925	VERB	VBZ	ROOT	587	O					3	O		O
+0	30	8	588	n’t	not	2925	2928	PART	RB	neg	587	O					3	O		O
+0	30	9	589	a	a	2929	2930	DET	DT	det	591	O					3	O		O
+0	30	10	590	mileage	mileage	2931	2938	NOUN	NN	compound	591	O	noun.possession				3	O		O
+0	30	11	591	charge	charge	2939	2945	NOUN	NN	attr	587	O	noun.possession				3	O		O
+0	30	12	592	.	.	2945	2946	PUNCT	.	punct	587	O					3	O		O
+0	31	0	593	No	no	2947	2949	INTJ	UH	intj	598	O					3	O		O
+0	31	1	594	,	,	2949	2950	PUNCT	,	punct	598	O					3	O		O
+0	31	2	595	we	we	2951	2953	PRON	PRP	nsubj	598	O		3.0	PRON	PER	3	O		O
+0	31	3	596	do	do	2954	2956	AUX	VBP	aux	598	O					3	O		O
+0	31	4	597	n’t	not	2956	2959	PART	RB	neg	598	O					3	O		O
+0	31	5	598	need	need	2960	2964	VERB	VB	ROOT	598	O					3	O		O
+0	31	6	599	to	to	2965	2967	PART	TO	aux	600	O					3	O		O
+0	31	7	600	automate	automate	2968	2976	VERB	VB	xcomp	598	O	verb.change				3	O		O
+0	31	8	601	the	the	2977	2980	DET	DT	det	603	O					3	O		O
+0	31	9	602	financial	financial	2981	2990	ADJ	JJ	amod	603	O					3	O		O
+0	31	10	603	side	side	2991	2995	NOUN	NN	dobj	600	O	noun.state				3	O		O
+0	31	11	604	of	of	2996	2998	ADP	IN	prep	603	O					3	O		O
+0	31	12	605	our	our	2999	3002	PRON	PRP$	poss	606	O		3.0	PRON	PER	3	O		O
+0	31	13	606	business	business	3003	3011	NOUN	NN	pobj	604	O	noun.act				3	O		O
+0	31	14	607	,	,	3011	3012	PUNCT	,	punct	603	O					3	O		O
+0	31	15	608	just	just	3013	3017	ADV	RB	advmod	612	O					3	O		O
+0	31	16	609	our	our	3018	3021	PRON	PRP$	poss	611	O		3.0	PRON	PER	3	O		O
+0	31	17	610	rental	rental	3022	3028	ADJ	JJ	amod	611	O	noun.communication				3	O		O
+0	31	18	611	agreement	agreement	3029	3038	NOUN	NN	compound	612	O	noun.communication				3	O		O
+0	31	19	612	tracking	tracking	3039	3047	NOUN	NN	conj	603	O	noun.act				3	O		O
+0	31	20	613	and	and	3048	3051	CCONJ	CC	cc	612	O					3	O		O
+0	31	21	614	vehicle	vehicle	3052	3059	NOUN	NN	compound	615	O	noun.artifact				3	O		O
+0	31	22	615	assignment	assignment	3060	3070	NOUN	NN	compound	616	O	noun.act				3	O		O
+0	31	23	616	functions	function	3071	3080	NOUN	NNS	conj	612	O	noun.act				3	O		O
+0	31	24	617	.	.	3080	3081	PUNCT	.	punct	598	O					3	O		O
