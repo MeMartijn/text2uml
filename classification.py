@@ -7,7 +7,7 @@ class Classifier:
         self.tokens = tokens
         self.retrieve_text = retrieve_text
 
-        with open('data/model.pkl', 'rb') as f:
+        with open('models/model.pkl', 'rb') as f:
             self.crf = pickle.load(f)
 
     def word2features(self, sent, i):
