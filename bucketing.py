@@ -58,6 +58,22 @@ class Bucketizer:
                 return False
         else:
             return False
+    
+    def is_important_for_usecase(self, supersense_df):
+        # Rule 1: there needs to be at least two nouns in the sentences
+        if supersense_df['fine_POS_tag'].tolist().count('NN') + supersense_df['fine_POS_tag'].tolist().count('NNP') + supersense_df['fine_POS_tag'].tolist().count('NNS') > 1:
+            if len(supersense_df[supersense_df['lemma'].isin(['system', 'facilitate', 'module', 'interface', 'functionality', 'capability'])]) > 0:
+                return True
+            if len(supersense_df[supersense_df['supersense_category'] == 'verb.contact']) > 0:
+                return True
+            if len(supersense_df[(supersense_df['supersense_category'].isin(['verb.creation', 'verb.social'])) & (supersense_df['lemma'] == 'execute')]) > 0:
+                return True
+            if len(supersense_df[(supersense_df['supersense_category'].isin(['noun.animal', 'noun.person', 'noun.plant'])) & (supersense_df['dependency_relation'] == 'nsubj')]) > 0:
+                return True
+            else:
+                return False
+        else:
+            return False
 
     def apply_bucketing(self):
         input_text = self.retrieve_text()
@@ -66,6 +82,7 @@ class Bucketizer:
             bucketed_data = {
                 'class': list(filter(lambda x: self.is_important_for_class(x), focus_text_dfs)),
                 'activity': list(filter(lambda x: self.is_important_for_activity(x), focus_text_dfs)),
+                'usecase': list(filter(lambda x: self.is_important_for_usecase(x), focus_text_dfs)),
             }
 
             # Save raw dfs for the next part of the process
