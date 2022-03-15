@@ -1,52 +1,100 @@
 import pickle
 import numpy as np
 import pandas as pd
+import json
 
 class Classifier:
     def __init__(self, tokens, retrieve_text):
         self.tokens = tokens
         self.retrieve_text = retrieve_text
+        self.columns = ['word', 'lemma', 'POS_tag', 'fine_POS_tag', 'dependency_relation', 'event', 'supersense_category', 'entity', 'entity_type', 'entity_category', 'total_occurences', 'class_occurences', 'attribute_occurences']
 
         with open('models/model.pkl', 'rb') as f:
             self.crf = pickle.load(f)
+        
+        with open('models/fasttext-model.pkl', 'rb') as f:
+            self.fasttext = pickle.load(f)
+        
+        with open('../data/genmymodel/genmymodel_uml_extracted_metadata_final.json') as json_file:
+            gmm_data = json.load(json_file)
+
+        # Store all classes and attributes independent of eachother
+        all_classes = []
+        all_attrs = []
+
+        # Loop over all metadata and append to proper list
+        for file, metadata in gmm_data.items():
+            if 'classes' in metadata.keys():
+                all_classes.append(metadata['classes'])
+
+            if 'attributes' in metadata.keys():
+                all_attrs.append(metadata['attributes'])
+
+        flatten = lambda t: [item for sublist in t for item in sublist]
+
+        self.all_classes = flatten(all_classes)
+        self.all_attrs = flatten(all_attrs)
 
     def word2features(self, sent, i):
-        word = sent[i][0]
+        word = sent[i][1]
         postag = sent[i][3]
+        fine_postag = sent[i][4]
         
         features = {
-            'word': word,
+            label: data
+            for label, data in zip(self.columns, sent[i])
+        }
+        
+        features.update({
+            'word.lower()': word.lower(),
+            'word.isupper()': word.isupper(),
+            'word.istitle()': word.istitle(),
+            'word.isdigit()': word.isdigit(),
             'word[-3:]': word[-3:],
             'word[-2:]': word[-2:],
-            'postag': postag,
             'postag[:2]': postag[:2],
-            'lemma': sent[i][1],
-            'general_pos': sent[i][2],
-            'dependency': sent[i][4],
-            'supersense': sent[i][5],
-            'entity': sent[i][6],
-            'entity_type': sent[i][7],
-            'entity_category': sent[i][8]
-        }
+            'postag[:2]': postag[:2],
+            'finepostag[:2]': fine_postag[:2],
+            'finepostag[:2]': fine_postag[:2],
+        })
         if i > 0:
-            word1 = sent[i-1][0]
-            postag1 = sent[i-1][2]
+            word1 = sent[i-1][1]
+            postag1 = sent[i-1][3]
+            finepostag1 = sent[i-1][4]
             features.update({
+                '-1:word.lower()': word1.lower(),
+                '-1:word.istitle()': word1.istitle(),
+                '-1:word.isupper()': word1.isupper(),
                 '-1:postag': postag1,
                 '-1:postag[:2]': postag1[:2],
+                '-1:finepostag': finepostag1,
+                '-1:finepostag[:2]': finepostag1[:2],
             })
         else:
             features['BOS'] = True
 
         if i < len(sent)-1:
-            word1 = sent[i+1][0]
-            postag1 = sent[i+1][2]
+            word1 = sent[i+1][1]
+            postag1 = sent[i+1][3]
+            finepostag1 = sent[i-1][4]
             features.update({
+                '+1:word.lower()': word1.lower(),
+                '+1:word.istitle()': word1.istitle(),
+                '+1:word.isupper()': word1.isupper(),
                 '+1:postag': postag1,
                 '+1:postag[:2]': postag1[:2],
+                '+1:finepostag': finepostag1,
+                '+1:finepostag[:2]': finepostag1[:2],
             })
         else:
             features['EOS'] = True
+
+        word_embedding = self.fasttext.wv.get_vector(word)
+        
+        features.update({
+            f'emb_pos_{i}': word_embedding[i]
+            for i in range(len(word_embedding))
+        })
 
         return features
 
@@ -54,17 +102,35 @@ class Classifier:
         return [self.word2features(sent, i) for i in range(len(sent))]
 
     def preprocess(self, input_text):
-        def agg_func(s): return [(w, l, p, fp, dr, sc, e, et, ec) for w, l, p, fp, dr, sc, e, et, ec in zip(
-            s['word'].values.tolist(),
-            s['lemma'].values.tolist(),
-            s['POS_tag'].values.tolist(),
-            s['fine_POS_tag'].values.tolist(),
-            s['dependency_relation'].values.tolist(),
-            s['supersense_category'].values.tolist(),
-            s['entity'].values.tolist(),
-            s['entity_type'].values.tolist(),
-            s['entity_category'].values.tolist(),
-        )]
+        def get_gmm_data(df):
+            df['total_occurences'] = 0
+            df['class_occurences'] = 0
+            df['attribute_occurences'] = 0
+
+            noungroup = []
+            noungroup_indices = []
+
+            for index, row in df.iterrows():
+                if isinstance(row['fine_POS_tag'], str) and row['fine_POS_tag'][:2] == 'NN':
+                    noungroup.append(row['word'])
+                    noungroup_indices.append(index)
+                else:
+                    if len(noungroup) == 0:
+                        continue
+                    else:
+                        full_ng = ' '.join(noungroup).lower()
+                        attr_no = self.all_attrs.count(full_ng)
+                        class_no = self.all_classes.count(full_ng)
+                        
+                        for noun_index in noungroup_indices:
+                            df.loc[noun_index, ['class_occurences', 'attribute_occurences', 'total_occurences']] = [class_no, attr_no, attr_no + class_no]
+                            
+                        noungroup = []
+                        noungroup_indices = []
+            
+            return df
+
+        agg_func = lambda s: list(map(lambda w: tuple(w), get_gmm_data(s).values.tolist()))
         
         raw_features = [agg_func(df) for df in input_text]
         sentences = [s for s in raw_features]
